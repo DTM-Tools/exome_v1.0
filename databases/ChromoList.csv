@@ -1,0 +1,318 @@
+Allele,Description,Enabled,System,Gene,Chromosome,HG19Pos,GRC38Pos,A,C,G,T,Aclass,Cclass,Gclass,Tclass,DP_REF,MAPQ_REF,QUAL,DP,AO,AO/DP,Cell,Type,Gensubtype,Asubtype,Csubtype,Gsubtype,Tsubtype
+s10a,DI01/DI02 (Dia/Dib),TRUE,10,SLC4A1,17,42328621,44251253,var,abn,ref,abn,Dia,-,Dib,abn,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s10b,DI02_03 (Wra/Wrb),TRUE,10,SLC4A1,17,42331949,44254581,abn,ref,abn,var,-,Wrb,-,Wra,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s10c,DI02_05 (Wda),TRUE,10,SLC4A1,17,42333172,44255804,abn,ref,abn,var,-,Wda_neg,-,Wda_pos,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s10d,DI02_06 (Rba),TRUE,10,SLC4A1,17,42333198,44255830,var,abn,ref,abn,Rba_pos,-,Rba_neg,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s10e,DI02_07 (WARR),TRUE,10,SLC4A1,17,42333186,44255818,var,abn,ref,abn,WARR_pos,-,WARR_neg,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s10f,DI02_08 (ELO),TRUE,10,SLC4A1,17,42335164,44257796,var,abn,ref,abn,ELO_pos,-,ELO_neg,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s10g,DI02_09 (Wu/DISK),TRUE,10,SLC4A1,17,42333147,44255779,abn,ref,var,abn,-,Wu_neg/DISK_pos,Wu_pos/DISK_neg,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,Epitope,-
+s10h,DI02_10 (Bpa),TRUE,10,SLC4A1,17,42333134,44255766,abn,abn,ref,var,-,-,Bpa_neg,Bpa_pos,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,-,Epitope,Epitope
+s10i,DI02_11 (Moa),TRUE,10,SLC4A1,17,42331954,44254586,abn,ref,abn,var,-,Moa_neg,-,Moa_pos,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s10j,DI02_12 (Hga),TRUE,10,SLC4A1,17,42331955,44254587,var,abn,ref,abn,Hga_pos,-,Hga_neg,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s10k,DI02_13 (Vga),TRUE,10,SLC4A1,17,42333178,44255810,ref,abn,var,abn,Vga_neg,-,Vga_pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s10l,DI02_14_01 (Swa),TRUE,10,SLC4A1,17,42331984,44254616,abn,ref,abn,var,-,Swa_neg,-,Swa_pos,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s10m,DI02_14_02 (Swa/SW1)/DI02_21,TRUE,10,SLC4A1,17,42331985,44254617,var,abn,ref,abn,Swa_pos,-,Swa_neg,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s10n,DI02_16 (NFLD) part 1,TRUE,10,SLC4A1,17,42335171,44257803,var,abn,abn,ref,multi,-,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,Epitope,-
+s10o,DI02_15 (BOW)/DI02_16 (NFLD) part 2,TRUE,10,SLC4A1,17,42333160,44255792,var,var,ref,abn,BOW_pos,multi,BOW_neg,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s10p,DI02_17 (Jna)/DI02_18 (KREP),TRUE,10,SLC4A1,17,42333145,44255777,var,var,ref,abn,Jna_pos,KREP_pos,Jna_neg/KREP_neg,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s10q,DI02_19 (Tra),TRUE,10,SLC4A1,17,42333188,44255820,abn,ref,var,abn,-,Tra_neg,Tra_pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,Epitope,-
+s10r,DI02_20 (Fra),TRUE,10,SLC4A1,17,42334906,44257538,abn,ref,abn,var,-,Fra_neg,-,Fra_pos,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s10s,DI02_N01,TRUE,10,SLC4A1,17,42334882,44257514,abn,ref,abn,var,-,Not found,-,DI02_null_N_01 present,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s11a,YT01/YT02 (Yta/Ytb),TRUE,11,ACHE,7,100490797,100893176,abn,abn,ref,var,-,-,Yta,Ytb,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,-,Epitope,Epitope
+s11b,YT03,TRUE,11,ACHE,7,100491588,100893967,abn,ref,abn,var,-,Not found,-,Ytc,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s13a,SC01_05neg (STAR or SC5),TRUE,13,ERMAP,1,43296492,42830821,var,abn,ref,abn,SC5neg,-,SC5pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s13b,SC01_07neg (SCAN or SC7),TRUE,13,ERMAP,1,43296456,42830785,var,abn,ref,abn,SC7neg,-,SC7pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s13c,SC01/SC02 (Sc1/Sc2),TRUE,13,ERMAP,1,43296522,42830851,var,abn,ref,abn,SC2,-,SC1,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s13d,SC01_04(Rd),TRUE,13,ERMAP,1,43296531,42830860,abn,ref,var,abn,-,SC4neg,SC4pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,Epitope,-
+s13e,SC01_06(SCER),TRUE,13,ERMAP,1,43296595,42830924,var,abn,ref,abn,SC6neg,-,SC6pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s13f,SC01_N02,TRUE,13,ERMAP,1,43308469,42842798,abn,ref,abn,var,-,Not found,-,SC_null_01_02,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s14a,DO01_05neg/DO02_05neg (Joa or DO5),TRUE,14,ART4,12,14993882,14840948,var,abn,ref,abn,Joa_neg,-,Joa_pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s14b,DO02_08negpart2 (DOLG or DO8),TRUE,14,ART4,12,14993558,14840624,ref,abn,abn,var,Not found,-,-,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,-,Epitope
+s14c,DO01/DO02 (Doa/Dob),TRUE,14,ART4,12,14993439,14840505,abn,ref,abn,var,-,Dob,-,Doa,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s14d,DO02_04neg (Hy or DO4),TRUE,14,ART4,12,14993909,14840975,var,ref,abn,abn,Hy_neg,Hy_pos,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,Epitope,-,-
+s14e,DO01_06neg (DOYA),TRUE,14,ART4,12,14993685,14840751,ref,var,abn,abn,DOYApos,DOYAneg,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,Epitope,-,-
+s14f,DO01_09neg (DOLC),TRUE,14,ART4,12,14993666,14840732,var,abn,ref,abn,DOLCneg,-,DOLCpos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s14g,DO01_N01,TRUE,14,ART4,12,14993790,14840856,var,abn,ref,abn,DO01_null_N01,-,Not Found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s14h,DO02_N01,TRUE,14,ART4,12,14994089,14841155,abn,var,abn,ref,-,DO02_null_N01,-,Not Found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Null,-,Noeffect
+s14i,DO02_N02,TRUE,14,ART4,12,14995902,14842968,ref,abn,var,abn,Not found,-,DO02_null_N02,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Noeffect,-,Null,-
+s14j,DO02_N03part2,TRUE,14,ART4,12,14994047,14841113,ref,abn,var,abn,Not found,-,mulit,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Noeffect,-,Null,-
+s14k,DO01_10_neg(DODE),TRUE,14,ART4,12,14993827,14840893,abn,abn,ref,var,-,-,DODEpos,DODEneg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,-,Epitope,Epitope
+s14l,DO02_N04part2,TRUE,14,ART4,12,14993964,14841030,var,abn,ref,abn,multi,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,-,Noeffect,Null
+s14m,DO02_07negpart2,TRUE,14,ART4,12,14993801,14840867,abn,abn,ref,var,-,-,Not found,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,-,Noeffect,Epitope
+s14n,DO02_07negpart3,TRUE,14,ART4,12,14993800,14840866,abn,abn,ref,var,-,-,Not found,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,-,Noeffect,Epitope
+s15a,CO01/CO02_01 (Coa/Cob),TRUE,15,AQP1,7,30951658,30912043,abn,ref,abn,var,-,Coa+,-,Cob+,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s15b,CO01_04neg,TRUE,15,AQP1,7,30951664,30912049,ref,abn,var,abn,CO01_04pos,-,CO1_neg_CO2_neg_CO4_neg_CO3pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s15c,CO01_N03,TRUE,15,AQP1,7,30962205,30922590,var,ref,abn,abn,CO01_null_N03,Not found,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,Noeffect,-,-
+s15d,CO01_N05,TRUE,15,AQP1,7,30951636,30912021,abn,ref,abn,var,-,Not found,-,CO_01_N05_present,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s15e,CO_M01,TRUE,15,AQP1,7,30951637,30912022,abn,ref,abn,var,-,Not found,-,CO_M_01_present,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,-,Weak
+s16a,LW05/LW07 (LWa/LWb),TRUE,16,ICAM4,19,10397987,10287311,ref,abn,var,abn,Lwa,-,LWb,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s19a,XK_N16,TRUE,19,XK,X,37545321,37686068,var,abn,ref,abn,Kx_neg_McLeod_N16,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,Kx_neg_McLeod,-,Noeffect,-
+s19b,XK_N17,TRUE,19,XK,X,37553690,37694437,abn,ref,abn,var,-,Not found,-,Kx_neg_McLeod_N17,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,-,Noeffect,-,Kx_neg_McLeod
+s19c,XK_N18,TRUE,19,XK,X,37553756,37694503,abn,ref,abn,var,-,Not found,-,Kx_neg_McLeod_N18,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,-,Noeffect,-,Kx_neg_McLeod
+s19d,XK_N19,TRUE,19,XK,X,37587087,37727834,var,abn,ref,abn,Kx_neg_McLeod_N19,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,Kx_neg_McLeod,-,Noeffect,-
+s19e,XK_N20,TRUE,19,XK,X,37587275,37728022,abn,ref,abn,var,-,Not found,-,Kx_neg_McLeod_N20,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,-,Noeffect,-,Kx_neg_McLeod
+s19f,XK_N21,TRUE,19,XK,X,37587321,37728068,var,abn,ref,abn,Kx_neg_McLeod_N21,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,Kx_neg_McLeod,-,Noeffect,-
+s19g,XK_N22,TRUE,19,XK,X,37545460,37686207,abn,var,ref,abn,-,Kx_neg_McLeod_N22,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,-,Kx_neg_McLeod,Noeffect,-
+s19h,XK_N23,TRUE,19,XK,X,37553538,37694285,var,abn,ref,abn,Kx_neg_McLeod_N23,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,Kx_neg_McLeod,-,Noeffect,-
+s19i,XK_N24,TRUE,19,XK,X,37553802,37694549,var,abn,ref,abn,Kx_neg_McLeod_N24,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,Kx_neg_McLeod,-,Noeffect,-
+s19j,XK_N25,TRUE,19,XK,X,37553806,37694553,var,abn,ref,abn,Kx_neg_McLeod_N25,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,Kx_neg_McLeod,-,Noeffect,-
+s19k,XK_N26,TRUE,19,XK,X,37586888,37727635,var,abn,ref,abn,Kx_neg_McLeod_N26,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,Kx_neg_McLeod,-,Noeffect,-
+s19l,XK_N27,TRUE,19,XK,X,37587044,37727791,abn,ref,var,abn,-,Not found,Kx_neg_McLeod_N27,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,-,Noeffect,Kx_neg_McLeod,-
+s19m,XK_N28,TRUE,19,XK,X,37587260,37728007,abn,var,abn,ref,-,Kx_neg_McLeod_N28,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,-,Kx_neg_McLeod,-,Noeffect
+s19n,XK_N29,TRUE,19,XK,X,37587359,37728106,var,abn,ref,abn,Kx_neg_McLeod_N29,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,Kx_neg_McLeod,-,Noeffect,-
+s19o,XK_N30,TRUE,19,XK,X,37587504,37728251,abn,var,ref,abn,-,Kx_neg_McLeod_N30,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,-,Kx_neg_McLeod,Noeffect,-
+s19p,XK_N31,TRUE,19,XK,X,37587514,37728261,abn,ref,var,abn,-,Not found,Kx_neg_McLeod_N31,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,-,Noeffect,Kx_neg_McLeod,-
+s19q,XK_N32,TRUE,19,XK,X,37587342,37728089,ref,abn,var,abn,Not found,-,Kx_neg_McLeod_N32,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,Noeffect,-,Kx_neg_McLeod,-
+s19t,XK_N37,TRUE,19,XK,X,37545368,37686115,abn,ref,abn,var,-,Not found,-,Kx_neg_McLeod_N37,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Override,-,Noeffect,-,Kx_neg_McLeod
+s20a,GE01_05,TRUE,20,GYPC,2,127413862,126656286,ref,abn,var,abn,Wb_neg,-,Wb_pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s20b,GE01_07,TRUE,20,GYPC,2,127447848,126690272,abn,abn,ref,var,-,-,An_a_neg,An_a_pos,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,-,Epitope,Epitope
+s20c,GE01_08,TRUE,20,GYPC,2,127413879,126656303,abn,ref,abn,var,-,Dh_a_neg,-,Dh_a_pos,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s20d,GE01_09,TRUE,20,GYPC,2,127447876,126690300,var,ref,abn,abn,GEIS_pos,GEIS_neg,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,Epitope,-,-
+s20e,GE01_10neg,TRUE,20,GYPC,2,127451467,126693891,abn,ref,abn,var,-,GEPL_pos,-,GEPL_neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s20f,GE01_11neg,TRUE,20,GYPC,2,127447837,126690261,ref,abn,abn,var,GEAT_pos,-,-,GEAT_neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,-,Epitope
+s20g,GE01_12neg,TRUE,20,GYPC,2,127447861,126690285,abn,ref,abn,var,-,GETI_pos,-,GETI_neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s20h,GE01N_02part1,TRUE,20,GYPC,2,127451464,126693888,abn,abn,ref,var,-,-,Not found,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,-,Epitope,Epitope
+s21a,CROM01neg (Cra),TRUE,21,CD55,1,207504467,207331122,abn,var,ref,abn,-,Cra_neg,Cra_pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,Epitope,-
+s21b,CROM01_03/CROM01_04 (Tca/Tcb/Tcc),TRUE,21,CD55,1,207495781,207322436,abn,var,ref,var,-,Tcc,Tca,Tcb,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,Epitope,Epitope
+s21c,CROM01_05neg,TRUE,21,CD55,1,207500114,207326769,abn,ref,abn,var,-,Dra_pos,-,Dra_neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s21d,CROM01_06neg,TRUE,21,CD55,1,207495865,207322520,var,abn,abn,ref,Esa_neg,-,-,Esa_pos,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,-,Epitope
+s21e,CROM01_08 (Wesb or CROM9/Wesa or CROM8),TRUE,21,CD55,1,207495871,207322526,abn,abn,var,ref,-,-,WESa,WESb,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,-,Epitope,Epitope
+s21f,CROM01_10neg (UMC or CROM10),TRUE,21,CD55,1,207504537,207331192,abn,ref,abn,var,-,UMC_pos,-,UMC_neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s21g,CROM01_11neg,TRUE,21,CD55,1,207504507,207331162,var,abn,ref,abn,GUTI_neg,-,GUTI_pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s21h,CROM01_12neg,TRUE,21,CD55,1,207500165,207326820,abn,ref,abn,var,-,SERF_pos,-,SERF_neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s21i,CROM01_13neg,TRUE,21,CD55,1,207504514,207331169,abn,abn,var,ref,-,-,ZENA_neg,ZENA_pos,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,-,Epitope,Epitope
+s21j,CROM01_14neg,TRUE,21,CD55,1,207498083,207324738,var,abn,ref,abn,CROV_neg,-,CROV_pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s21k,CROM01_15neg,TRUE,21,CD55,1,207504528,207331183,ref,abn,var,abn,CRAM_pos,-,CRAM_neg,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s21l,CROM01_16neg,TRUE,21,CD55,1,207498006,207324661,var,abn,ref,abn,CROZ_neg,-,CROZ_pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s21m,CROM17 or CRUE (provisional),TRUE,21,CD55,1,207500168,207326823,abn,abn,var,ref,-,-,CROM17neg,CROM17pos,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,-,Epitope,Epitope
+s21n,CROM01_N01,TRUE,21,CD55,1,207495887,207322542,var,abn,ref,abn,Inab_CROM_null_01N_01,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s21o,CROM01_N02,TRUE,21,CD55,1,207495889,207322544,var,ref,abn,abn,Inab_CROM_null_01N_02,Not found,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,Noeffect,-,-
+s21p,CROM01_N03,TRUE,21,CD55,1,207498996,207325651,abn,ref,abn,var,-,Not found,-,Inab_CROM_null_01N_03,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s21q,CROM18 or CRAG (provisional),TRUE,21,CD55,1,207495799,207322454,ref,abn,var,abv,CROM18pos,-,CROM18neg,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s22a,KN02,TRUE,22,CR1,1,207782769,207609424,var,abn,ref,abn,Knb,-,Kna,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s22b,KN01_05neg,TRUE,22,CR1,1,207760773,207587428,abn,ref,abn,var,-,Yka_pos,-,Yka_neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s22c,KN01_06,TRUE,22,CR1,1,207782856,207609511,ref,abn,var,abn,McC_a_pos,-,McC_b_pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s22d,KN01_07,TRUE,22,CR1,1,207782889,207609544,ref,abn,var,abn,Vil_neg,-,Vil_pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitiope,-,Epitope,-
+s22e,KN01_08neg,TRUE,22,CR1,1,207782916,207609571,var,abn,abn,ref,Sl3_neg,-,-,Sl3_pos,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,-,Epitope
+s22f,KN01_09neg,TRUE,22,CR1,1,207782931,207609586,ref,abn,var,abn,KCAM_pos,-,KCAM_neg ,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s23a,IN01,TRUE,23,CD44,11,35198191,35176644,abn,var,ref,abn,-,In(a_pos_b_neg),In(a_neg_b_pos),-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,Epitope,-
+s23b,IN02_03neg,TRUE,23,CD44,11,35201842,35180295,abn,ref,var,abn,-,INFI_pos,INFI_neg,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,Epitope,-
+s23c,IN02_04neg,TRUE,23,CD44,11,35211433,35189886,var,ref,abn,abn,INJA_neg,INJA_pos,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,Epitope,-,-
+s23d,IN02_05neg,TRUE,23,CD44,11,35211394,35189847,var,abn,ref,abn,INRA_neg,-,INRA_pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s24a,OK_01_01neg,TRUE,24,BSG,19,580428,580428,var,abn,ref,abn,OK_aneg,-,OK_apos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s24b,OK_01_02_neg,TRUE,24,BSG,19,579608,579608,abn,abn,ref,var,-,-,OKGVpos,OKGVneg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,-,Epitope,Epitope
+s24c,OK_01_03_neg,TRUE,24,BSG,19,579610,579610,var,abn,ref,abn,OKVMneg,-,OKVMpos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s25a,RAPH01_01neg,TRUE,25,CD151,11,837514,837514,abn,ref,abn,var,-,RAPH1_pos,-,RAPH1_neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s25b,RAPH01_02neg,TRUE,25,CD151,11,837536,837536,var,abn,ref,abn,RAPH1_neg,-,RAPH1_pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s26a,JMH01_02neg (JMHKneg),TRUE,26,SEMA7A,15,74709718,74417377,var,abn,ref,abn,JMHKneg,-,JMHK+,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s26b,JMH01_03neg (JMHLneg),TRUE,26,SEMA7A,15,74709717,74417376,abn,ref,abn,var,-,JMHL+,-,JMHLneg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s26c,JMH01_04neg (JMHGneg),TRUE,26,SEMA7A,15,74704269,74411928,abn,ref,abn,var,-,JMHG+,-,JMHGneg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s26d,JMH01_05neg (JMHMneg),TRUE,26,SEMA7A,15,74704267,74411926,var,abn,ref,abn,JMHMneg,-,JMHM+,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s26e,JMH01_06neg (JMHQneg),TRUE,26,SEMA7A,15,74707234,74414893,var,ref,abn,abn,JMHQneg,JMHQ+,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,Epitope,-,-
+s27a,GCNT2_02,TRUE,27,I,6,10587038,10586805,abn,var,ref,abn,-,I_pos_GCNT2_02,I_pos_GCNT2_01,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Enzyme,,,,
+s27b,GCNT2_01W_01,TRUE,27,I,6,10586465,10586232,var,abn,abn,ref,I_pos_weak_GCNT2_01W_01,-,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Enzyme,,,,
+s27c,GCNT2_01W_02,TRUE,27,I,6,10586727,10586494,var,abn,ref,abn,I_pos_weak_GCNT2_01W_02,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Enzyme,,,,
+s27d,GCNT2_01W_03,TRUE,27,I,6,10586905,10586672,var,abn,ref,abn,I_pos_weak_GCNT2_01W_03,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Enzyme,,,,
+s27e,GCNT2_01N_01,TRUE,27,I,6,10626680,10626447,var,abn,ref,abn,Ineg_iadult_GCNT2_01N_01,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Enzyme,,,,
+s27f,GCNT2_01N_02,TRUE,27,I,6,10626785,10626552,var,abn,ref,abn,Ineg_iadult_GCNT2_01N_02,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Enzyme,,,,
+s27g,GCNT2_01N_05,TRUE,27,I,6,10621642,10621409,var,abn,ref,abn,Ineg_iadult_GCNT2_01N_05,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Enzyme,,,,
+s27h,GCNT2_01N_08,TRUE,27,I,6,10621593,10621360,var,abn,ref,abn,Ineg_iadult_GCNT2_01N_08,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Enzyme,,,,
+s27i,GCNT2_02N_01part2,TRUE,27,I,6,10621664,10621431,var,abn,ref,abn,multi,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Enzyme,,,,
+s29a,GIL01N_01,TRUE,29,AQP3,9,33442298,33442300,abn,ref,abn,var,-,Not found,-,GIL_neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s30a,RHAG_01_03,TRUE,30,RHAG,6,49585783,49618070,abn,abn,var,ref,-,-,RHAG3neg,RHAG3+,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,-,Epitope,Epitope
+s30aa,RHAG_01M11,TRUE,30,RHAG,6,49586992,49619279,abn,ref,var,abn,-,not found,RHAG_weak,-,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,Weak,-
+s30ab,RHAG_01N_08part2,TRUE,30,RHAG,6,49580217,49612504,abn,ref,abn,var,-,Not found,-,multi,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s30b,RHAG_01_04,TRUE,30,RHAG,6,49580247,49612534,abn,ref,abn,var,-,RHAG4neg,-,RHAG4+,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s30c,RHAG_01neg,TRUE,30,RHAG,6,49586917,49619204,abn,var,ref,abn,-,RHAG1neg,RHAG1+,-,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,Epitope,-
+s30d,RHAG_02,TRUE,30,RHAG,6,49582527,49614814,var,abn,ref,abn,RHAG2+,-,RHAG2neg,-,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s30e,RHAG_01N_03,TRUE,30,RHAG,6,49604368,49636655,abn,ref,abn,var,-,Not found,-,RHAG_null,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s30f,RHAG_01N_04,TRUE,30,RHAG,6,49580109,49612396,abn,ref,abn,var,-,Not found,-,RHAG_null,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s30g,RHAG_01N_05 / RHAG_01N_06,TRUE,30,RHAG,6,49578859,49611146,var,ref,abn,var,RHAG_null,Not found,-,RHAG_null,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,Noeffect,-,Null
+s30i,RHAG_01N_07,TRUE,30,RHAG,6,49578736,49611023,abn,ref,abn,var,-,Not found,-,RHAG_null,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s30j,RHAG_01N_09,TRUE,30,RHAG,6,49580219,49612506,abn,ref,abn,var,-,Not found,-,RHAG_null,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s30k,RHAG_01N_10,TRUE,30,RHAG,6,49574907,49607194,ref,var,abn,abn,Not found,RHAG_null,-,-,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Noeffect,Null,-,-
+s30l,RHAG_01N_11,TRUE,30,RHAG,6,49574634,49606921,var,ref,abn,abn,RHAG_null,Not found,-,-,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,Noeffect,-,-
+s30m,RHAG_01N_12,TRUE,30,RHAG,6,49585920,49618207,abn,abn,ref,var,-,-,Not found,RHAG_null,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,-,Noeffect,Null
+s30n,RHAG_01N_13,TRUE,30,RHAG,6,49578801,49611088,abn,ref,abn,var,-,Not found,-,RHAG_null,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s30o,RHAG_01N_14,TRUE,30,RHAG,6,49578860,49611147,abn,var,abn,ref,-,RHAG_null,-,Not found,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Null,-,Noeffect
+s30p,RHAG_01N_16,TRUE,30,RHAG,6,49586923,49619210,var,abn,ref,abn,RHAG_null,-,Not found,-,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s30q,RHAG_01N_18,TRUE,30,RHAG,6,49582417,49614704,var,abn,ref,abn,RHAG_null,-,Not found,-,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s30r,RHAG_01M02,TRUE,30,RHAG,6,49604523,49636810,var,ref,abn,abn,RHAG_weak,Not found,-,-,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,Noeffect,-,-
+s30s,RHAG_01M03,TRUE,30,RHAG,6,49586997,49619284,abn,ref,abn,var,RHAG_weak,Not found,-,-,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,Noeffect,-,-
+s30t,RHAG_01M04,TRUE,30,RHAG,6,49586964,49619251,var,ref,abn,abn,RHAG_weak,Not found,-,-,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,Noeffect,-,-
+s30u,RHAG_01M05,TRUE,30,RHAG,6,49585875,49618162,ref,abn,var,abn,Not found,-,RHAG_weak,-,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Noeffect,-,Weak,-
+s30v,RHAG_01M06,TRUE,30,RHAG,6,49583417,49615704,abn,ref,abn,var,-,not found,-,RHAG_weak,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,-,Weak
+s30w,RHAG_01M07,TRUE,30,RHAG,6,49574578,49606865,var,ref,abn,abn,RHAG_weak,not found,-,-,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,Noeffect,-,-
+s30x,RHAG_01M08,TRUE,30,RHAG,6,49587051,49619338,ref,var,abn,abn,Not found,RHAG_weak,-,-,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Noeffect,Weak,-,-
+s30y,RHAG_01M09,TRUE,30,RHAG,6,49587039,49619326,ref,abn,var,abn,Not found,-,RHAG_weak,-,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Noeffect,-,Weak,-
+s30z,RHAG_01M10,TRUE,30,RHAG,6,49583405,49615692,abn,ref,abn,var,-,not found,-,RHAG_weak,x > 3,x>0,x>10,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,-,Weak
+s32a,ABCG2_01N_01,TRUE,32,ABCG2,4,89052957,88131805,var,abn,ref,abn,Jra_neg_ABCG2_null_01N_01,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s32b,ABCG2_01N_02_01,TRUE,32,ABCG2,4,89039396,88118244,var,abn,ref,abn,ABCG2_null_01_N02,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s32c,ABCG2_01N_03,TRUE,32,ABCG2,4,89039366,88118214,var,abn,ref,abn,Jra_neg_ABCG2_null_01N_03,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s32d,ABCG2_01N_04,TRUE,32,ABCG2,4,89052996,88131844,var,abn,ref,abn,Jra_neg_ABCG2_01N04,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s32e,ABCG2_01N_05,TRUE,32,ABCG2,4,89039318,88118166,var,ref,abn,abn,Jra_neg_ABCG2_01N_05,Not found,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Noeffect,Null,-,-
+s32f,ABCG2_01N_09,TRUE,32,ABCG2,4,89039372,88118220,var,abn,ref,abn,Jra_neg_ABCG2_01N_09,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s32g,ABCG2_01N_17,TRUE,32,ABCG2,4,89053727,88132575,abn,ref,abn,var,-,Not found,-,Jra_neg_ABCG2_01N_17,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,Null,-
+s32h,ABCG2_01N_18,TRUE,32,ABCG2,4,89053044,88131892,var,abn,abn,ref,Jra_neg_ABCG2_01N_18,-,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s32i,ABCG2_01N_21,TRUE,32,ABCG2,4,89016686,88095534,var,abn,ref,abn,Jra_neg_ABCG2_01N_21,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s32j,ABCG2_01N_24,TRUE,32,ABCG2,4,89061146,88139994,ref,abn,var,abn,Not found,-,Jra_neg_ABCG2_01N_24,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Noeffect,-,Null,-
+s32k,ABCG2_01N_26,TRUE,32,ABCG2,4,89052305,88131153,var,abn,ref,abn,Jra_neg_ABCG2_01N_26,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s32l,ABCG2_01W_01,TRUE,32,ABCG2,4,89052323,88131171,abn,abn,ref,var,-,-,Not found,Jr_weak_ABCG2_01W_01,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,-,Noeffect,Weak
+s32m,ABCG2_01W_02,TRUE,32,ABCG2,4,89013496,88092344,abn,ref,abn,var,-,Not found,-,Jr_weak_ABCG2_01W_02,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,-,Weak
+s32n,ABCG2_01N_02_02part1 / ABCG2_01N_06_part1 / ABCG2_01N_13part1,TRUE,32,ABCG2,4,89061114,88139962,abn,ref,abn,var,-,Not found,-,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s32o,ABCG2_01N_06part2,TRUE,32,ABCG2,4,89018661,88097509,var,abn,ref,abn,multi,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Nul,-,Noeffect,-
+s33a,ABCB6_01_N02 ,TRUE,33,ABCB6 ,2,220081525,219216803,abn,ref,abn,var,-,Not found,-,ABCB6_null_01N_02,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,-,Null
+s33b,ABCB6_01N08,TRUE,33,ABCB6 ,2,220077135,219212413,var,abn,ref,abn,ABCB6_null_01N_08,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s33c,ABCB6_01N10,TRUE,33,ABCB6 ,2,220075431,219210709,ref,var,abn,abn,Not found,ABCB6_null_01N_10,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Noeffect,Null,-,-
+s33d,ABCB6_01N11,TRUE,33,ABCB6 ,2,220079723,219215001,abn,ref,abn,var,-,Not found,-,ABCB6_null_01N_11,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,Noeffect,-,-
+s33e,ABCB6_01_N13,TRUE,33,ABCB6 ,2,220082505,219217783,var,abn,ref,abn,ABCB6_null_01N_13,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s33g,ABCB6_01N19,TRUE,33,ABCB6 ,2,220081524,219216802,var,abn,ref,abn,ABCB6_null_01N_19,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s33i,ABCB6_01N28,TRUE,33,ABCB6 ,2,220083395,219218673,abn,abn,var,ref,-,-,ABCB6_null_01N_28,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,-,Null,Noeffect
+s33j,ABCB6_01N29,TRUE,33,ABCB6 ,2,220081415,219216693,abn,ref,abn,var,-,Not found,-,ABCB6_null_01N_29,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s33k,ABCB6_01N30,TRUE,33,ABCB6 ,2,220080903,219216181,abn,ref,abn,var,-,Not found,-,ABCB6_null_01N_30,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s33l,ABCB6_01N31,TRUE,33,ABCB6 ,2,220077768,219213046,abn,ref,abn,var,-,Not found,-,ABCB601N_31,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s33m,ABCB6_01N32,TRUE,33,ABCB6 ,2,220077165,219212443,var,abn,ref,abn,ABCB6_01N_32,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s33n,ABCB6_01N33,TRUE,33,ABCB6 ,2,220075534,219210812,var,abn,ref,abn,ABCB6_01N_33,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s33o,ABCB6_01N35,TRUE,33,ABCB6 ,2,220075102,219210380,abn,ref,abn,var,-,Not found,-,ABCB6_null_01N_35,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s33p,ABCB6_01W01,TRUE,33,ABCB6 ,2,220081416,219216694,var,abn,ref,abn,ABCB6_weak_01W_01,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,Noeffect,-
+s33q,ABCB6_01W02,TRUE,33,ABCB6 ,2,220080845,219216123,abn,ref,abn,var,-,Not found,-,ABCB6_weak_01W_02,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,-,Weak
+s33r,ABCB6_01W03,TRUE,33,ABCB6 ,2,220078006,219213284,abn,ref,abn,var,-,Not found,-,ABCB6_weak_01W_03,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,-,Weak
+s33s,ABCB6_01W04,TRUE,33,ABCB6 ,2,220075473,219210751,abn,ref,abn,var,-,Not found,-,ABCB6_weak_01W_04,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,-,Weak
+s33t,ABCB6_01W05,TRUE,33,ABCB6 ,2,220083079,219218357,abn,var,abn,ref,-,ABCB6_weak_01W_05,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Weak,-,Noeffect
+s33u,ABCB6_01W06,TRUE,33,ABCB6 ,2,220075483,219210761,abn,ref,var,abn,-,Not found,ABCB6_weak_01W_06,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,Weak,-
+s33v,ABCB6_01W07,TRUE,33,ABCB6 ,2,220082993,219218271,abn,abn,ref,var,-,-,Not found,ABCB6_weak_01W_07,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,-,Noeffect,Weak
+s33w,ABCB6_01N_23part1,TRUE,33,ABCB6 ,2,220083376,219218654,abn,var,abn,ref,-,multi,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Null,-,Noeffect
+s34a,VEL_01W_01 / VEL_01W_02,TRUE,34,SMIM1,1,3692400,3775836,var,abn,var,ref,Vel_weak,-,Vel_weak_Velneg,Vel+,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,Weak,Noeffect
+s35a,CD59_01N_03,TRUE,35,CD59,11,33731793,33710247,abn,ref,abn,var,-,Not found,-,CD59_1neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s36a,AUG01/AUG02(Ata+/Ata_neg),TRUE,36,SLC29A1,6,44200655,44232918,var,abn,ref,abn,Ata_neg,-,Ata+,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s36b,AUG_03,TRUE,36,SLC29A1,6,44200643,44232906,ref,var,abn,abn,Not found,AUG_123,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Noeffect,Epitope,-,-
+s36c,AUG_01N,TRUE,36,SLC29A1,6,44198219,44230482,abn,var,ref,abn,-,AUG_null,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Null,Noeffect,-
+s5a,LU01/LU02 (Lua/Lub),TRUE,5,BCAM,19,45315445,44812188,var,abn,ref,abn,Lua,-,Lub,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s5aa,LU02_24neg(part3),TRUE,5,BCAM,19,45316807,44813550,abn,ref,abn,var,-,Not found,-,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s5b,LU01_16neg(part2) (Lu16),TRUE,5,BCAM,19,45316772,44813515,abn,ref,abn,var,-,Not found,-,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s5c,LU02_05neg (Lu5),TRUE,5,BCAM,19,45315541,44812284,var,abn,ref,abn,Lu5neg,-,Lu5pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s5d,LU02_09 (Lu6/Lu9),TRUE,5,BCAM,19,45317448,44814191,abn,ref,abn,var,-,Lu6,-,Lu9,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s5e,LU02_14 (Lu8/Lu14),TRUE,5,BCAM,19,45316704,44813447,var,abn,abn,ref,Lu14,-,-,Lu8,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,-,Epitope
+s5f,LU02_19 (Lu18/Lu19),TRUE,5,BCAM,19,45322744,44819487,ref,abn,var,abn,Lu18 (Au_a),-,Lu19 (Au_b),-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s5g,LU02_22neg (Lu22),TRUE,5,BCAM,19,45315438,44812181,abn,ref,abn,var,-,Lu22pos,-,Lu22neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s5h,LU02_04_01neg/LU02_04_02neg (Lu4),TRUE,5,BCAM,19,45316526,44813269,var,abn,ref,var,Lu4neg,-,Lu4pos,Lu4neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,Epitope
+s5i,LU02_07neg (Lu7),TRUE,5,BCAM,19,45322077,44818820,ref,var,abn,abn,Lu7pos,Lu7neg,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,Epitope,-,-
+s5j,LU02_12_2neg (Lu12_2),TRUE,5,BCAM,19,45315634,44812377,var,abn,ref,abn,Lu02_12_2neg,-,Lu02_12_2pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s5k,LU02_17neg (Lu17),TRUE,5,BCAM,19,45315555,44812298,var,abn,ref,abn,Lu17neg,-,Lu17pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s5l,LU02_20neg (Lu20),TRUE,5,BCAM,19,45317529,44814272,abn,ref,abn,var,-,Lu20pos,-,Lu20neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s5m,LU02_21neg (Lu21),TRUE,5,BCAM,19,45315497,44812240,abn,ref,var,abn,-,Lu21pos,Lu21neg,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,Epitope,-
+s5n,LU02_25neg (Lu25),TRUE,5,BCAM,19,45316755,44813498,abn,ref,abn,var,-,Lu25pos,-,Lu25neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s5o,LU02_26neg (Lu26),TRUE,5,BCAM,19,45322624,44819367,abn,ref,abn,var,-,Lu26pos,-,Lu26neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s5p,LU02N_01,TRUE,5,BCAM,19,45316784,44813527,abn,ref,abn,var,-,Not found,-,LU_null_02N_01,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s5q,LU02N_03 / LU02_24neg(part2),TRUE,5,BCAM,19,45316804,44813547,var,ref,abn,var,LU_null_02N_03,Not found,-,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,Noeffect,-,Null
+s5r,LU02N_04,TRUE,5,BCAM,19,45315576,44812319,abn,ref,abn,var,-,Not found,-,LU_null_02N_04,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s5t,LU02_13neg(part1),TRUE,5,BCAM,19,45322316,44819059,abn,ref,abn,var,-,Not found,-,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s5u,LU02_13neg(part2),TRUE,5,BCAM,19,45322891,44819634,abn,ref,abn,var,-,Not found,-,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s5v,LU02_13neg(part3),TRUE,5,BCAM,19,45322962,44819705,ref,abn,abn,var,Not found,-,-,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Noeffect,-,-,Null
+s5w,LU02_23neg(part1),TRUE,5,BCAM,19,45315770,44812513,var,abn,ref,abn,multi,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s5x,LU02_23neg(part2),TRUE,5,BCAM,19,45322092,44818835,abn,ref,abn,var,-,Not found,-,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s5y,LU02_24neg(part1),TRUE,5,BCAM,19,45315427,44812170,var,abn,ref,abn,multi,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s6a,KEL01_01/KEL02/KEL01M_01 (K1/k),TRUE,6,KEL,7,142655008,142957921,var,var,ref,abn,K1,KEL_weak_01M_01,k(Cellano),-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope|weak,Epitope,Weak,Epitope,-
+s6aa,KEL02_34neg (KEL34) (KASH),TRUE,6,KEL,7,142651437,142954350,abn,var,abn,ref,-,K34neg,-,K34pos,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s6ab,KEL02_36neg (KETI or KEL36),TRUE,6,KEL,7,142641752,142944665,var,abn,ref,abn,K36neg,-,K36pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s6ac,KEL02_37neg(KHUL or KEL37),TRUE,6,KEL,7,142651318,142954231,var,abn,ref,abn,K37neg,-,K37pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s6ad,KEL02M_01,TRUE,6,KEL,7,142649711,142952624,abn,ref,abn,var,-,Not found,-,KEL_weak_02M_01,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,-,Weak
+s6ae,KEL02M_02,TRUE,6,KEL,7,142639528,142942441,abn,var,abn,ref,-,KEL_weak_02M_02,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Weak,-,Noeffect
+s6af,KEL02M_03,TRUE,6,KEL,7,142650982,142953895,ref,abn,var,abn,Not found,-,KEL_weak_02M_03,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Noeffect,-,Weak,-
+s6ag,KEL02M_04,TRUE,6,KEL,7,142638431,142941344,abn,ref,abn,var,-,Not found,-,KEL_weak_02M_04 ,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,-,Weak
+s6ah,KEL02M_05,TRUE,6,KEL,7,142640415,142943328,var,abn,ref,abn,KEL_weak_02M_05,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,Noeffect,-
+s6ai,KEL02M_07,TRUE,6,KEL,7,142640371,142943284,abn,var,abn,ref,-,KEL_weak_02M_07,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Weak,-,Noeffect
+s6aj,KEL02M_08,TRUE,6,KEL,7,142641411,142944324,var,abn,abn,ref,KEL_weak_02M_08,-,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,-,Noeffect
+s6ak,KEL02M_09,TRUE,6,KEL,7,142640377,142943290,ref,var,abn,abn,Not found,KEL_weak_02M_09,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Noeffect,Weak,-,-
+s6al,KEL02M_10,TRUE,6,KEL,7,142651408,142954321,abn,ref,abn,var,-,Not found,-,KEL_weak_02M_10,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,-,Weak
+s6am,KEL02M_11,TRUE,6,KEL,7,142643340,142946253,var,abn,ref,abn,KEL_weak_02M_11,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,Noeffect,-
+s6an,KEL02N_01/KEL02N_06,TRUE,6,KEL,7,142658446,142961359,abn,ref,var,var,-,Not found,KEL_null_02N_01,KEL_null_02N_06,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,Null,Null
+s6ao,KEL02N_26,TRUE,6,KEL,7,142658033,142960946,var,abn,ref,abn,KEL_null_02N_26,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s6ap,KEL02N_03,TRUE,6,KEL,7,142658169,142961082,ref,abn,abn,var,Not found,-,-,KEL_null_02N_03,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Noeffect,-,-,Null
+s6aq,KEL02N_04,TRUE,6,KEL,7,142650926,142953839,var,abn,ref,abn,KEL_null_02N_04,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s6ar,KEL02N_05,TRUE,6,KEL,7,142639531,142942444,abn,ref,abn,var,-,Not found,-,KEL_null_02N_05,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s6as,KEL02N_07,TRUE,6,KEL,7,142655012,142957925,var,abn,ref,abn,Kell_null_02N_07,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s6at,KEL02N_08,TRUE,6,KEL,7,142655062,142957975,abn,var,abn,ref,-,KEL_null_02N_08,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Null,-,Noeffect
+s6au,KEL02N_09,TRUE,6,KEL,7,142641766,142944679,abn,ref,abn,var,-,Not found,-,KEL_null_02N_09,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s6av,KEL02N_10,TRUE,6,KEL,7,142641481,142944394,var,abn,ref,abn,KEL_null_02N_10,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s6aw,KEL02N_12/KEL02N_13,TRUE,6,KEL,7,142651270,142954183,var,ref,abn,var,KEL_null_02N_13,Not found,-,KEL_null_02N_12,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,Noeffect,-,Null
+s6ax,KEL02N_14,TRUE,6,KEL,7,142651020,142953933,abn,ref,abn,var,-,Not found,-,KEL_null_02N_14,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s6ay,KEL02N_15,TRUE,6,KEL,7,142643392,142946305,var,abn,ref,abn,KEL_null_02N_15,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s6az,KEL02N_16,TRUE,6,KEL,7,142641424,142944337,var,abn,ref,abn,KEL_null_02N_16,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s6b,KEL01_02,TRUE,6,KEL,7,142655009,142957922,var,abn,abn,ref,K1_weak_present,-,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,-,Noeffect
+s6ba,KEL02N_17,TRUE,6,KEL,7,142640916,142943829,var,abn,ref,var,KEL_null_02N_17,-,Not found,Not found (synonymous),x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Nulll,-,Noeffect,Noeffect
+s6bb,KEL02N_19,TRUE,6,KEL,7,142639535,142942448,var,abn,ref,abn,KEL_null_02N_19,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s6bc,KEL02N_20,TRUE,6,KEL,7,142640680,142943593,abn,ref,abn,var,-,Not found,-,KEL_null_02N_20,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s6bd,KEL02N_21,TRUE,6,KEL,7,142639611,142942524,abn,var,ref,abn,-,KEL_null_02N_21,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Null,Noeffect,-
+s6be,KEL02N_22,TRUE,6,KEL,7,142651460,142954373,abn,ref,var,abn,-,Not found,KEL_null_02N_22,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,Null,-
+s6bf,KEL02N_24,TRUE,6,KEL,7,142651572,142954485,var,ref,abn,abn,KEL_null_02N_24,Not found,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Nulll,Noeffect,-,-
+s6bg,KEL02N_28,TRUE,6,KEL,7,142658185,142961098,var,ref,abn,abn,KEL_null_02N_28,Not found,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,Noeffect,-,-
+s6bh,KEL02N_29,TRUE,6,KEL,7,142640612,142943525,abn,ref,abn,var,-,Not found,-,KEL_null_02N_29,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s6bi,KEL02_35negpart1,TRUE,6,KEL,7,142651415,142954328,var,ref,abn,abn,multi,Not found,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,Noeffect,-,-
+s6bj,KEL02_35negpart2,TRUE,6,KEL,7,142639534,142942447,abn,ref,abn,var,-,Not found,-,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s6bk,KEL02M_06part1,TRUE,6,KEL,7,142658109,142961022,abn,abn,ref,var,-,-,Not found,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,-,Noeffect,Weak
+s6bl,KEL02M_06part2,TRUE,6,KEL,7,142643310,142946223,var,abn,ref,abn,multi,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,Noeffect,-
+s6c,KEL01N_01 part 2,TRUE,6,KEL,7,142640598,142943511,abn,var,ref,abn,-,multi,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Null,Noeffect,-
+s6d,KEL01N_02 part 2,TRUE,6,KEL,7,142658171,142961084,ref,abn,var,abn,Not found,-,multi,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Noeffect,-,Null,-
+s6e,KEL02_03 (Kpa/Kpb),TRUE,6,KEL,7,142651354,142954267,var,abn,ref,abn,Kpa,-,Kpb,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s6f,KEL02_06 (Jsa/Jsb),TRUE,6,KEL,7,142640113,142943026,ref,abn,var,abn,Jsb,-,Jsa,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s6g,KEL02_10 (Ula or K10),TRUE,6,KEL,7,142641420,142944333,var,abn,abn,ref,Ulapos,-,-,Ulaneg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,-,Epitope
+s6h,KEL02_12neg (KEL12),TRUE,6,KEL,7,142640633,142943546,abn,var,abn,ref,-,K12neg,-,K12pos,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s6i,KEL02_14_1neg,TRUE,6,KEL,7,142655048,142957961,var,abn,ref,abn,K14neg K24negCys180,-,K14posK24negR180,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s6j,KEL02_14_2neg/KEL02_24 (KEL14/KEL24),TRUE,6,KEL,7,142655047,142957960,abn,ref,var,var,-,K14pos K24negR180,K14neg K24posP180,K14negK24negH180,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,Epitope,Epitope
+s6k,KEL02_17 (K11/K17),TRUE,6,KEL,7,142651290,142954203,ref,abn,var,abn,K11,-,K17,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s6l,KEL02_18_1neg,TRUE,6,KEL,7,142658027,142960940,var,abn,ref,abn,K18_1neg,-,K18_1pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s6m,KEL02_18_2neg,TRUE,6,KEL,7,142658026,142960939,abn,ref,abn,var,-,K18_2pos,-,K18_2neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s6n,KEL02_19neg (K19),TRUE,6,KEL,7,142641426,142944339,abn,ref,abn,var,-,K19pos,-,K19neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s6o,KEL02_21 (Kpc),TRUE,6,KEL,7,142651353,142954266,abn,ref,abn,var,-,Not found,-,Kpc,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s6p,KEL02_22neg (KEL22),TRUE,6,KEL,7,142651003,142953916,var,abn,ref,abn,K22neg,-,K22pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s6q,KEL02_23 (KEL23),TRUE,6,KEL,7,142649654,142952567,abn,var,abn,ref,-,K23pos,-,K23neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s6r,KEL02_25 (KEL25/KEL28) (VLAN/VONG),TRUE,6,KEL,7,142651452,142954365,abn,ref,abn,var,-,K25negK28neg,-,K25posK28neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s6s,KEL02_26neg (TOU or KEL26),TRUE,6,KEL,7,142643391,142946304,abn,ref,abn,var,-,K26pos,-,K26neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s6t,KEL02_27neg (KEL27) (RAZ),TRUE,6,KEL,7,142651450,142954363,abn,ref,abn,var,-,K27pos,-,K27neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s6u,KEL02_28 (KEL25/KEL28) (VLAN/VONG),TRUE,6,KEL,7,142651453,142954366,var,abn,ref,abn,K25negK28pos,-,K25negK28neg,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s6v,KEL02_29neg (KEL29) (KALT),TRUE,6,KEL,7,142640035,142942948,abn,ref,abn,var,-,K29pos,-,K29neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s6w,KEL02_30neg (KTIM or KEL30),TRUE,6,KEL,7,142651282,142954195,abn,ref,abn,var,-,K30pos,-,K30neg,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s6x,KEL02_31 (KYO or KEL31)/KEL38),TRUE,6,KEL,7,142651320,142954233,abn,ref,abn,var,-,K38,-,K31,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,-,Epitope,-,Epitope
+s6y,KEL02_32neg (KEL32) (KUCI),TRUE,6,KEL,7,142643337,142946250,var,abn,ref,abn,K32neg,-,K32pos,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s6z,KEL02_33neg (KEL33) (KANT),TRUE,6,KEL,7,142643325,142946238,var,ref,abn,abn,K33neg,K33pos,-,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,Epitope,-,-
+s8a,FY01/FY02 (Fya/Fyb),TRUE,8,ACKR1,1,159175354,159205564,var,abn,ref,abn,Fyb,-,Fya,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s8b,FY01N_01(GATAmutation)/FY02N_01,TRUE,8,ACKR1,1,159174683,159204893,abn,var,abn,ref,-,FY null (Canonical GATA mutation present),-,GATA mutation not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Null,-,Noeffect
+s8c,FY01N_03,TRUE,8,ACKR1,1,159175637,159205847,var,abn,ref,abn,FY_null_01N_03,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s8d,FY01N_04,TRUE,8,ACKR1,1,159175516,159205726,var,abn,ref,abn,FY_null_01N_04,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s8e,FY01N_06,TRUE,8,ACKR1,1,159175624,159205834,var,abn,ref,abn,FY_null_01N_06,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s8f,FY02N_02,TRUE,8,ACKR1,1,159175636,159205846,var,abn,ref,abn,FY_null_02N_02,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s8g,FY02N_03,TRUE,8,ACKR1,1,159176010,159206220,var,abn,ref,abn,FY_null_02N_03,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s8h,FY02W_03,TRUE,8,ACKR1,1,159175495,159205705,var,abn,ref,abn,FY_weak_02W_03,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,Noeffect,-
+s8i,FY02W_04,TRUE,8,ACKR1,1,159176130,159206340,abn,ref,abn,var,-,Not found,-,FY_weak_02W_04,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,-,Weak
+s8j,FY02N_05,TRUE,8,ACKR1,1,159176124,159206334,var,abn,ref,abn,FY_null_02N_05,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s8k,FY01W_01(Arg89Cys),TRUE,8,ACKR1,1,159175494,159205704,abn,ref,abn,var,-,Not found,-,FYX (Arg89Cys) present,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,-,Weak
+s8l,FY01W_03,TRUE,8,ACKR1,1,159175909,159206119,var,abn,ref,abn,FY_weak_01W_03,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,Noeffect,-
+s8m,FY01N_08,TRUE,8,ACKR1,1,159174681,159204891,abn,var,abn,ref,-,FY null (GATA caucasian),-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Null,-,Noeffect
+s8n,FY01W_02part2,TRUE,8,ACKR1,1,159175527,159205737,var,abn,ref,abn,multi,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,Noeffect,-
+s8o,FY02W_02part1,TRUE,8,ACKR1,1,159175374,159205584,abn,abn,ref,var,-,-,Not found,multi,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,-,Noeffect,Weak
+s9a,JK_01/JK_02 (Jka/Jkb),TRUE,9,SLC14A1,18,43319519,45739554,var,abn,ref,abn,Jkb,-,Jka,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Epitope,Epitope,-,Epitope,-
+s9b,JK01N_02,TRUE,9,SLC14A1,18,43311030,45731065,abn,ref,abn,var,-,Not found,-,JK_null_01N_02,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s9c,JK01N_03,TRUE,9,SLC14A1,18,43316532,45736567,abn,ref,var,abn,-,Not found,JK_null_01N_03,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,Null,-
+s9d,JK01N_05,TRUE,9,SLC14A1,18,43316511,45736546,var,ref,abn,var,JK_null_01N_05,Not found,-,synonymous,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,Noeffect,Noeffect,-
+s9e,JK01N_08,TRUE,9,SLC14A1,18,43319547,45739582,ref,abn,var,abn,Not found,-,JK_null_01N_08,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Noeffect,-,Null,-
+s9f,JK01N_10,TRUE,9,SLC14A1,18,43319280,45739315,var,abn,ref,abn,JK_null_01N_10,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s9g,JK01W_05,TRUE,9,SLC14A1,18,43319206,45739241,var,abn,ref,abn,JK_weak_01W_05,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,Noeffect,-
+s9h,JK02N_01/JK01N_06/JK02N_02,TRUE,9,SLC14A1,18,43314238,45734273,var,var,ref,abn,JK_null_ 02N_01/JK_null_01N_06,JK_null_02N_02,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,Null,Noeffect,-
+s9i,JK02N_06,TRUE,9,SLC14A1,18,43319552,45739587,abn,var,abn,ref,-,JK_null_02N_06,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Null,-,Noeffect
+s9j,JK02N_03,TRUE,9,SLC14A1,18,43311050,45731085,var,ref,abn,var,JK_null_02N_03,Not found,-,synonymous,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,Noeffect,-,Noeffect
+s9k,JK02N_04,TRUE,9,SLC14A1,18,43316614,45736649,abn,abn,ref,var,-,-,Not found,JK_null_02N_04,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,-,Noeffect,Null
+s9l,JK02N_09,TRUE,9,SLC14A1,18,43311019,45731054,var,abn,ref,abn,JK_null_02N_09,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s9m,JK02N_10,TRUE,9,SLC14A1,18,43311022,45731057,var,abn,ref,abn,JK_null_02N_10,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s9n,JK02W_01,TRUE,9,SLC14A1,18,43316498,45736533,abn,ref,abn,var,-,Not found,-,JK_weak_02W_01,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Noeffect,-,Weak
+s9o,JK02W_02,TRUE,9,SLC14A1,18,43319182,45739217,var,abn,abn,ref,JK_weak_02W_02,-,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,-,Noeffect
+s9p,JK01N_04/JK02N_08,TRUE,9,SLC14A1,18,43328350,45748385,abn,ref,abn,var,-,Not found,-,JK_null_01N_04/JK_null_02N_08,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,-,Null
+s9q,JK01W_01,TRUE,9,SLC14A1,18,43310415,45730450,var,abn,ref,abn,JK_weak_01W_01,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,Noeffect,-
+s9r,JK01W_02,TRUE,9,SLC14A1,18,43316461,45736496,abn,var,abn,ref,-,JK_weak_01W_02,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,-,Weak,-,Noeffect
+s9s,JK01W_03,TRUE,9,SLC14A1,18,43310313,45730348,var,abn,ref,abn,JK_weak_01W_03,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,Noeffect,-
+s9t,JK01W_04,TRUE,9,SLC14A1,18,43311054,45731089,var,abn,ref,abn,JK_weak_01W_04,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Weak,Weak,-,Noeffect,-
+s9u,JK02N_07,TRUE,9,SLC14A1,18,43319577,45739612,var,abn,ref,abn,JK_null_02N_07,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s9v,JK02N_11part1/JK02_N_12part2/JK02_N_13part1,TRUE,9,SLC14A1,18,43316449,45736484,ref,abn,var,abn,Not found,-,multi,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Noeffect,-,Null,-
+s9w,JK02N_11part2,TRUE,9,SLC14A1,18,43316462,45736497,var,abn,ref,abn,multi,-,Not found,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,Null,-,Noeffect,-
+s9x,JK02N_12part1,TRUE,9,SLC14A1,18,43314334,45734369,abn,var,abd,ref,-,multi,-,Not found,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Null,-,Noeffect
+s9y,JK02N_13part2,TRUE,9,SLC14A1,18,43316486,45736521,abn,ref,var,abn,-,Not found,multi,-,x > 5,x>10,x>5,(x > 3) & (x < 200),x > 3,x > 0.3,RBC,Antigen,Null,-,Noeffect,Null,-

@@ -1,0 +1,119 @@
+Name,***KEL***,
+s6a,k(Cellano),K1
+s6b,Not found,K1_weak_present
+s6c,Not found,multi
+s6d,Not found,multi
+s6e,Kpb,Kpa
+s6f,Jsb,Jsa
+s6g,Ulaneg,Ulapos
+s6h,K12pos,K12neg
+s6i,K14posK24negR180,K14neg K24negCys180
+s6j,K14pos K24negR180,K14neg K24posP180
+s6k,K11,K17
+s6l,K18_1pos,K18_1neg
+s6m,K18_2pos,K18_2neg
+s6n,K19pos,K19neg
+s6o,Not found,Kpc
+s6p,K22pos,K22neg
+s6q,K23neg,K23pos
+s6r,K25negK28neg,K25posK28neg
+s6s,K26pos,K26neg
+s6t,K27pos,K27neg
+s6u,K25negK28neg,K25negK28pos
+s6v,K29pos,K29neg
+s6w,K30pos,K30neg
+s6x,K38,K31
+s6y,K32pos,K32neg
+s6z,K33pos,K33neg
+s6aa,K34pos,K34neg
+s6ab,K36pos,K36neg
+s6ac,K37pos,K37neg
+s6ad,Not found,KEL_weak_02M_01
+s6ae,Not found,KEL_weak_02M_02
+s6af,Not found,KEL_weak_02M_03
+s6ag,Not found,KEL_weak_02M_04
+s6ah,Not found,KEL_weak_02M_05
+s6ai,Not found,KEL_weak_02M_07
+s6aj,Not found,KEL_weak_02M_08
+s6ak,Not found,KEL_weak_02M_09
+s6al,Not found,KEL_weak_02M_10
+s6am,Not found,KEL_weak_02M_11
+s6an,Not found,KEL_null_02N_01
+s6ao,Not found,KEL_null_02N_26
+s6ap,Not found,KEL_null_02N_03
+s6aq,Not found,KEL_null_02N_04
+s6ar,Not found,KEL_null_02N_05
+s6as,Not found,Kell_null_02N_07
+s6at,Not found,KEL_null_02N_08
+s6au,Not found,KEL_null_02N_09
+s6av,Not found,KEL_null_02N_10
+s6aw,Not found,KEL_null_02N_13
+s6ax,Not found,KEL_null_02N_14
+s6ay,Not found,KEL_null_02N_15
+s6az,Not found,KEL_null_02N_16
+s6ba,Not found,KEL_null_02N_17
+s6bb,Not found,KEL_null_02N_19
+s6bc,Not found,KEL_null_02N_20
+s6bd,Not found,KEL_null_02N_21
+s6be,Not found,KEL_null_02N_22
+s6bf,Not found,KEL_null_02N_24
+s6bg,Not found,KEL_null_02N_28
+s6bh,Not found,KEL_null_02N_29
+s6bi,Not found,multi
+s6bj,Not found,multi
+s6bk,Not found,multi
+s6bl,Not found,multi
+insa6,Not found,KEL_null_02N_23
+dela6,Not found,KEL_null_02N_11
+delb6,Not found,KEL_null_02N_25
+delc6,Not found,KEL_null_02N_27
+Name,***Duffy***,
+s8a,Fya,Fyb
+s8b,GATA mutation not found,FY null (Canonical GATA mutation present)
+s8c,Not found,FY_null_01N_03
+s8d,Not found,FY_null_01N_04
+s8e,Not found,FY_null_01N_06
+s8f,Not found,FY_null_02N_02
+s8g,Not found,FY_null_02N_03
+s8h,Not found,FY_weak_02W_03
+s8i,Not found,FY_weak_02W_04
+s8j,Not found,FY_null_02N_05
+s8k,Not found,FY_weak_01W01 (Arg89Cys)
+s8l,Not found,FY_weak_01W_03
+s8m,Not found,FY null (GATA caucasian)
+s8n,Not found,multi
+s8o,Not found,multi
+del8a,Not found,FY_null_01N_02
+del8b,Not found,FY_null_01N_05
+del8c,Not found,FY_null_01N_07
+del8e,Not found,FY_null_02N_04
+del8f,Not found,FY_null_02N_06
+Name,***Kidd***,
+s9a,Jka,Jkb
+s9b,Not found,JK_null_01N_02
+s9c,Not found,JK_null_01N_03
+s9d,Not found,JK_null_01N_05
+s9e,Not found,JK_null_01N_08
+s9f,Not found,JK_null_01N_10
+s9g,Not found,JK_weak_01W_05
+s9h,Not found,JK_null_ 02N_01/JK_null_01N_06
+s9i,Not found,JK_null_02N_06
+s9j,Not found,JK_null_02N_03
+s9k,Not found,JK_null_02N_04
+s9l,Not found,JK_null_02N_09
+s9m,Not found,JK_null_02N_10
+s9n,Not found,JK_weak_02W_01
+s9o,Not found,JK_weak_02W_02
+s9p,Not found,JK_null_01N_04/JK_null_02N_08
+s9q,Not found,JK_weak_01W_01
+s9r,Not found,JK_weak_01W_02
+s9s,Not found,JK_weak_01W_03
+s9t,Not found,JK_weak_01W_04
+s9u,Not found,JK_null_02N_07
+s9v,Not found,multi
+s9w,Not found,multi
+s9x,Not found,multi
+s9y,Not found,multi
+del9a,Not found,JK_null_01N_09
+del9b,Not found,JK_null_01N_07/JK_null_02N_05
+del9c,Not found,JK_null_02N_14
