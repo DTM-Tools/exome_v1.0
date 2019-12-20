@@ -3,7 +3,7 @@ This is the DTMTools classifier source code page.
 
 DTMTools was created by the Department of Transfusion Medicine of the National Institutes of Health, in loving memory of our patient Rylan Jaxson Macomb.
 
-You can learn more about DTMTools in the /documentation directory; we strongly advice reviewing all this material before downloading and running the code.
+You can learn more about DTMTools in the_ /documentation_ directory; we strongly advice reviewing all this material before downloading and running the code.
 
 ## Download Reference Genome
 
@@ -42,7 +42,7 @@ Example sorting and indexing pipeline for an aligned file:
 	
 ## Genomic Interpretation Rules Database
 
-DTMTools interprets Freebayes vcf results in relation to an interpretation rules database. For blood group interpretation, we provide databases in .csv format (_ChromoList.csv, ChromoInDelList.csv and Multi.csv_) located in _/databases_. Please refer to the /documentation directory and to our publication for further details.
+DTMTools interprets Freebayes vcf results in relation to an interpretation rules database. For blood group interpretation, we provide databases in .csv format (_ChromoList.csv, ChromoInDelList.csv and Multi.csv_) located in _/databases_. Please refer to the _/documentation_ directory and to our publication for further details.
 
 ## Additional Genomic Variants in Genes of Interest
 [Annovar webpage]: http://annovar.openbioinformatics.org/en/latest/
