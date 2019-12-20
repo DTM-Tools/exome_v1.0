@@ -62,7 +62,7 @@ Where:
 
 - **-a**: Run annovar analysis to capture additional variants in the blood group genes. Annovar must be run independently by the user; DTMTools expects Annovar output files in the input directory. Expected file names are specified in _rylantools/additional\_findings\_stage.py_.
 - **-n**: Do not clean up temporary files (for debugging).
-- **-m**: Number of parallel processes to make the analysis fatser. For use in multicore machines. Recommended one per core. Maximum number of threads = number of chromosomes.
+- **-m**: Number of parallel processes to make the analysis faster. For use in multicore machines. Recommended one per core. Maximum number of threads = number of chromosomes.
 - **-r**: Directory where the FASTA genomic reference files and respective index are found. Software also expects genomic coordinate .csv failes in this directory (_ChromoList.csv, ChromoInDelList.csv, Multi.csv_).
 - **-o**: Ouptut will be written as a .json file in this specified directory.
 - **-i**: Directory where aligned, sorted bam files and indexes are located. If _-a_ option is used, DTMTools expects Annovar output files in this directory.
