@@ -3,9 +3,7 @@
 ## Introduction
 DTM-Tools was designed for prediction of blood antigen phenotypes from large NGS datasets. It is written in Python and designed to work in a Linux/Unix environment. It can only be run from the command line or through a Docker container – graphical and web interfaces will be implemented in the future.
 
-The description and tutorial material presented in this document is intended as a complement, not a repetition, for the software’s publication. Please refer to ```
-*Citation pending
-``` before reviewing this material.
+The description and tutorial material presented in this document is intended as a complement, not a repetition, for the software’s publication. Please refer to ```Citation pending``` before reviewing this material.
 
 DTM-Tools is written in object-oriented notation as a series of stages (static methods) that create objects, execute, and return the output to the pipeline state. Logging levels are incorporated for future web server deployment.
 
