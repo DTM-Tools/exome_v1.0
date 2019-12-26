@@ -34,12 +34,19 @@ If run locally, DTM-Tools requires prior installation of [Samtools][samtools], [
 However, a Docker container is available, which obviates the need for these installations and enhances reproducibility of DTM-Tools. Docker command lines can be found in _softwareTutorials.md_ in this /documentation directory.
 
 You can read more about software reproducibility and the use of containers here:
+
 [Peng paper]:hhttps://www.ncbi.nlm.nih.gov/pubmed/?term=PMID%3A+22144613.
+
 [Cito paper]: https://ieeexplore.ieee.org/document/7883438
+
 [Piccolo paper]:https://www.ncbi.nlm.nih.gov/pubmed/?term=PMID%3A+27401684
+
 [Schulz paper]:https://www.ncbi.nlm.nih.gov/pubmed/?term=PMID%3A+28163975
+
 [Lobe paper]:https://www.ncbi.nlm.nih.gov/pubmed/?term=PMID%3A+27577463
+
 [Wagholikar paper]:https://www.ncbi.nlm.nih.gov/pubmed/?term=PMID%3A+30012140
+
 * Peng RD: [Reproducible research in computational science][Peng paper]. Science 2011; 334: 1226-7.
 * Cito J, Gall HC: [Using Docker Containers to Improve Reproducibililty in Software Engineering Research][Cito paper];  2016 IEEE/ACM 38th IEEE International Conference on Software Engineering Companion. Austin, TX, 2016.
 * Piccolo SR, Frampton MB: [Tools and techniques for computational reproducibility][Piccolo paper]. Gigascience 2016; 5: 30.
@@ -47,7 +54,7 @@ You can read more about software reproducibility and the use of containers here:
 * Lobe M, Ganslandt T, Lotzmann L, et al.: [Simplified Deployment of Health Informatics Applications by Providing Docker Images][Lobe paper]. Stud Health Technol Inform 2016; 228: 643-7.
 * Wagholikar KB, Dessai P, Sanz J, et al.: [Implementation of informatics for integrating biology and the bedside (i2b2) platform as Docker containers][Wagholikar paper]. BMC Med Inform Decis Mak 2018; 18: 66.
 
-##Input File Format
+## Input File Format
 
 * DTM-Tools takes .bam files and the associated index (.bai) file as input; these files should be stored in the directory path specified by the **‘-i’** option. Note that DTM-Tools currently employs Freebayes as its variant caller, which expects the index to have the ‘.bai’ extension, NOT ‘.bam.bai’. This requires renaming of the typical extension given by the samtools index command. Refer to our pre-processing script in this directory for sample commands for alignment and indexing. 
 
@@ -74,4 +81,4 @@ DTM-Tools also has the option (**-a**) to report any additional genomic variants
         file1_name = '%s/%s_Annovar.variant_function'%(input_dir, base_name)
         return (file1_name, file2_name)
 
-##DTM-Tools Database
+## DTM-Tools Database
