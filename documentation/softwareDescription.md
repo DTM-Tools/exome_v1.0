@@ -82,3 +82,57 @@ DTM-Tools also has the option (**-a**) to report any additional genomic variants
         return (file1_name, file2_name)
 
 ## DTM-Tools Database
+
+The DTM-Tools command line also expects the genomic rules and interpretation databases stored in the directory path specified by the ‘**-r**’ command line option. 
+
+DTM-Tools exome v1.0 database can be downloaded from the Github  _/database directory. Three files are expected: _ChromoList.csv, ChromoInDelList.csv, and Multi.csv_, each described individually below. 
+
+* The user can open these files and edit them in Excel, but must ensure that the line break remains as LF and not CRLF. 
+* The first line of each .csv database file is expected to be column headers and is ignored by the software. Note that entering allele information in the first line will not yield an error, however the information will not be interpreted in the output file.  
+* DTM-Tools exome v1.0 database is based on the ISBT blood group alleles tables, but it does not use special characters to ensure compatibility with the DTM-Tools Python library. We provide detailed database nomenclature rules for the user in /documentation/databaseNomenclaturev1.pdf.
+* Reference nucleotides must correspond exactly to the input reference genome. For example, although _SLC14A1 c.838A_ (_JK\*02_ or _JK\*B_) is listed as the reference in the ISBT tables, hg19 and hg38 lists _SLC14A1 c.838G_ (_JK\*01_ or _JK\*A_) as the reference at that position, and it is reflected as such in the DTM-Tools database.
+* Note that nucleotide reference/variant classification and phenotype interpretation **must be provided in the PLUS strand**. For genes that are encoded in the negative strand, use the reverse complement.
+
+### ChromoList.csv
+
+ChromoList.csv is used to describe SNV interpretation rules and contains the following fields:
+
+	A) Allele: unique code for each entry. See nomenclature rules for suggested nomenclature.
+	
+	B) Description: allele name per ISBT, without special characters as indicated in nomenclature rules. 
+	
+	C) Enabled: TRUE or FALSE
+	
+	D) System: blood group system number
+	
+	E) Gene: Name of gene
+	
+	F) Chromosome: chromosome number
+	
+	G) HG19Pos: nucleotide position of the SNV in hg19 (1-based)
+	
+	H) GRC38Pos: nucleotide position of the SNV in hg38 (1-based)
+	
+	I-L) A,C,G and T: enter ‘ref’ if it is considered the reference nucleotide (in the plus strand), enter ‘var’ if it is one of the documented variants, and enter ‘abn’ if it’s never been reported and you’d like DTM-Tools to flag it if found. Note that ‘ref’ is required, and only one ‘ref’ is allowed. More than one ‘var’ entry is possible.
+	
+	M-P) Aclass, Cclass,Gclass,Tclass: enter the phenotype classification you want DTM-Tools to assign to each of the nucleotides, if found in the plus strand. Remember to avoid any special characters that may interfere with the python code, such as asterisks or commas. Enter ‘-‘ if it is an ‘abn’ nucleotide call (i.e. unexpected nucleotide call for that genomic position). 
+	
+	Q) DP_REF: enter ‘x > #’ to denote the depth filter in this position if it is called homozygous reference
+	
+	R) MAPQ_REF: enter the minimum MAPQ filter in this position
+	
+	S) QUAL: qual value filter, applies only if there’s a variant nucleotide call
+	
+	T) DP: accepts minimum and maximum expected values for total depth, regardless of nucleotide call
+	
+	U) AO: filter for minimum number of detected alternate allele calls, applies only if there’s a variant nucleotide call
+	
+	V) AO/DP: filter for minimum fraction of alternate allele, applies only if there’s a variant nucleotide call
+	
+	W) Cell: ‘RBC’, ‘platelet’, or ‘PMN’
+	
+	X) Type: ‘Antigen’ vs ‘Enzyme’
+	
+	Y) Gensubtype: define if the SNV encodes for an epitope, a weakening variant, or a null change. Multiple values accepted in pipe-delimited format.
+	
+	Z-AC) Asubtype, Csubtype, Gsubtype, Tsubtype: specify what each nucleotide’s specific ‘Gensubtype’ (column Y) effect is.
