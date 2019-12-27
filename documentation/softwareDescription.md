@@ -307,12 +307,12 @@ JSON format was selected, rather than a predicted individual phenotype output, t
  
 * DTM-Tools employs [Freebayes] [freebayes] for variant calling, which is haplotype-based. If an indel or a complex genomic variant is identified in a position listed in the _ChromoList.csv_ database (i.e. an expected SNV), the alternate nucleotide call will not match, and the allele will NOT be classified in the output database. This can be uncovered by running the DTM-Tools software with the ‘**-n**’ option, and inspection of the individual _.vcf_ file, which will be stored in the _/tmp_ directory. Thus, in the setting of exome sequencing, a missing allele in the output JSON can have 4 explanations: 
 
-> 1) Indel or complex variant in an SNV-expected position
-
-> 2) Trimming at pre-processing stage due to low quality/short sequence
-
-> 3) Misalignment to paralogous gene
-
-> 4) True homozygous deletion
+>> 1) Indel or complex variant in an SNV-expected position
+>>
+>> 2) Trimming at pre-processing stage due to low quality/short sequence
+>>
+>> 3) Misalignment to paralogous gene
+>>
+>> 4) True homozygous deletion
 
 **DTM-Tools is for research use only and is in continuous development**. Please contact the DTM-Tools developer at <celina.montemayorgarcia@nih.gov> for questions and to report any problems.
