@@ -55,7 +55,7 @@ Hg19 is considered the default assembly build value, in this case it does not ne
 
 The JSON output file and its rationale is also discussed in /_documentation/softwareDescription.md_ - please review that document first. **Figure 2** the DTM-Tools publication provides an illustration and description of each field in the DTM-Tools JSON output.
 
-To view the .JSON output file in a visually-friendly format, use any online JSON formatter (look for "JSON formatter" in any web search engine). Some examples are:
+To view the JSON output file in a visually-friendly format, use any online JSON formatter (search for "JSON formatter" in any web search engine). Some examples are:
 
 [sample1]:https://jsonformatter.curiousconcept.com/
 
@@ -74,7 +74,7 @@ The user can then download the formatted JSON file and visualize with any text e
 	
 ## Pymongo scripts
 
-Pymongo scripts are provided in the /queryTools directory. These are provided as a guide, we upload our JSON files into MongoDB for querying and analysis but any non-relational database could be used.
+Pymongo scripts are provided in the /queryTools directory. These are provided as a guide; we upload our JSON files into MongoDB for querying and analysis but any non-relational database could be used.
 
 [pymongo site]:https://api.mongodb.com/python/current/
 
@@ -82,7 +82,7 @@ DTM-Tools exome_v1.0 release contains the following two scripts which require [p
 
 ### AlleleCountMissingFiltered.py
 
-This script provides an output that indicates, per row entry in each of the three databases, how many documents are classified as homozygous reference (ie zygosity code = 0), heterozygous (zygosity code =1) or homozygous variant (zygosity code =2). It also indicates how many documents were flagged as ‘filtered’ due to a failed quality filter, and how many documents did not contain such allele entry (missing in the input .bam file). Requires Python 3.x. Note that authentication is not encoded in this instance; authentication is the responsibility of the user.
+This script provides an output that indicates, per row entry in each of the three databases, how many documents are classified as homozygous reference (i.e. zygosity code = 0), heterozygous (zygosity code =1) or homozygous variant (zygosity code =2). It also indicates how many documents were flagged as ‘filtered’ due to a failed quality filter, and how many documents did not contain such allele entry (missing in the input .bam file). Requires Python 3.x. Note that authentication is not encoded in this instance; authentication is the responsibility of the user.
 
 The collection and table names are specified in line 10, remember to edit this before running the script:
 
@@ -108,7 +108,7 @@ Command line:
 	
 ## Sample MongoDB queries
 
-Any non-relational database can be employed. We provide here some commands that the development team uses to import, export and analyze documents in MongoDB for your reference.
+Any non-relational database can be employed. We provide here some commands that the development team uses to import and analyze documents in MongoDB for your reference.
 
 To import in bulk all .rylanout.jsons (DTM-Tools output files) saved in a directory:
 
@@ -119,13 +119,13 @@ To list the runID and Input File name for a document that contains a specific ad
 	db.databaseName.find({"additionalFindings.CHROM19:45321793:G:T.gene":"BCAM"},{"_id":0,"runId":1,"inputFile":1})
 
 	
-To count the documents that predict homozygosity for sa8 (Fyb) and homozygosity for the s8b (GATA box mutation):
+To count the documents that predict homozygosity for s8a (Fyb) and homozygosity for the s8b (GATA box mutation):
 
-	db.databaseName.count({$and:[{"findings.sa8.zygosity":2},{"findings.sb8.zygosity":2}]})
+	db.databaseName.count({$and:[{"findings.s8a.zygosity":2},{"findings.s8b.zygosity":2}]})
 	
-To list the runIDs for all documents that predict homozygosity for sa8 (Fyb) and homozygosity for the s8b (GATA box mutation):
+To list the runIDs for all documents that predict homozygosity for s8a (Fyb) and homozygosity for the s8b (GATA box mutation):
 
-	db.databaseName.find({$and:[{"findings.sa8.zygosity":2},{"findings.sb8.zygosity":2}]},{"_id" : 0,"runId":1})
+	db.databaseName.find({$and:[{"findings.s8a.zygosity":2},{"findings.s8b.zygosity":2}]},{"_id" : 0,"runId":1})
 	
 To list the runIDs for all documents that have a certain allele (s6a in this case) not classified and not filtered:
 
