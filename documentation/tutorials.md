@@ -70,6 +70,10 @@ This script provides a breakdown of the genomic variants identified, per ANNOVAR
 
 Output provides a count of total exonic, intronic, 3’UTR, and 5’UTR variants per gene. Note that gene names are determined by ANNOVAR and may vary. For exonic variants, the script provides the breakdown count for nonsynonymous SNV, synonymous SNV, nonframeshifts (substitutions, insertions, and deletions), frameshifts (substitutions, insertions, and deletions), stop gains, stop losses, and unknowns - as defined by ANNOVAR. Requires Python 3.x. Note that authentication is not encoded in this instance; authentication is the responsibility of the user.
 
+The collection and table names are specified in line 10, remember to edit this before running the script:
+
+	return client.collectionName.tableName
+
 Command line:
 
 	python AddVariantsPerGene.py > /DIRECTORY/PATH/outputFile.txt
