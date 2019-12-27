@@ -3,7 +3,7 @@ This is the DTM-Tools source code page.
 
 DTMTools was created by the Department of Transfusion Medicine of the National Institutes of Health, in loving memory of our patient Rylan Jaxson Macomb.
 
-You can learn more about DTMTools in the _/documentation_ directory. **We strongly encourage users to review all documentation material before downloading and running DTM-Tools code**.
+You can learn more about DTMTools in the _/documentation_ directory. **We strongly encourage users to review all documentation material before downloading and running the DTM-Tools code**.
 
 ## Download Reference Genome
 
