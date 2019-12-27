@@ -86,7 +86,7 @@ DTM-Tools also has the option (**-a**) to report any additional genomic variants
         file1_name = '%s/%s_Annovar.variant_function'%(input_dir, base_name)
         return (file1_name, file2_name)
 
-* **Important Note**: DTM-Tools has been tested with reference genomes that label chromosomes as  '1', '2', '3', etc and the use of this nomenclature with DTM-Tools is strongly encouraged. If your reference genome lables chromosomes as 'chr1', 'chr2', 'chr3', the DTM-Tools source code will need to be modified: add 'chr' to range\_arg in the execute\_freebayes\_mp method and the determine\_mapq method of dtmtool/vcf\_rylan\_stage.py ```range_arg = 'chr%s:%s-%s'%(chromo, one_range[1], one_range[2])```. Features allowing for different chromosomal nomenclature are currently being tested for future DTM-Tools releases.
+* **Important Note**: DTM-Tools has been tested with reference genomes that label chromosomes as  '1', '2', '3', etc and the use of this nomenclature with DTM-Tools is strongly encouraged. If your reference genome lables chromosomes as 'chr1', 'chr2', 'chr3', the DTM-Tools source code will need to be modified. Add 'chr' to range\_arg in the execute\_freebayes\_mp method and the determine\_mapq method of dtmtool/vcf\_rylan\_stage.py as shown: ```range_arg = 'chr%s:%s-%s'%(chromo, one_range[1], one_range[2])```. Features allowing for different chromosomal nomenclature are currently being tested for future DTM-Tools releases.
 
 ## DTM-Tools Database
 
