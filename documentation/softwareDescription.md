@@ -247,9 +247,9 @@ In DTM-Tools, if a deletion occurs between the Xth and Yth nucleotide, the start
 
 Multi.csv is used for alleles defined by more than one SNV and/or indel, and contains the following fields:
 
-	A) Allele: unique code for each entry. See nomenclature rules for suggested nomenclature.
+	A) Allele: unique code for each entry. See nomenclature rules for suggested nomenclature
 	
-	B) Description: allele name per ISBT, without special characters as indicated in nomenclature rules.
+	B) Description: allele name per ISBT, without special characters as indicated in nomenclature rules
 	
 	C) List SNV: list of the ‘Allele’ unique codes (i.e. ‘Allele’ code for ChromoList.csv and ChromoInDel.csv) or each of the variants that define the allele
 	
