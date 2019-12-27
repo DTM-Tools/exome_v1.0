@@ -3,7 +3,7 @@ This is the DTM-Tools source code page.
 
 DTMTools was created by the Department of Transfusion Medicine of the National Institutes of Health, in loving memory of our patient Rylan Jaxson Macomb.
 
-You can learn more about DTMTools in the _/documentation_ directory, which includes a detailed description, sample command lines, and files for download. **We encourage users to review all the documentation material carefully before downloading and running the DTM-Tools code**.
+You can learn more about DTMTools in the _/documentation_ directory, which includes a detailed softwaree description, sample command lines, and files for download. **We encourage users to review all the documentation material carefully prior to downloading and running the DTM-Tools code**.
 
 ## Download Reference Genome
 
@@ -19,13 +19,16 @@ For hg38, expected file names are:
 * GRCh38.fasta
 * GRCh38.fasta.fai
 
-Expected reference file names can be modified in _dtmtool/utils.py_.
+Expected reference file names can be modified in _dtmtool/utils.py_. Please refer to the documentation material for further details.
 
 ## Dependencies
 Please install the following tools before running:
 
-* samtools
-* freebayes
+[freebayes]:https://github.com/ekg/freebayes
+[samtools]:http://www.htslib.org/
+
+* [Samtools][samtools]
+* [Freebayes][freebayes]
 
 Ensure that your Linux system has the development packages installed, including support for **make**.
 
@@ -33,7 +36,7 @@ DTM-Tool's output is a series of JSON files that can be subsequently queried an 
 
 ## Preparing Aligned (.bam) Files
 
-DTM-Tools takes sorted bam files as input, along with the corresponding index. Currently DTM-Tools employs Freebayes for variant calling; validation was performed with bbmap alignment. The  _/documentation_ directory provides a sample trimming and aligning pipeline. 
+DTM-Tools takes sorted bam files as input, along with the corresponding index. Currently DTM-Tools employs [Freebayes][freebayes] for variant calling; validation was performed with bbmap alignment. The  _/documentation_ directory provides a sample trimming and aligning pipeline (_/documentation/TrimAlignSort.sh_). 
 
 Example sorting and indexing pipeline for an aligned file:	
 
@@ -47,7 +50,7 @@ Example sorting and indexing pipeline for an aligned file:
 	
 ## Genomic Interpretation Rules Database
 
-DTM-Tools interprets Freebayes vcf results in relation to an interpretation rules database. For blood group interpretation, we provide databases in .csv format (_ChromoList.csv, ChromoInDelList.csv and Multi.csv_) located in _/databases_. Please refer to the _/documentation_ directory and to our publication for further details.
+DTM-Tools interprets Freebayes vcf results in relation to an interpretation rules database. For blood group interpretation, we provide databases in .csv format (_ChromoList.csv, ChromoInDelList.csv and Multi.csv_) located in _/databases_. Please refer to the _/documentation_ directory for further details.
 
 ## Additional Genomic Variants in Genes of Interest
 [Annovar webpage]: http://annovar.openbioinformatics.org/en/latest/
