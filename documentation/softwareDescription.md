@@ -136,3 +136,95 @@ ChromoList.csv is used to describe SNV interpretation rules and contains the fol
 	Y) Gensubtype: define if the SNV encodes for an epitope, a weakening variant, or a null change. Multiple values accepted in pipe-delimited format.
 	
 	Z-AC) Asubtype, Csubtype, Gsubtype, Tsubtype: specify what each nucleotide’s specific ‘Gensubtype’ (column Y) effect is.
+
+### ChromoInDelList.csv
+
+ChromoInDelList.csv is used to describe indel interpretation rules and contains the following fields:
+
+	A) Allele: unique code for each entry. See nomenclature rules for suggested nomenclature.
+	
+	B) Description: allele name per ISBT, without special characters as indicated in nomenclature rules. 
+	
+	C) Enabled: TRUE or FALSE
+	
+	D) System: blood group system number
+	
+	E) Gene: Name of gene
+	
+	F) Chromosome: chromosome number
+	
+	G) HG19Start: Start nucleotide position in hg19 (see indel mapping note below)
+	
+	H) HG19End: End nucleotide position in hg19 (see indel mapping note below)
+	
+	I) GRC38Start: Start nucleotide position in hg38 (see indel mapping note below)
+	
+	J) GRC38End: End nucleotide position in hg38 (see indel mapping note below)
+	
+	K) Ref: reference nucleotide string expected in the plus strand
+	
+	L) Alt: alternate nucleotide string expected in the plus strand
+	
+	M) RefClass: phenotype classification for the ‘Ref’ nucleotide string (column K)
+	
+	N) AltClass: phenotype classification for the ‘Alt’ nucleotide string (column N)
+	
+	O) Type: ‘ins’ for insertion and ‘del’ for deletion; complex variations are not yet supported by DTM-Tools
+	
+	P) DP_REF: enter ‘x > #’ to denote the depth filter in this position if it is called homozygous reference
+	
+	Q) MAPQ_REF: enter the minimum MAPQ filter in this position for reference nucleotide strings
+	
+	R) MQM: filter for MQM value (mean mapping quality of observed alternate alleles)        
+	
+	S) MQMR: filter for MQMR value (mean mapping quality of observed reference alleles)
+	
+	T) QUAL: qual value filter, applies only if there’s a variant nucleotide call
+	
+	U) DP: accepts minimum and maximum expected values for total depth, regardless of nucleotide call
+	
+	V) AO: filter for minimum number of detected alternate allele calls, applies only if there’s a variant nucleotide call
+	
+	W) AO/DP: filter for minimum fraction of alternate allele, applies only if there’s a variant nucleotide call
+	
+	X) QR: filter for the sum of quality of the reference observations
+	
+	Y) QA: filter for the sum of quality of the alternate observations
+	
+	Z) Cell: ‘RBC’, ‘platelet’, or ‘PMN’
+	
+	AA) Function: ‘Antigen’ vs ‘Enzyme’
+	
+	AB) Gensubtype: define if the indel variant encodes for an epitope, a weakening variant, or a null change. 
+	
+	AC) Refsubtype: specific Gensubytpe for the reference nucleotide string.
+	
+	AD) Altsubtype: specific Gensubtype for the alternate nucleotide string.
+
+#### Special considerations for Indels
+
+DTM-Tools currently employs Freebayes, a haplotyper, for variant calling. Nucleotide coordinates for indels are 0-based start,1-based end. As a reference, the nucleotide coordinates displayed in the UCSC Genome Browser (graphical) are 1-based.
+
+**Simulated insertion example:**
+
+> For ATCGATCGATC  to ATCGATACGATC
+
+Nucleotide A is added after the 6th nucleotide, T.
+
+In DTM-Tools, if an insertion occurs after the Xth nucleotide, the start nucleotide coordinate is X-1, while the end nucleotide coordinate is X, so for this example:
+
+> Start nucleotide coordinate specified in DTM-Tools database = 5
+> 
+> End nucleotide coordinate specified in DTM-Tools database = 6
+
+**Simulated deletion example:**
+
+> ATCGATACGATC to ATCGATCGATC
+
+The nucleotide A between the 6th nucleotide, T, and the 8th nucleotide, C, is deleted.
+
+In DTM-Tools, if a deletion occurs between the Xth and Yth nucleotide, the start nucleotide coordinate is X-1, while the end nucleotide coordinate is Y, so for this example:
+
+> Start nucleotide coordinate in DTM-Tools database = 5 
+
+> End nucleotide coordinate specified in DTM-Tools database = 8
