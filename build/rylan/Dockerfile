@@ -13,20 +13,20 @@ COPY ./build/rylan/bins/usr/local/lib/* /usr/local/lib/
 COPY ./build/rylan/bins/usr/local/bin/* /usr/local/bin/
 RUN ln -s /usr/local/lib/libhts.so /usr/local/lib/libhts.so.2
 
-RUN mkdir -p /rylan/rylantool
+RUN mkdir -p /rylan/dtmtool
 RUN mkdir -p /rylan/querytools
 run mkdir -p /rylan/databases
 RUN mkdir -p /rylan/tmp
 
-COPY ./rylantool/*.py /rylan/rylantool/
-COPY ./rylantool/*.sh /rylan/rylantool/
-COPY ./rylantool/requirements.txt /rylan/rylantool/
+COPY ./dtmtool/*.py /rylan/dtmtool/
+COPY ./dtmtool/*.sh /rylan/dtmtool/
+COPY ./dtmtool/requirements.txt /rylan/dtmtool/
 COPY ./databases/* /rylan/databases/
 COPY ./queryTools/* /rylan/querytools/
 
 COPY ./build/rylan/deploy/entrypointv2.sh /rylan/
 RUN chmod +x /rylan/entrypointv2.sh
 RUN pip3 install --upgrade pip
-RUN pip3 install -r /rylan/rylantool/requirements.txt
+RUN pip3 install -r /rylan/dtmtool/requirements.txt
 
 CMD ["/rylan/entrypointv2.sh"]

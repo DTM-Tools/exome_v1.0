@@ -10,13 +10,13 @@ logger = logging.getLogger(__name__)
 
 
 def main(argv):
-    inputdir = os.environ.get('RYLAN_INPUT_DIR')
-    outputdir = os.environ.get('RYLAN_OUTPUT_DIR')
-    refdir = os.environ.get('RYLAN_REF_DIR')
-    patientfile = os.environ.get('RYLAN_PATIENT_FILE')
-    genref =  os.environ.get('RYLAN_REF_BUILD','hg19')
+    inputdir = os.environ.get('INPUT_DIR')
+    outputdir = os.environ.get('OUTPUT_DIR')
+    refdir = os.environ.get('REF_DIR')
+    patientfile = os.environ.get('PATIENT_FILE')
+    genref =  os.environ.get('REF_BUILD','hg19')
     cleanupdata = True
-    numcores = int(os.environ.get('RYLAN_NUMCORES','2'))
+    numcores = int(os.environ.get('NUMCORES','2'))
     run_annovar_str = os.environ.get('RUN_ANNOVAR','True')
 
     logger.info('FASTA ref dir is %s'%(refdir))
