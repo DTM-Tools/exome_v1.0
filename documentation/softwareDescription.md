@@ -58,10 +58,10 @@ You can read more about software reproducibility and the use of containers here:
 
 * DTM-Tools takes .bam files and the associated index (.bai) file as input; these files should be stored in the directory path specified by the **‘-i’** option. Note that DTM-Tools currently employs Freebayes as its variant caller, which expects the index to have the _‘.bai’_ extension, NOT _‘.bam.bai’_. This requires renaming of the typical extension given by the samtools index command. 
 
-[Biowulf site]: https://hpc.nih.gov/systems/
+[Biowulf site]: https://hpc.nih.gov/systems
 [bbmap site]: https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmap-guide
 
-* We provide our own pre-processing script in this directory (_/documentation/TrimAlignSort.sh_) as sample commands for alignment and indexing. This script was used with the [NIH High Performance Computing] [Biowulf site] cluster. Alignment with [bbmap][bbmap site] is recommended. 
+* We provide our own pre-processing script in this directory (_/documentation/TrimAlignSort.sh_) as sample commands for alignment and indexing. This script was used with the [NIH High Performance Computing][Biowulf site] cluster. Alignment with [bbmap][bbmap site] is recommended. 
 
 * DTM-Tools also requires the reference genome and its index as input files, stored in the directory path specified by the **‘-r’** command line option. Ensure that this is the exact same reference genome file employed when aligning the raw NGS FASTQ files. Be aware that the hg38 reference genome contains alternative haplotypes and patches which can lead to ambiguous alignments with some software. Note that in our sample preprocessing script we employ the bbmap aligner with the ‘ambiguous=toss’ option, which WILL result in loss of any reads derived from regions with alternative haplotypes (such as the _KEL_ gene). If using this script, limit the reference genome to the chromosomal assemblies only (no patches or haplotypes).
 
