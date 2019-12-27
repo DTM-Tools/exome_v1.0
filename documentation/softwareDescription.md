@@ -56,7 +56,7 @@ You can read more about software reproducibility and the use of containers here:
 
 ## Input File Format
 
-* DTM-Tools takes .bam files and the associated index (.bai) file as input; these files should be stored in the directory path specified by the **‘-i’** option. Note that DTM-Tools currently employs Freebayes as its variant caller, which expects the index to have the ‘.bai’ extension, NOT ‘.bam.bai’. This requires renaming of the typical extension given by the samtools index command. 
+* DTM-Tools takes .bam files and the associated index (.bai) file as input; these files should be stored in the directory path specified by the **‘-i’** option. Note that DTM-Tools currently employs Freebayes as its variant caller, which expects the index to have the _‘.bai’_ extension, NOT _‘.bam.bai’_. This requires renaming of the typical extension given by the samtools index command. 
 
 [Biowulf site]: https://hpc.nih.gov/systems/
 [bbmap site]: https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmap-guide/

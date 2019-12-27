@@ -119,7 +119,5 @@ In any work or product derived from this material, proper attribution of the aut
 *Citation pending
 ```
 
-
-Questions? Contact the DTM-Tools developer at <celina.montemayorgarcia@nih.gov>. 
-We welcome all comments and contributions.
+**DTM-Tools is for research use only and is in continuous development**. Please contact the DTM-Tools developer at <celina.montemayorgarcia@nih.gov> for questions. We welcome all comments and contributions.
 
