@@ -261,3 +261,34 @@ JSON format was selected, rather than a predicted individual phenotype output, t
 
 * /documentation/tutorials.md also contains further tips on interpreting the DTM-Tools output JSON file
 
+## Important Notes and Exceptions
+
+* After a DTM-Tools run is completed, we recommend uploading JSON files to a non-relational database for querying. We recommend individual review of all cases whose classification is marked as “abnormality” and of all quality filter failures. 
+
+* **Note that left-alignment and harmonization is not yet enabled in DTM-Tools**, which may result in variable representation of indels and ‘abnormality’ flags.
+
+* Alleles defined by more than one SNV and/or indel (_Multi.csv_) are given a zygosity value and a certainty value in the JSON output file. Physical phasing is not enabled for DTM-Tools_exome, and thus phasing of heterozygous calls cannot be performed. 
+
+Zygosity values are equivalent to those for SNVs and Indels: 
+> 0 = homozygous reference
+
+> 1 = heterozygous
+
+> 2 = homozygous variant
+
+Certainty values are:
+ > 0 = uncertain (for example, three variants in heterozygous state)
+ 
+ > 1 = certain (for example, two heterozygous variants and one homozygous result in a zygosity value of 1 and a certainty value of 1).
+ 
+* DTM-Tools employs [Freebayes] [freebayes] for variant calling, which is haplotype-based. If an indel or a complex genomic variant is identified in a position listed in the _ChromoList.csv_ database (i.e. an expected SNV), the alternate nucleotide call will not match, and the allele will NOT be classified in the output database. This can be uncovered by running the DTM-Tools software with the ‘**-n**’ option, and inspection of the individual _.vcf_ file, which will be stored in the _/tmp_ directory. Thus, in the setting of exome sequencing, a missing allele in the output JSON can have 4 explanations: 
+
+> 1) Indel or complex variant in an SNV-expected position
+
+> 2) Trimming at pre-processing stage due to low quality/short sequence
+
+> 3) Misalignment to paralogous gene
+
+> 4) True homozygous deletion
+
+**DTM-Tools is for research use only and is in continuous development**. Please contact the DTM-Tools developer at <celina.montemayorgarcia@nih.gov> for questions and to report any problems.
