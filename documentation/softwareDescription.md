@@ -86,6 +86,8 @@ DTM-Tools also has the option (**-a**) to report any additional genomic variants
         file1_name = '%s/%s_Annovar.variant_function'%(input_dir, base_name)
         return (file1_name, file2_name)
 
+* **Important Note**: DTM-Tools has been tested with reference genomes that label chromosomes as  '1','2','3', etc and the use of this nomenclature with DTM-Tools is strongly encouraged. If your reference genome lables chromosomes as 'chr1','chr2','chr3', the DTM-Tools source code will need to be modified; add 'chr' to range\_arg in the execute\_freebayes\_mp method and the determine\_mapq method of _dtmtool/vcf\_rylan\_stage.py_: ```range_arg = 'chr%s:%s-%s'%(chromo, one_range[1], one_range[2])```. Features allowing for different chromosomal nomenclature are currently being tested for future DTM-Tools releases.
+
 ## DTM-Tools Database
 
 The DTM-Tools command line also expects the genomic rules and interpretation databases stored in the directory path specified by the ‘**-r**’ command line option. 
@@ -286,7 +288,7 @@ JSON format was selected, rather than a predicted individual phenotype output, t
 >> 
 >> **'not classified'**: this value only appears for alleles defined by more than one SNV/indel (_Multi.csv_), when one of the individual variants is inconsistent, abnormal, or missing.
 >> 
->> **'unverified'**: warning - a filter was failed but is not marked as a 'flag' action. Contact developing team for debugging.
+>> **'unverified'**: warning - a filter threshold failed but is not marked as a 'flag' action. Contact developing team for debugging.
 
 
 * Note that left-alignment and harmonization is not yet enabled in DTM-Tools, which may result in variable representation of indels and ‘abnormality’ flags.
@@ -314,5 +316,7 @@ JSON format was selected, rather than a predicted individual phenotype output, t
 >> 3) Misalignment to paralogous gene
 >>
 >> 4) True homozygous deletion
+
+
 
 **DTM-Tools is for research use only and is in continuous development**. Please contact the DTM-Tools developer at <celina.montemayorgarcia@nih.gov> for questions and to report any problems.
