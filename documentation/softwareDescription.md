@@ -35,9 +35,9 @@ However, a Docker container is available, which obviates the need for these inst
 
 You can read more about software reproducibility and the use of containers here:
 
-[Peng paper]:hhttps://www.ncbi.nlm.nih.gov/pubmed/?term=PMID%3A+22144613.
+[Peng paper]:https://www.ncbi.nlm.nih.gov/pubmed/?term=PMID%3A+22144613.
 
-[Cito paper]: https://ieeexplore.ieee.org/document/7883438
+[Cito paper]:https://ieeexplore.ieee.org/document/7883438
 
 [Piccolo paper]:https://www.ncbi.nlm.nih.gov/pubmed/?term=PMID%3A+27401684
 
@@ -87,9 +87,14 @@ The DTM-Tools command line also expects the genomic rules and interpretation dat
 
 DTM-Tools exome v1.0 database can be downloaded from the Github  _/database directory. Three files are expected: _ChromoList.csv, ChromoInDelList.csv, and Multi.csv_, each described individually below. 
 
-* The user can open these files and edit them in Excel, but must ensure that the line break remains as LF and not CRLF. 
-* The first line of each .csv database file is expected to be column headers and is ignored by the software. Note that entering allele information in the first line will not yield an error, however the information will not be interpreted in the output file.  
-* DTM-Tools exome v1.0 database is based on the ISBT blood group alleles tables, but it does not use special characters to ensure compatibility with the DTM-Tools Python library. We provide detailed database nomenclature rules for the user in /documentation/databaseNomenclaturev1.pdf.
+[JSON dbsnpsite]: https://ncbiinsights.ncbi.nlm.nih.gov/2018/06/15/dbsnp-updates-json-refsnp-report-api
+
+**Note that although downloaded files are in _.csv_ format, DTM-Tools reads them into memory as a JSON dictionary** . This will allow future versions of DTM-Tools to incorporate complex non-relational definitions, and renders the DTM-Tools backbone compatible with current [dbSNP JSON data]  [JSON dbsnpsite] file structure. 
+
+
+* The user can open the donwloaded _.csv_ files and edit them in Excel, but must ensure that the line break remains as LF and not CRLF. 
+* The first line of each _.csv_ database file is expected to be column headers and is ignored by the software. Note that entering allele information in the first line will not yield an error, however the information will not be interpreted in the output file.  
+* DTM-Tools exome\_v1.0 database is based on the ISBT blood group alleles tables, but it does not use special characters to ensure compatibility with the DTM-Tools Python library. We provide detailed database nomenclature rules for the user in /documentation/databaseNomenclaturev1.pdf.
 * Reference nucleotides must correspond exactly to the input reference genome. For example, although _SLC14A1 c.838A_ (_JK\*02_ or _JK\*B_) is listed as the reference in the ISBT tables, hg19 and hg38 lists _SLC14A1 c.838G_ (_JK\*01_ or _JK\*A_) as the reference at that position, and it is reflected as such in the DTM-Tools database.
 * Note that nucleotide reference/variant classification and phenotype interpretation **must be provided in the PLUS strand**. For genes that are encoded in the negative strand, use the reverse complement.
 
@@ -246,5 +251,13 @@ Multi.csv is used for alleles defined by more than one SNV and/or indel, and con
 ## DTM-Tools Output File
 The DTM-Tools output file is in JSON format. It will be saved in the directory specified by the ‘**-o**’ option of the command line, and will have the name of the input file with the ‘_.DTM-Toolsout.json_’ extension. 
 
-JSON format was selected, rather than a predicted individual phenotype output, to allow the user to perform powerful and complex queries in large cohorts using a non-relational database. Refer to the DTM-Tools publication for a description and illustration of the output file structure. A sample output file is available here as /documentation/Sample.rylanout.json
+JSON format was selected, rather than a predicted individual phenotype output, to allow the user to perform powerful and complex queries in large cohorts using a non-relational database. This format will also allow for complete structural flexibility in the output of future software versions that incorporate copy number variations and genes with complex structural rearrangements. This format is also compatible with current genomic variation data file structures, such as [dbSNP] [JSON dbsnpsite].
+
+* Please refer to the DTM-Tools publication for a description and illustration of the output file structure. 
+
+* A sample output file is available here for download: /documentation/Sample.rylanout.json
+
+* Sample non-relational database queries are available in /documentation/tutorials.md
+
+* /documentation/tutorials.md also contains further tips on interpreting the DTM-Tools output JSON file
 
