@@ -105,7 +105,6 @@ The supported variables and default values are:
 * OUTPUT_DIR
 * REF_DIR
 * PATIENT_FILE
-* PATIENT_ID = 'unspecified'
 * REF_BUILD = 'hg19'
 * NUMCORES = '2'
 * RUN_ANNOVAR = 'True'
