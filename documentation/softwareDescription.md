@@ -302,10 +302,11 @@ JSON format was selected, rather than a predicted individual phenotype output, t
 >> 
 >> 2 = homozygous variant
 
-	Certainty values are:
- >> 0 = uncertain (for example, three variants in heterozygous state)
- >>
- >> 1 = certain (for example, two heterozygous variants and one homozygous result in a zygosity value of 1 and a certainty value of 1).
+Certainty values are:
+
+>> 0 = uncertain (for example, three variants in heterozygous state)
+>>
+>> 1 = certain (for example, two heterozygous variants and one homozygous result in a zygosity value of 1 and a certainty value of 1).
  
 * DTM-Tools employs [Freebayes] [freebayes] for variant calling, which is haplotype-based. If an indel or a complex genomic variant is identified in a position listed in the _ChromoList.csv_ database (i.e. an expected SNV), the alternate nucleotide call will not match, and the allele will NOT be classified in the output database. This can be uncovered by running the DTM-Tools software with the ‘**-n**’ option, and inspection of the individual _.vcf_ file, which will be stored in the _/tmp_ directory. Thus, in the setting of exome sequencing, a missing allele in the output JSON can have 4 explanations: 
 
@@ -317,6 +318,6 @@ JSON format was selected, rather than a predicted individual phenotype output, t
 >>
 >> 4) True homozygous deletion
 
-
+* The _additionalFindings_ field wil be included in the JSON output if ANNOVAR files were provided. This section will include variants reported by ANNOVAR whose coordinates are NOT described in the DTM-Tools database used in that particular run. Note that variant calls, classifications, gene names, locations and expected transcript consequence are determined directly by the user's selection of variant caller, hard filters, and ANNOVAR software - these are not manipulated by DTM-Tools. They should be interpreted as a guidance for deteection of possible new variants that require careful study and experimental validation.
 
 **DTM-Tools is for research use only and is in continuous development**. Please contact the DTM-Tools developer at <celina.montemayorgarcia@nih.gov> for questions and to report any problems.
