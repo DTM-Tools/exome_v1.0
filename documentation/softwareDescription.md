@@ -294,11 +294,11 @@ JSON format was selected, rather than a predicted individual phenotype output, t
 * Alleles defined by more than one SNV and/or indel (_Multi.csv_) are given a zygosity value and a certainty value in the JSON output file. Physical phasing is not enabled for DTM-Tools_exome, and thus phasing of heterozygous calls cannot be performed. 
 
 	Zygosity values are equivalent to those for SNVs and Indels: 
-> 0 = homozygous reference
->
-> 1 = heterozygous
-> 
-> 2 = homozygous variant
+>> 0 = homozygous reference
+>>
+>> 1 = heterozygous
+>> 
+>> 2 = homozygous variant
 
 	Certainty values are:
  > 0 = uncertain (for example, three variants in heterozygous state)
