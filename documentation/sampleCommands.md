@@ -40,13 +40,13 @@ To keep a copy of each generated .vcf file add a -n option to the command line.
 
 If you don’t have ANNOVAR output files, omit the -a option.
 
-Hg19 is considered the default assembly build value, in this case the following command line will work:
+* hg19 is considered the default assembly build value, in this case the following command line will work:
 
-	python rylantool/main.py -a -m 6 -r /DIRECTORY/PATH/REFERENCE -o /DIRECTORY/PATH/OUTPUT -i /DIRECTORY/PATH/INPUT -p Sample.bam
+		python rylantool/main.py -a -m 6 -r /DIRECTORY/PATH/REFERENCE -o /DIRECTORY/PATH/OUTPUT -i /DIRECTORY/PATH/INPUT -p Sample.bam
 	
 ## Understanding the JSON output file
 
-The JSON output file and its rationale is discussed in /documentation/softwareDescription.md - please review first.
+The JSON output file and its rationale is discussed in /documentation/softwareDescription.md - please review it first.
 
 To view the .JSON output file in a visually-friendly format, use any online JSON formatter (look for "JSON formatter" in any web search engine). Some examples are:
 
