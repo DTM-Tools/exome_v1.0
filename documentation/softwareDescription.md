@@ -90,7 +90,7 @@ DTM-Tools also has the option (**-a**) to report any additional genomic variants
 
 ## DTM-Tools Database
 
-The DTM-Tools command line also expects the genomic rules and interpretation databases stored in the directory path specified by the ‘**-r**’ command line option. 
+The DTM-Tools command line also expects the genomic rules and interpretation databases stored in the directory path specified by the ‘**-r**’ option. 
 
 DTM-Tools exome v1.0 database can be downloaded from the Github  _/database directory. Three files are expected: _ChromoList.csv, ChromoInDelList.csv, and Multi.csv_, each described individually below. 
 
