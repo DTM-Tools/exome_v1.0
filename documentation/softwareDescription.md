@@ -31,7 +31,7 @@ _/queryTools_: contains sample pymongo query scripts
 
 If run locally, DTM-Tools requires prior installation of [Samtools][samtools], [Freebayes][freebayes], and [pyvcf][pyvcf site]. 
 
-However, a Docker container is available, which obviates the need for these installations and enhances reproducibility of DTM-Tools. Docker command lines can be found in _sampleCommands.md_ in this /documentation directory.
+However, a Docker container is available, which obviates the need for these installations and enhances reproducibility and portability of DTM-Tools. Docker command lines can be found in the main README.md document (root directory) and in _sampleCommands.md_ in this /documentation directory.
 
 You can read more about software reproducibility and the use of containers here:
 
@@ -63,7 +63,7 @@ You can read more about software reproducibility and the use of containers here:
 
 * We provide our own pre-processing script in this directory (_/documentation/TrimAlignSort.sh_) as sample commands for alignment and indexing. This script was used with the [NIH High Performance Computing][Biowulf site] cluster. Alignment with [bbmap][bbmap site] is recommended. 
 
-* DTM-Tools also requires the reference genome and its index as input files, stored in the directory path specified by the **‘-r’** command line option. Ensure that this is the exact same reference genome file employed when aligning the raw NGS FASTQ files. Be aware that the hg38 reference genome contains alternative haplotypes and patches which can lead to ambiguous alignments with some software. Note that in our sample preprocessing script we employ the bbmap aligner with the ‘ambiguous=toss’ option, which WILL result in loss of any reads derived from regions with alternative haplotypes (such as the _KEL_ gene). If using this script, limit the reference genome to the chromosomal assemblies only (no patches or haplotypes).
+* DTM-Tools also requires the reference genome and its index as input files, stored in the directory path specified by the **‘-r’** command line option. Ensure that this is the exact same reference genome file employed when aligning the raw NGS FASTQ files. Be aware that the hg38 reference genome contains alternative haplotypes and patches which can lead to ambiguous alignments with some software. Note that in our sample preprocessing script we employ the bbmap aligner with the ‘ambiguous=toss’ option, which WILL result in loss of any reads derived from regions with alternative haplotypes (such as the _KEL_ blood group gene). If using this script, limit the reference genome to the chromosomal assemblies only (no patches or haplotypes).
 
 The reference genome version is hg19 by default. Hg38 can be specified with the **‘-g grch38’** option in the DTM-Tools command line. Currently, the expected names of the reference genome fasta files are hard-coded, you can modify them in dtmtool/utils.py, getFastaFileName object (lines 19-26, shown below):
 
@@ -86,7 +86,7 @@ DTM-Tools also has the option (**-a**) to report any additional genomic variants
         file1_name = '%s/%s_Annovar.variant_function'%(input_dir, base_name)
         return (file1_name, file2_name)
 
-* **Important Note**: DTM-Tools has been tested with reference genomes that label chromosomes as  '1','2','3', etc and the use of this nomenclature with DTM-Tools is strongly encouraged. If your reference genome lables chromosomes as 'chr1','chr2','chr3', the DTM-Tools source code will need to be modified; add 'chr' to range\_arg in the execute\_freebayes\_mp method and the determine\_mapq method of _dtmtool/vcf\_rylan\_stage.py_: ```range_arg = 'chr%s:%s-%s'%(chromo, one_range[1], one_range[2])```. Features allowing for different chromosomal nomenclature are currently being tested for future DTM-Tools releases.
+* **Important Note**: DTM-Tools has been tested with reference genomes that label chromosomes as  '1', '2', '3', etc and the use of this nomenclature with DTM-Tools is strongly encouraged. If your reference genome lables chromosomes as 'chr1', 'chr2', 'chr3', the DTM-Tools source code will need to be modified; add 'chr' to range\_arg in the execute\_freebayes\_mp method and the determine\_mapq method of _dtmtool/vcf\_rylan\_stage.py_: ```range_arg = 'chr%s:%s-%s'%(chromo, one_range[1], one_range[2])```. Features allowing for different chromosomal nomenclature are currently being tested for future DTM-Tools releases.
 
 ## DTM-Tools Database
 

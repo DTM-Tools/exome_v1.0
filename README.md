@@ -70,10 +70,10 @@ Where:
 
 - **-a**: Run annovar analysis to capture additional variants in the blood group genes. Annovar must be run independently by the user; DTM-Tools expects Annovar output files in the input directory. Expected file names are specified in _dtmtool/additional\_findings\_stage.py_.
 - **-n**: Do not clean up temporary files (for debugging).
-- **-m**: Number of parallel processes to make the analysis faster. For use in multicore machines. Recommended one per core. Maximum number of threads = number of chromosomes in the database.
+- **-m**: Number of parallel processes to make the analysis faster. For use in multicore machines. Recommended one per core. Maximum number of threads = number of unique chromosomes in the database.
 - **-r**: Directory where the FASTA genomic reference files and respective index are found. Software also expects genomic coordinate .csv files in this directory (_ChromoList.csv, ChromoInDelList.csv, Multi.csv_).
 - **-o**: Ouptut will be written as a .json file in this specified directory.
-- **-i**: Directory where aligned, sorted bam files and indexes are located. If _-a_ option is used, DTM-Tools expects Annovar output files in this directory.
+- **-i**: Directory where aligned, sorted bam files and indexes are located. If **-a** option is used, DTM-Tools expects Annovar output files in this directory as well.
 - **-p**: Exact name of the .bam file to be anlayzed in this run. Must be located in _inputdir_ (specified by the **-i** option).
 - **-g**: Genome build coordinates to employ in the interpretation;  *hg19* or *grch38* values are supported today (case sensitive). Default value is _hg19_.
 
