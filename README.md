@@ -98,13 +98,13 @@ Environment variables are the only way to pass environment to the containers, vi
 The supported variables and default values are:
 
 ```
-* RYLAN_INPUT_DIR
-* RYLAN_OUTPUT_DIR
-* RYLAN_REF_DIR
-* RYLAN_PATIENT_FILE
-* RYLAN_PATIENT_ID = 'unspecified'
-* RYLAN_REF_BUILD = 'hg19'
-* RYLAN_NUMCORES = '2'
+* INPUT_DIR
+* OUTPUT_DIR
+* REF_DIR
+* PATIENT_FILE
+* PATIENT_ID = 'unspecified'
+* REF_BUILD = 'hg19'
+* NUMCORES = '2'
 * RUN_ANNOVAR = 'True'
 ```
 ## Legal

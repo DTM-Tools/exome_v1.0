@@ -2,7 +2,7 @@
 
 ## Running the Docker container
 
-Running RyLAN as a Docker container is 
+Running DTM-Tools as a Docker container is 
 **highly recommended**; this eliminates the need to install any dependencies or activate environments.
 
 The following command, from the root directory, will build the container. Be sure to make any necessary modifications to the DTM-Tools source code before building the container, such as: 
@@ -17,19 +17,19 @@ Docker container build command:
 	
 The following command will then run the container with the hg38 genome coordinates and six threads:
 
-	docker run -v /DIRECTORY/PATH:/data -e RYLAN_INPUT_DIR=/data/Directory -e RYLAN_OUTPUT_DIR=/data/Directory -e RYLAN_PATIENT_FILE=Sample.dedup.bam -e RYLAN_NUMCORES=6 -e RYLAN_REF_DIR=/data/Directory -e RYLAN_REF_BUILD=grch38 -it dtmtool:latest
+	docker run -v /DIRECTORY/PATH:/data -e INPUT_DIR=/data/Directory -e OUTPUT_DIR=/data/Directory -e PATIENT_FILE=Sample.dedup.bam -e NUMCORES=6 -e REF_DIR=/data/Directory -e REF_BUILD=grch38 -it dtmtool:latest
 
 [freebayes]:https://github.com/ekg/freebayes
 	
-‘RYLAN\_INPUT\_DIR’ should contain the file name given in the ‘RYLAN\_PATIENT\_FILE’ environment variable, along with its index, and ANNOVAR output files. Remember that DTM-Tools employs [Freebayes][freebayes], which expects the index extension of _'.bai'_ rather than _'.bam.bai'_.
+‘INPUT\_DIR’ should contain the file name given in the ‘PATIENT\_FILE’ environment variable, along with its index, and ANNOVAR output files. Remember that DTM-Tools employs [Freebayes][freebayes], which expects the index extension of _'.bai'_ rather than _'.bam.bai'_.
 
 If you do not have ANNOVAR output files, add the following environment variable:
 
 	-e RUN_ANNOVAR='False'
 
-‘RYLAN\_REF\_DIR’ should contain: ChromoList.csv, ChromoInDelList.csv, Multi.csv, genomic reference file and its index.
+‘REF\_DIR’ should contain: ChromoList.csv, ChromoInDelList.csv, Multi.csv, genomic reference file and its index.
 
-Hg19 is considered the default assembly value; if using hg19 the RYLAN\_REF\_BUILD environment variable need not be specified.
+Hg19 is considered the default assembly value; if using hg19 the REF\_BUILD environment variable need not be specified.
 
 ## Running DTM-Tools locally
 
