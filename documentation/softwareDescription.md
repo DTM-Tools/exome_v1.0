@@ -56,7 +56,12 @@ You can read more about software reproducibility and the use of containers here:
 
 ## Input File Format
 
-* DTM-Tools takes .bam files and the associated index (.bai) file as input; these files should be stored in the directory path specified by the **‘-i’** option. Note that DTM-Tools currently employs Freebayes as its variant caller, which expects the index to have the ‘.bai’ extension, NOT ‘.bam.bai’. This requires renaming of the typical extension given by the samtools index command. Refer to our pre-processing script in this directory for sample commands for alignment and indexing. 
+* DTM-Tools takes .bam files and the associated index (.bai) file as input; these files should be stored in the directory path specified by the **‘-i’** option. Note that DTM-Tools currently employs Freebayes as its variant caller, which expects the index to have the ‘.bai’ extension, NOT ‘.bam.bai’. This requires renaming of the typical extension given by the samtools index command. 
+
+[Biowulf site]: https://hpc.nih.gov/systems/
+[bbmap site]: https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmap-guide/
+
+* We provide our own pre-processing script in this directory (_/documentation/TrimAlignSort.sh_) as sample commands for alignment and indexing. This script was used with the [NIH High Performance Computing] [Biowulf site] cluster. Alignment with [bbmap] [bbmap site] is recommended. 
 
 * DTM-Tools also requires the reference genome and its index as input files, stored in the directory path specified by the **‘-r’** command line option. Ensure that this is the exact same reference genome file employed when aligning the raw NGS FASTQ files. Be aware that the hg38 reference genome contains alternative haplotypes and patches which can lead to ambiguous alignments with some software. Note that in our sample preprocessing script we employ the bbmap aligner with the ‘ambiguous=toss’ option, which WILL result in loss of any reads derived from regions with alternative haplotypes (such as the _KEL_ gene). If using this script, limit the reference genome to the chromosomal assemblies only (no patches or haplotypes).
 
@@ -251,15 +256,13 @@ Multi.csv is used for alleles defined by more than one SNV and/or indel, and con
 ## DTM-Tools Output File
 The DTM-Tools output file is in JSON format. It will be saved in the directory specified by the ‘**-o**’ option of the command line, and will have the name of the input file with the ‘_.DTM-Toolsout.json_’ extension. 
 
-JSON format was selected, rather than a predicted individual phenotype output, to allow the user to perform powerful and complex queries in large cohorts using a non-relational database. This format will also allow for complete structural flexibility in the output of future software versions that incorporate copy number variations and genes with complex structural rearrangements. This format is also compatible with current genomic variation data file structures, such as [dbSNP] [JSON dbsnpsite].
+JSON format was selected, rather than a predicted individual phenotype output, to allow the user to perform powerful and complex queries in large cohorts using a non-relational database. This format will also allow for complete structural flexibility in the output of future software versions that incorporate copy number variations and genes with complex structural rearrangements. It is also structurally compatible with current genomic variation data files such as [dbSNP] [JSON dbsnpsite].
 
-* Please refer to the DTM-Tools publication for a description and illustration of the output file structure. 
+* Understanding the structure of the JSON file is paramount to be able to perform the proper final phenotype prediction, and to design complex queries for large cohorts. Please refer to the DTM-Tools publication for an illustration and description of each field in the DTM-Tools JSON output.
 
-* A sample output file is available here for download: /documentation/Sample.rylanout.json
+* A sample output file is available here for download: /documentation/Sample.rylanout.json. To view the DTM-Tools output file in this visually-friendly format, simple use any online JSON formatter. 
 
-* Sample non-relational database queries are available in /documentation/tutorials.md
-
-* /documentation/tutorials.md also contains further tips on interpreting the DTM-Tools output JSON file
+* Sample non-relational database queries are available in /documentation/tutorials.md. This document also contains further tips on interpreting the DTM-Tools output JSON file.
 
 ## Important Notes and Exceptions
 
