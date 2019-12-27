@@ -228,3 +228,23 @@ In DTM-Tools, if a deletion occurs between the Xth and Yth nucleotide, the start
 > Start nucleotide coordinate in DTM-Tools database = 5 
 
 > End nucleotide coordinate specified in DTM-Tools database = 8
+
+### Multi.csv
+
+Multi.csv is used for alleles defined by more than one SNV and/or indel, and contains the following fields:
+
+	A) Allele: unique code for each entry. See nomenclature rules for suggested nomenclature.
+	
+	B) Description: allele name per ISBT, without special characters as indicated in nomenclature rules.
+	
+	C) List SNV: list of the ‘Allele’ unique codes (i.e. ‘Allele’ code for ChromoList.csv and ChromoInDel.csv) or each of the variants that define the allele
+	
+	D) RefClass: Phenotype classification if all the listed alleles in column C were not present in variant nucleotide form on the same haplotype
+	
+	E) AltClass: Phenotype classification if all the listed alleles in column C were found in alternate nucleotide form on the same haplotype
+
+## DTM-Tools Output File
+The DTM-Tools output file is in JSON format. It will be saved in the directory specified by the ‘**-o**’ option of the command line, and will have the name of the input file with the ‘_.DTM-Toolsout.json_’ extension. 
+
+JSON format was selected, rather than a predicted individual phenotype output, to allow the user to perform powerful and complex queries in large cohorts using a non-relational database. Refer to the DTM-Tools publication for a description and illustration of the output file structure. A sample output file is available here as /documentation/Sample.rylanout.json
+
