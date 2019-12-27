@@ -41,7 +41,7 @@ The following command line, from the root directory, executes DTM-Tools with hg3
 	
 /DIRECTORY/PATH/REFERENCE should contain: ChromoList.csv, ChromoInDelList.csv, Multi.csv, GRCh38.fasta, GRCh38.fasta.fai
 
-/DIRECTORY/PATH/INPUT should contain the file name given in the -p option, along with its index, and ANNOVAR output files if -a is employed.
+/DIRECTORY/PATH/INPUT should contain the file name given in the **-p** option, along with its index, and ANNOVAR output files if **-a** is employed.
 
 To keep a copy of each generated .vcf file add a **-n** option to the command line.
 
