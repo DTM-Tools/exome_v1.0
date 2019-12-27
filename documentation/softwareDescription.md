@@ -303,7 +303,6 @@ JSON format was selected, rather than a predicted individual phenotype output, t
 >> 2 = homozygous variant
 
 	Certainty values are:
-
 >> 0 = uncertain (for example, three variants in heterozygous state)
 >>
 >> 1 = certain (for example, two heterozygous variants and one homozygous result in a zygosity value of 1 and a certainty value of 1).
