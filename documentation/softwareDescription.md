@@ -94,14 +94,16 @@ DTM-Tools exome v1.0 database can be downloaded from the Github  _/database dire
 
 [JSON dbsnpsite]: https://ncbiinsights.ncbi.nlm.nih.gov/2018/06/15/dbsnp-updates-json-refsnp-report-api
 
-**Note that although downloaded files are in _.csv_ format, DTM-Tools reads them into memory as a JSON dictionary** . This will allow future versions of DTM-Tools to incorporate complex non-relational definitions, and renders the DTM-Tools backbone compatible with current [dbSNP JSON data]  [JSON dbsnpsite] file structure. 
+**Note that although downloaded files are in _.csv_ format, DTM-Tools reads them into memory as a JSON dictionary** . This will allow future versions of DTM-Tools to incorporate complex non-relational definitions, and renders the DTM-Tools backbone compatible with other genomic variant database file structures, such as the [dbSNP JSON data]  [JSON dbsnpsite].
 
 
 * The user can open the donwloaded _.csv_ files and edit them in Excel, but must ensure that the line break remains as LF and not CRLF. 
 * The first line of each _.csv_ database file is expected to be column headers and is ignored by the software. Note that entering allele information in the first line will not yield an error, however the information will not be interpreted in the output file.  
 * DTM-Tools exome\_v1.0 database is based on the ISBT blood group alleles tables, but it does not use special characters to ensure compatibility with the DTM-Tools Python library. We provide detailed database nomenclature rules for the user in /documentation/databaseNomenclaturev1.pdf.
 * Reference nucleotides must correspond exactly to the input reference genome. For example, although _SLC14A1 c.838A_ (_JK\*02_ or _JK\*B_) is listed as the reference in the ISBT tables, hg19 and hg38 lists _SLC14A1 c.838G_ (_JK\*01_ or _JK\*A_) as the reference at that position, and it is reflected as such in the DTM-Tools database.
-* Note that nucleotide reference/variant classification and phenotype interpretation **must be provided in the PLUS strand**. For genes that are encoded in the negative strand, use the reverse complement.
+* Note that nucleotide reference/variant classification and phenotype interpretation **must be provided in the PLUS strand**. For genes that are encoded in the negative strand, use the reverse complement. Do NOT mark more than one nucleotide as 'ref' in _ChromoList.csv_.
+
+**DTM-Tools allows for locus-specific hard filter thresolds**. This will allow, for example, to selectively reduce the AO/DP (fraction of alternate allele) threshold to make a heterozygous call in a genomic site that is known to frequently contain misaligments (such as the _RHCE_ gene). We recommend setting your specific tresholds according to your specific dataset; we obtain the distribution of parameters (QUAL, DEPTH, MAPQ) for our entire dataset to establish DTM-Tools tresholds. Be sure to edit these values accordingly in _ChromoList.csv_ rows Q-V and and _ChromoInDelList.csv_ rows P-Y before running the software.   
 
 ### ChromoList.csv
 
@@ -254,32 +256,51 @@ Multi.csv is used for alleles defined by more than one SNV and/or indel, and con
 	E) AltClass: Phenotype classification if all the listed alleles in column C were found in alternate nucleotide form on the same haplotype
 
 ## DTM-Tools Output File
-The DTM-Tools output file is in JSON format. It will be saved in the directory specified by the ‘**-o**’ option of the command line, and will have the name of the input file with the ‘_.DTM-Toolsout.json_’ extension. 
+The DTM-Tools output file is in JSON format. It will be saved in the directory specified by the ‘**-o**’ option of the command line, and will have the name of the input file with the ‘_.rylanout.json_’ extension. 
 
 JSON format was selected, rather than a predicted individual phenotype output, to allow the user to perform powerful and complex queries in large cohorts using a non-relational database. This format will also allow for complete structural flexibility in the output of future software versions that incorporate copy number variations and genes with complex structural rearrangements. It is also structurally compatible with current genomic variation data files such as [dbSNP] [JSON dbsnpsite].
 
-* Understanding the structure of the JSON file is paramount to be able to perform the proper final phenotype prediction, and to design complex queries for large cohorts. Please refer to the DTM-Tools publication for an illustration and description of each field in the DTM-Tools JSON output.
+* Understanding the structure of the JSON file is paramount to be able to perform the proper final phenotype prediction, and to design complex queries for large cohorts. Please refer to **Figure 2** the DTM-Tools publication for an illustration and description of each field in the DTM-Tools JSON output.
 
-* A sample output file is available here for download: /documentation/Sample.rylanout.json. To view the DTM-Tools output file in this visually-friendly format, simple use any online JSON formatter. 
+* A sample output file is available here for download: /documentation/Sample.rylanout.json. To view the DTM-Tools output file in this visually-friendly format, simple use any online JSON formatter. Sample links to open online formatters are provided in _/documentation/sampleCommands.md_.
 
-* Sample non-relational database queries are available in /documentation/sampleCommands.md. This document also contains further tips on interpreting the DTM-Tools output JSON file. 
+* After a DTM-Tools run is completed, we recommend uploading JSON files to a non-relational database for querying. We recommend individual review of all cases whose determination is not "classified", including all quality filter failures. This often includes visualization of aligned reads.
 
-## Important Notes and Exceptions
+* Sample non-relational database queries are available in _/documentation/sampleCommands.md_.
 
-* After a DTM-Tools run is completed, we recommend uploading JSON files to a non-relational database for querying. We recommend individual review of all cases whose classification is marked as “abnormality” and of all quality filter failures. 
+* The findings.ALLELE\_CODE.determination key in the JSON output file can contain the following values:
 
-* **Note that left-alignment and harmonization is not yet enabled in DTM-Tools**, which may result in variable representation of indels and ‘abnormality’ flags.
+> **"classified"**: nucleotide call was classified successfully per database interpretation rules. This should be the most common value, we recommend manual review of all other instances.
+> 
+> **"filtered"**: the nucleotide call was classified successfully per database interpretation rules and is provided in the JSON output file, but user is cautioned that this genomic site did NOT meet one or more of the locus-specific quality filters provided by the user. The specific filter(s) that were not met will be listed with the 'findings.ALLELE\_CODE.filter_criteria' key in the JSON output file.
+> 
+>**'inconsistent'**: the reference nucleotide defined in the database does not match the provided reference genome.
+>
+>**'abnormality'**: the variant or variant/reference nucleotide set defined in the database do not match.
+> 
+> **'triples'**: warning - three, instead of the expected two, nucleotide calls were provided in the _.vcf_.
+> 
+> **'MISSING'**: no entry in the _.vcf_ file generated for this precise genomic locus. Usually means that no sequences are aligned in that region. Four possible explantions are provided below.
+> 
+> **'negative probably other variants'**: the _.vcf_ file provides more than one entry for the genomic locus, therefore that site likely contains a different variant(s) than those defined in the database. Review manually.
+> 
+> **'not classified'**: this value only appears for alleles defined by more than one SNV/indel (_Multi.csv_), when one of the individual variants is inconsistent, abnormal, or missing.
+> 
+> **'unverified'**: warning - a filter was failed but is not marked as a 'flag' action. Contact developing team for debugging.
+
+
+* Note that left-alignment and harmonization is not yet enabled in DTM-Tools, which may result in variable representation of indels and ‘abnormality’ flags.
 
 * Alleles defined by more than one SNV and/or indel (_Multi.csv_) are given a zygosity value and a certainty value in the JSON output file. Physical phasing is not enabled for DTM-Tools_exome, and thus phasing of heterozygous calls cannot be performed. 
 
-Zygosity values are equivalent to those for SNVs and Indels: 
+	Zygosity values are equivalent to those for SNVs and Indels: 
 > 0 = homozygous reference
-
+>
 > 1 = heterozygous
-
+> 
 > 2 = homozygous variant
 
-Certainty values are:
+	Certainty values are:
  > 0 = uncertain (for example, three variants in heterozygous state)
  
  > 1 = certain (for example, two heterozygous variants and one homozygous result in a zygosity value of 1 and a certainty value of 1).

@@ -51,9 +51,9 @@ Hg19 is considered the default assembly build value, in this case it does not ne
 
 	python dtmtool/main.py -a -m 6 -r /DIRECTORY/PATH/REFERENCE -o /DIRECTORY/PATH/OUTPUT -i /DIRECTORY/PATH/INPUT -p Sample.bam
 	
-## Understanding the JSON output file
+## Evaluating the JSON output file
 
-The JSON output file and its rationale is also discussed in /documentation/softwareDescription.md - please review that document first.
+The JSON output file and its rationale is also discussed in /_documentation/softwareDescription.md_ - please review that document first. **Figure 2** the DTM-Tools publication provides an illustration and description of each field in the DTM-Tools JSON output.
 
 To view the .JSON output file in a visually-friendly format, use any online JSON formatter (look for "JSON formatter" in any web search engine). Some examples are:
 
@@ -70,8 +70,6 @@ To view the .JSON output file in a visually-friendly format, use any online JSON
 [Open formatter example 3][sample3]
 
 The user can then download the formatted JSON file and visualize with any text editor. In addition, the Firefox web browser will automatically open any _.json_ file in an expandible/collapsible format.
-
-* Understanding the structure of the JSON file is paramount to be able to perform the proper final phenotype prediction, and to design complex queries for large cohorts. Please refer to the DTM-Tools publication for an illustration and description of each field in the DTM-Tools JSON output. A sample output file is available here for download: /documentation/Sample.rylanout.json.
 
 	
 ## Pymongo scripts
