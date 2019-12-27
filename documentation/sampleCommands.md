@@ -51,14 +51,16 @@ The JSON output file and its rationale is discussed in /documentation/softwareDe
 To view the .JSON output file in a visually-friendly format, use any online JSON formatter (look for "JSON formatter in any web search engine). Some examples are:
 
 [formatter1]: [https://jsonformatter.curiousconcept.com/]
+
 [formatter2]: [https://www.jsonformatter.io/]
+
 [formatter3]: [https://jsonformatter-online.com/]
 
-[Open formatter example 1] [formatter1]
+[Open formatter example 1][formatter1]
 
-[Open formatter example 2] [formatter2]
+[Open formatter example 2][formatter2]
 
-[Open formatter example 3] [formatter3]
+[Open formatter example 3][formatter3]
 
 The user can then download the formatted JSON file and visualize with any text editor. In addition, the Firefox web browser will automatically open any _.json_ file in an expandible/collapsible format.
 
