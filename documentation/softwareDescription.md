@@ -274,24 +274,24 @@ JSON format was selected, rather than a predicted individual phenotype output, t
 
 > **"classified"**: nucleotide call was classified successfully per database interpretation rules. This should be the most common value, we recommend manual review of all other instances.
 >
-> **"filtered"**: the nucleotide call was classified successfully per database interpretation rules and is provided in the JSON output file, but user is cautioned that this genomic site did NOT meet one or more of the locus-specific quality filters provided by the user. The specific filter(s) that were not met will be listed with the 'findings.ALLELE\_CODE.filter_criteria' key in the JSON output file.
+> **"filtered"**: the nucleotide call was classified successfully per database interpretation rules and is provided in the JSON output file, but user is cautioned that this genomic site did NOT meet one or more of the locus-specific quality filters provided by the user. The specific filter(s) that was not met will be listed with the 'findings.ALLELE\_CODE.filter_criteria' key in the JSON output file.
 >
->**'inconsistent'**: the reference nucleotide defined in the database does not match the provided reference genome.
+>**'inconsistent'**: the reference nucleotide defined in the database does not match the provided reference genome at that chromosomal coordinate.
 >
->**'abnormality'**: the variant or variant/reference nucleotide set defined in the database do not match.
+>**'abnormality'**: the variant or variant/reference nucleotide set defined in the database do not match with the variant reported in the _.vcf_ file.
 >
-> **'triples'**: warning - three, instead of the expected two, nucleotide calls were provided in the _.vcf_.
+> **'triples'**: warning - three, instead of the expected two, nucleotide calls were provided in the _.vcf_ for this region.
 >
-> **'MISSING'**: no entry in the _.vcf_ file generated for this precise genomic locus. Usually means that no sequences are aligned in that region. Four possible explantions are provided below.
+> **'MISSING'**: no entry in the _.vcf_ file for this genomic coordinate. Usually means that no sequences are aligned in that region. Four possible explantions are provided below.
 >
-> **'negative probably other variants'**: the _.vcf_ file provides more than one entry for the genomic locus, therefore that site likely contains a different variant(s) than those defined in the database. Review manually.
+> **'negative probably other variants'**: the _.vcf_ file provides more than one entry for the genomic coordinate; therefore, that site likely contains a different variant(s) than those defined in the database. Review manually.
 >
-> **'not classified'**: this value only appears for alleles defined by more than one SNV/indel (_Multi.csv_), when one of the individual variants is inconsistent, abnormal, or missing.
+> **'not classified'**: this value only appears for alleles defined by more than one SNV/indel (_Multi.csv_) when one of the individual variants is inconsistent, abnormal, or missing.
 > 
 > **'unverified'**: warning - a filter threshold failed but is not marked as a 'flag' action. Contact developing team for debugging.
 
 
-* Note that left-alignment and harmonization is not yet enabled in DTM-Tools, which may result in variable representation of indels and ‘abnormality’ flags.
+* Note that left-alignment and harmonization is not yet enabled in DTM-Tools, which may result in variable representation of indels and ‘abnormality’ determination flags.
 
 * Alleles defined by more than one SNV and/or indel (_Multi.csv_) are given a zygosity value and a certainty value in the JSON output file. Physical phasing is not enabled for DTM-Tools_exome, and thus phasing of heterozygous calls cannot be performed. 
 
@@ -307,7 +307,7 @@ Certainty values are:
 >
 > 1 = certain (for example, two heterozygous variants and one homozygous result in a zygosity value of 1 and a certainty value of 1).
  
-* DTM-Tools employs [Freebayes] [freebayes] for variant calling, which is haplotype-based. If an indel or a complex genomic variant is identified in a position listed in the _ChromoList.csv_ database (i.e. an expected SNV), the alternate nucleotide call will not match, and the allele will NOT be classified in the output database. This can be uncovered by running the DTM-Tools software with the ‘**-n**’ option, and inspection of the individual _.vcf_ file, which will be stored in the _/tmp_ directory. Thus, in the setting of exome sequencing, a missing allele in the output JSON can have 4 explanations: 
+* DTM-Tools employs [Freebayes][freebayes] for variant calling, which is haplotype-based. If an indel or a complex genomic variant is identified in a position listed in the _ChromoList.csv_ database (i.e. an expected SNV), the alternate nucleotide call will not match, and the allele will NOT be classified in the output database. This can be uncovered by running the DTM-Tools software with the ‘**-n**’ option, and inspection of the individual _.vcf_ file, which will be stored in the _/tmp_ directory. Thus, in the setting of exome sequencing, a missing allele in the output JSON can have 4 explanations: 
 
 > 1) Indel or complex variant in an SNV-expected position
 >
