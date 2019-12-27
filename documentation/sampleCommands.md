@@ -9,7 +9,7 @@ The following command, from the root directory, will build the container. Be sur
 
 * Expected names of reference genome file, and expected names for ANNOVAR output files: refer to the 'Input File Format' section in _/documentation/softwareDescription.md_ for further details. 
 * Set the filter tresholds in _ChromoList.csv_ and _ChromoInDelList.csv_ that are appropriate for your dataset.
-* If your reference genome names chromosomes as 'chr1','chr2','chr3', etc (rather than '1','2','3', etc), edit the source code accordingly: refer to 'Input File Format' section in in _/documentation/softwareDescription.md_ for further details. 
+* If your reference genome names chromosomes as 'chr1', 'chr2', 'chr3', etc (rather than '1', '2', '3', etc), edit the source code accordingly. Refer to 'Input File Format' section in in _/documentation/softwareDescription.md_ for further details. 
 
 Docker container build command:
 
