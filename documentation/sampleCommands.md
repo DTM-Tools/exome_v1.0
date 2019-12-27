@@ -50,11 +50,11 @@ The JSON output file and its rationale is discussed in /documentation/softwareDe
 
 To view the .JSON output file in a visually-friendly format, use any online JSON formatter (look for "JSON formatter" in any web search engine). Some examples are:
 
-[sample1]: [https://jsonformatter.curiousconcept.com/]
+[sample1]:https://jsonformatter.curiousconcept.com/
 
-[sample2]: [https://www.jsonformatter.io/]
+[sample2]:https://www.jsonformatter.io/
 
-[sample3]: [https://jsonformatter-online.com/]
+[sample3]:https://jsonformatter-online.com/
 
 [Open formatter example 1][sample1]
 
