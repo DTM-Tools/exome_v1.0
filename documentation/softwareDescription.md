@@ -65,7 +65,7 @@ You can read more about software reproducibility and the use of containers here:
 
 * DTM-Tools also requires the reference genome and its index as input files, stored in the directory path specified by the **‘-r’** command line option. Ensure that this is the exact same reference genome file employed when aligning the raw NGS FASTQ files. Be aware that the hg38 reference genome contains alternative haplotypes and patches which can lead to ambiguous alignments with some software. Note that in our sample preprocessing script we employ the bbmap aligner with the ‘ambiguous=toss’ option, which WILL result in loss of any reads derived from regions with alternative haplotypes (such as the _KEL_ gene). If using this script, limit the reference genome to the chromosomal assemblies only (no patches or haplotypes).
 
-The reference genome version is hg19 by default. Hg38 can be specified with the **‘-g grch38’** option in the DTM-Tools command line. Currently, the expected names of the reference genome fasta files are hard-coded, you can modify them in rylantool/utils.py, getFastaFileName object (lines 19-26, shown below):
+The reference genome version is hg19 by default. Hg38 can be specified with the **‘-g grch38’** option in the DTM-Tools command line. Currently, the expected names of the reference genome fasta files are hard-coded, you can modify them in dtmtool/utils.py, getFastaFileName object (lines 19-26, shown below):
 
 	def getFastaFileName(reference):
    	
@@ -76,7 +76,7 @@ The reference genome version is hg19 by default. Hg38 can be specified with the 
     	else:
         	raise RylanParamException('Invalid reference type: %s' % reference)
 
-DTM-Tools also has the option (**-a**) to report any additional genomic variants in genes of interest. For this purpose, the user is responsible for providing ANNOVAR output files. ANNOVAR output file extensions of ‘Annovar.variant\_function’ and ‘Annovar.exonic\_variant\_function’ are currently expected by the code. If the ANNOVAR output file name is different, you can modify the expected extension in rylantool/additional\_findings\_stage.py, compute\_annovar\_file\_names object (lines 31 and 32, shown below):
+DTM-Tools also has the option (**-a**) to report any additional genomic variants in genes of interest. For this purpose, the user is responsible for providing ANNOVAR output files. ANNOVAR output file extensions of ‘Annovar.variant\_function’ and ‘Annovar.exonic\_variant\_function’ are currently expected by the code. If the ANNOVAR output file name is different, you can modify the expected extension in dtmtool/additional\_findings\_stage.py, compute\_annovar\_file\_names object (lines 31 and 32, shown below):
 
 
 	def compute_annovar_file_names(self):

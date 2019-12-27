@@ -19,7 +19,7 @@ For hg38, expected file names are:
 * GRCh38.fasta
 * GRCh38.fasta.fai
 
-Expected reference file names can be modified in _rylantool/utils.py_.
+Expected reference file names can be modified in _dtmtool/utils.py_.
 
 ## Dependencies
 Please install the following tools before running:
@@ -61,11 +61,11 @@ To run the DTMTools classifier, you will need to set up Python 3.x. We recommend
 	
 To run DTM-Tools exome v1.0, this is the command line and current supported options:
 
-	python rylantool/main.py [-a] [-n] -m <num_cores> -r <refdir> -o <outputdir> -i <inputdir> -p <patientfile.dedup.bam> -g <hg19|grch38>
+	python dtmtool/main.py [-a] [-n] -m <num_cores> -r <refdir> -o <outputdir> -i <inputdir> -p <patientfile.dedup.bam> -g <hg19|grch38>
 		
 Where:
 
-- **-a**: Run annovar analysis to capture additional variants in the blood group genes. Annovar must be run independently by the user; DTM-Tools expects Annovar output files in the input directory. Expected file names are specified in _rylantools/additional\_findings\_stage.py_.
+- **-a**: Run annovar analysis to capture additional variants in the blood group genes. Annovar must be run independently by the user; DTM-Tools expects Annovar output files in the input directory. Expected file names are specified in _dtmtool/additional\_findings\_stage.py_.
 - **-n**: Do not clean up temporary files (for debugging).
 - **-m**: Number of parallel processes to make the analysis faster. For use in multicore machines. Recommended one per core. Maximum number of threads = number of chromosomes in the database.
 - **-r**: Directory where the FASTA genomic reference files and respective index are found. Software also expects genomic coordinate .csv files in this directory (_ChromoList.csv, ChromoInDelList.csv, Multi.csv_).
@@ -77,7 +77,7 @@ Where:
 To display the usage line:
 
 ```
-python rylantool/main.py -h
+python dtmtool/main.py -h
 ```
 
 ## Building Docker Container

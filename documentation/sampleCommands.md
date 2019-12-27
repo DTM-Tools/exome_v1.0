@@ -37,7 +37,7 @@ Activate the local environment (pyvcf) first. Make any necessary edits to the DT
 
 The following command line, from the root directory, executes DTM-Tools with hg38 database coordinates and six threads:
 
-	python rylantool/main.py -a -m 6 -r /DIRECTORY/PATH/REFERENCE -o /DIRECTORY/PATH/OUTPUT -i /DIRECTORY/PATH/INPUT -p Sample.bam -g grch38
+	python dtmtool/main.py -a -m 6 -r /DIRECTORY/PATH/REFERENCE -o /DIRECTORY/PATH/OUTPUT -i /DIRECTORY/PATH/INPUT -p Sample.bam -g grch38
 	
 /DIRECTORY/PATH/REFERENCE should contain: ChromoList.csv, ChromoInDelList.csv, Multi.csv, GRCh38.fasta, GRCh38.fasta.fai
 
@@ -49,7 +49,7 @@ If you don’t have ANNOVAR output files, omit the **-a** option.
 
 Hg19 is considered the default assembly build value, in this case it does not need to be specified and the following command line will work:
 
-	python rylantool/main.py -a -m 6 -r /DIRECTORY/PATH/REFERENCE -o /DIRECTORY/PATH/OUTPUT -i /DIRECTORY/PATH/INPUT -p Sample.bam
+	python dtmtool/main.py -a -m 6 -r /DIRECTORY/PATH/REFERENCE -o /DIRECTORY/PATH/OUTPUT -i /DIRECTORY/PATH/INPUT -p Sample.bam
 	
 ## Understanding the JSON output file
 
