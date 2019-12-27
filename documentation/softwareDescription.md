@@ -155,9 +155,9 @@ ChromoList.csv is used to describe SNV interpretation rules and contains the fol
 
 ChromoInDelList.csv is used to describe indel interpretation rules and contains the following fields:
 
-	A) Allele: unique code for each entry. See nomenclature rules for suggested nomenclature.
+	A) Allele: unique code for each entry. See nomenclature rules for suggested nomenclature
 	
-	B) Description: allele name per ISBT, without special characters as indicated in nomenclature rules. 
+	B) Description: allele name per ISBT, without special characters as indicated in nomenclature rules
 	
 	C) Enabled: TRUE or FALSE
 	
@@ -209,15 +209,15 @@ ChromoInDelList.csv is used to describe indel interpretation rules and contains 
 	
 	AA) Function: ‘Antigen’ vs ‘Enzyme’
 	
-	AB) Gensubtype: define if the indel variant encodes for an epitope, a weakening variant, or a null change. 
+	AB) Gensubtype: define if the indel variant encodes for an epitope, a weakening variant, or a null change 
 	
-	AC) Refsubtype: specific Gensubytpe for the reference nucleotide string.
+	AC) Refsubtype: specific Gensubytpe for the reference nucleotide string
 	
-	AD) Altsubtype: specific Gensubtype for the alternate nucleotide string.
+	AD) Altsubtype: specific Gensubtype for the alternate nucleotide string
 
 #### Special considerations for Indels
 
-DTM-Tools currently employs Freebayes, a haplotyper, for variant calling. Nucleotide coordinates for indels are 0-based start,1-based end. As a reference, the nucleotide coordinates displayed in the UCSC Genome Browser (graphical) are 1-based.
+DTM-Tools currently employs [Freebayes][freebayes], a haplotyper, for variant calling. Nucleotide coordinates for indels are 0-based start,1-based end. As a reference, the nucleotide coordinates displayed in the UCSC Genome Browser (graphical) are 1-based.
 
 **Simulated insertion example:**
 
