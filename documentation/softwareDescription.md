@@ -272,23 +272,23 @@ JSON format was selected, rather than a predicted individual phenotype output, t
 
 * The findings.ALLELE\_CODE.determination key in the JSON output file can contain the following values:
 
->> **"classified"**: nucleotide call was classified successfully per database interpretation rules. This should be the most common value, we recommend manual review of all other instances.
->> 
->> **"filtered"**: the nucleotide call was classified successfully per database interpretation rules and is provided in the JSON output file, but user is cautioned that this genomic site did NOT meet one or more of the locus-specific quality filters provided by the user. The specific filter(s) that were not met will be listed with the 'findings.ALLELE\_CODE.filter_criteria' key in the JSON output file.
->> 
->>**'inconsistent'**: the reference nucleotide defined in the database does not match the provided reference genome.
->>
->>**'abnormality'**: the variant or variant/reference nucleotide set defined in the database do not match.
->> 
->> **'triples'**: warning - three, instead of the expected two, nucleotide calls were provided in the _.vcf_.
->>
->> **'MISSING'**: no entry in the _.vcf_ file generated for this precise genomic locus. Usually means that no sequences are aligned in that region. Four possible explantions are provided below.
->> 
->> **'negative probably other variants'**: the _.vcf_ file provides more than one entry for the genomic locus, therefore that site likely contains a different variant(s) than those defined in the database. Review manually.
->> 
->> **'not classified'**: this value only appears for alleles defined by more than one SNV/indel (_Multi.csv_), when one of the individual variants is inconsistent, abnormal, or missing.
->> 
->> **'unverified'**: warning - a filter threshold failed but is not marked as a 'flag' action. Contact developing team for debugging.
+> **"classified"**: nucleotide call was classified successfully per database interpretation rules. This should be the most common value, we recommend manual review of all other instances.
+>
+> **"filtered"**: the nucleotide call was classified successfully per database interpretation rules and is provided in the JSON output file, but user is cautioned that this genomic site did NOT meet one or more of the locus-specific quality filters provided by the user. The specific filter(s) that were not met will be listed with the 'findings.ALLELE\_CODE.filter_criteria' key in the JSON output file.
+>
+>**'inconsistent'**: the reference nucleotide defined in the database does not match the provided reference genome.
+>
+>**'abnormality'**: the variant or variant/reference nucleotide set defined in the database do not match.
+>
+> **'triples'**: warning - three, instead of the expected two, nucleotide calls were provided in the _.vcf_.
+>
+> **'MISSING'**: no entry in the _.vcf_ file generated for this precise genomic locus. Usually means that no sequences are aligned in that region. Four possible explantions are provided below.
+>
+> **'negative probably other variants'**: the _.vcf_ file provides more than one entry for the genomic locus, therefore that site likely contains a different variant(s) than those defined in the database. Review manually.
+>
+> **'not classified'**: this value only appears for alleles defined by more than one SNV/indel (_Multi.csv_), when one of the individual variants is inconsistent, abnormal, or missing.
+> 
+> **'unverified'**: warning - a filter threshold failed but is not marked as a 'flag' action. Contact developing team for debugging.
 
 
 * Note that left-alignment and harmonization is not yet enabled in DTM-Tools, which may result in variable representation of indels and ‘abnormality’ flags.
