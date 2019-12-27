@@ -13,7 +13,7 @@ The following command, from the root directory, will build the container. Be sur
 
 Docker container build command:
 
-	docker build -f build/rylan/Dockerfile -t dtmtool:latest 
+	docker build -f build/rylan/Dockerfile -t dtmtool:latest . 
 	
 The following command will then run the container with the hg38 genome coordinates and six threads:
 
