@@ -317,6 +317,6 @@ Certainty values are:
 >
 > 4) True homozygous deletion
 
-* The 'additionalFindings' section wil be included in the JSON output if ANNOVAR files were provided. This section will include variants reported by ANNOVAR whose coordinates are NOT described in the DTM-Tools database used in that particular run. Note that variant calls, gene names, locations and expected transcript consequence are determined directly by the user's selection of variant caller, hard filters, and by ANNOVAR software - these are not manipulated by DTM-Tools. They should be interpreted as a guidance for detection of possible new variants and require careful study and experimental validation.
+* The 'additionalFindings' section wil be included in the JSON output if ANNOVAR files were provided. This section will include variants reported by ANNOVAR whose coordinates are NOT described in the DTM-Tools database used in that particular run. Note that variant calls, gene names, locations and expected transcript consequence are determined directly by the user's selection of variant caller, hard filters, and by ANNOVAR software - these are only reported, but not manipulated, by DTM-Tools. This should be interpreted as a guidee for detection of possible new variants that require careful study and experimental validation.
 
 **DTM-Tools is for research use only and is in continuous development**. Please contact the DTM-Tools developer at <celina.montemayorgarcia@nih.gov> for questions and to report any problems.
