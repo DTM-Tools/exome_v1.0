@@ -260,7 +260,7 @@ Multi.csv is used for alleles defined by more than one SNV and/or indel, and con
 ## DTM-Tools Output File
 The DTM-Tools output file is in JSON format. It will be saved in the directory specified by the ‘**-o**’ option of the command line, and will have the name of the input file with the ‘_.rylanout.json_’ extension. 
 
-JSON format was selected, rather than a predicted individual phenotype output, to allow the user to perform powerful and complex queries in large cohorts using a non-relational database. This format will also allow for complete structural flexibility in the output of future software versions that incorporate copy number variations and genes with complex structural rearrangements. It is also structurally compatible with current genomic variation data files such as [dbSNP] [JSON dbsnpsite].
+JSON format was selected, rather than a predicted individual phenotype output, to allow the user to perform powerful and complex queries in large cohorts using a non-relational database. This format will also allow for complete structural flexibility in the output of future software versions that will incorporate copy number variations and genes with complex structural rearrangements. It is also structurally compatible with current genomic variation data files such as [dbSNP][JSON dbsnpsite].
 
 * Understanding the structure of the JSON file is paramount to be able to perform the proper final phenotype prediction, and to design complex queries for large cohorts. Please refer to **Figure 2** the DTM-Tools publication for an illustration and description of each field in the DTM-Tools JSON output.
 
