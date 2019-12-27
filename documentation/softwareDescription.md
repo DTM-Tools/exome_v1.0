@@ -31,7 +31,7 @@ _/queryTools_: contains sample pymongo query scripts
 
 If run locally, DTM-Tools requires prior installation of [Samtools][samtools], [Freebayes][freebayes], and [pyvcf][pyvcf site]. 
 
-However, a Docker container is available, which obviates the need for these installations and enhances reproducibility of DTM-Tools. Docker command lines can be found in _softwareTutorials.md_ in this /documentation directory.
+However, a Docker container is available, which obviates the need for these installations and enhances reproducibility of DTM-Tools. Docker command lines can be found in _sampleCommands.md_ in this /documentation directory.
 
 You can read more about software reproducibility and the use of containers here:
 
@@ -262,7 +262,7 @@ JSON format was selected, rather than a predicted individual phenotype output, t
 
 * A sample output file is available here for download: /documentation/Sample.rylanout.json. To view the DTM-Tools output file in this visually-friendly format, simple use any online JSON formatter. 
 
-* Sample non-relational database queries are available in /documentation/tutorials.md. This document also contains further tips on interpreting the DTM-Tools output JSON file.
+* Sample non-relational database queries are available in /documentation/sampleCommands.md. This document also contains further tips on interpreting the DTM-Tools output JSON file. 
 
 ## Important Notes and Exceptions
 
