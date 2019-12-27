@@ -240,7 +240,7 @@ The nucleotide A between the 6th nucleotide, T, and the 8th nucleotide, C, is de
 In DTM-Tools, if a deletion occurs between the Xth and Yth nucleotide, the start nucleotide coordinate is X-1, while the end nucleotide coordinate is Y, so for this example:
 
 > Start nucleotide coordinate in DTM-Tools database = 5 
-
+>
 > End nucleotide coordinate specified in DTM-Tools database = 8
 
 ### Multi.csv
