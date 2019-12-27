@@ -13,11 +13,11 @@ The following command, from the root directory, will build the container. Be sur
 
 Docker container build command:
 
-	docker build -f build/rylan/Dockerfile -t rylantool:latest 
+	docker build -f build/rylan/Dockerfile -t dtmtool:latest 
 	
 The following command will then run the container with the hg38 genome coordinates and six threads:
 
-	docker run -v /DIRECTORY/PATH:/data -e RYLAN_INPUT_DIR=/data/Directory -e RYLAN_OUTPUT_DIR=/data/Directory -e RYLAN_PATIENT_FILE=Sample.dedup.bam -e RYLAN_NUMCORES=6 -e RYLAN_REF_DIR=/data/Directory -e RYLAN_REF_BUILD=grch38 -it rylantool:latest
+	docker run -v /DIRECTORY/PATH:/data -e RYLAN_INPUT_DIR=/data/Directory -e RYLAN_OUTPUT_DIR=/data/Directory -e RYLAN_PATIENT_FILE=Sample.dedup.bam -e RYLAN_NUMCORES=6 -e RYLAN_REF_DIR=/data/Directory -e RYLAN_REF_BUILD=grch38 -it dtmtool:latest
 
 [freebayes]:https://github.com/ekg/freebayes
 	
