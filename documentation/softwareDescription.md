@@ -13,13 +13,13 @@ DTM-Tools is written in object-oriented notation as a series of stages (static m
 
 The source code can be accessed through [Github][Github main]: https://github.com/DTM-Tools/exome_v1.0. Please refer to the DTM-Tools publication for additional details and laboratory validation data.
 
-The following four subdirectories are included in exome v1.0:
+The following four subdirectories are included in exome v1.0 and are illustrated in **Figure 1B** of the DTM-Tools publication:
 
-_/build_: contains Docker definition files and the Docker deployment entrypoint.
+_/build_: contains Docker definition files and the Docker deployment entrypoint. Sample Docker commands can be found in _/documentation/sampleCommands.md_.
 
 _/databases_: contains three .csv files that define genomic coordinates and their interpretation rules. Described in further detail below.
 
-_/rylantool_: contains DTM-Tools app python scripts
+_/dtmtool_: contains DTM-Tools app python scripts
 
 _/queryTools_: contains sample pymongo query scripts
 

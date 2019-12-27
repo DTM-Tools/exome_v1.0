@@ -116,8 +116,8 @@ This software is intended for research use only.
 In any work or product derived from this material, proper attribution of the authors as the source of the software/database or data should be made, using the following citation:
 
 ```
-*Citation pending
+*Publication citation pending
 ```
 
-**DTM-Tools is for research use only and is in continuous development**. Please contact the DTM-Tools developer at <celina.montemayorgarcia@nih.gov> for questions. We welcome all comments and contributions.
+**DTM-Tools is for research use only and is in continuous development**. Please contact the DTM-Tools developer at <celina.montemayorgarcia@nih.gov> wiith questions. We welcome all comments and contributions.
 
