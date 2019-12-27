@@ -96,7 +96,7 @@ DTM-Tools exome v1.0 database can be downloaded from the Github  _/database dire
 
 [JSON dbsnpsite]: https://ncbiinsights.ncbi.nlm.nih.gov/2018/06/15/dbsnp-updates-json-refsnp-report-api
 
-**Note that although downloaded files are in _.csv_ format, DTM-Tools reads them into memory as a JSON dictionary** . This will allow future versions of DTM-Tools to incorporate complex non-relational definitions, and renders the DTM-Tools backbone compatible with other genomic variant database file structures, such as the [dbSNP JSON data]  [JSON dbsnpsite].
+**Note that although downloaded files are in _.csv_ format, DTM-Tools reads them into memory as a JSON dictionary** . This will allow future versions of DTM-Tools to incorporate complex non-relational definitions, and renders the DTM-Tools backbone compatible with other genomic variant database file structures, such as the [dbSNP JSON data][JSON dbsnpsite].
 
 
 * The user can open the donwloaded _.csv_ files and edit them in Excel, but must ensure that the line break remains as LF and not CRLF. 
