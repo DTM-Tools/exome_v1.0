@@ -295,17 +295,17 @@ JSON format was selected, rather than a predicted individual phenotype output, t
 
 * Alleles defined by more than one SNV and/or indel (_Multi.csv_) are given a zygosity value and a certainty value in the JSON output file. Physical phasing is not enabled for DTM-Tools_exome, and thus phasing of heterozygous calls cannot be performed. 
 
-	Zygosity values are equivalent to those for SNVs and Indels: 
->> 0 = homozygous reference
->>
->> 1 = heterozygous
->> 
->> 2 = homozygous variant
+Zygosity values are equivalent to those for SNVs and Indels: 
+> 0 = homozygous reference
+>
+> 1 = heterozygous
+> 
+> 2 = homozygous variant
 
-	Certainty values are:
->> 0 = uncertain (for example, three variants in heterozygous state)
->>
->> 1 = certain (for example, two heterozygous variants and one homozygous result in a zygosity value of 1 and a certainty value of 1).
+Certainty values are:
+> 0 = uncertain (for example, three variants in heterozygous state)
+>
+> 1 = certain (for example, two heterozygous variants and one homozygous result in a zygosity value of 1 and a certainty value of 1).
  
 * DTM-Tools employs [Freebayes] [freebayes] for variant calling, which is haplotype-based. If an indel or a complex genomic variant is identified in a position listed in the _ChromoList.csv_ database (i.e. an expected SNV), the alternate nucleotide call will not match, and the allele will NOT be classified in the output database. This can be uncovered by running the DTM-Tools software with the ‘**-n**’ option, and inspection of the individual _.vcf_ file, which will be stored in the _/tmp_ directory. Thus, in the setting of exome sequencing, a missing allele in the output JSON can have 4 explanations: 
 
