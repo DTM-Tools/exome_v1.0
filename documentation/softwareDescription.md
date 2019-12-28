@@ -23,13 +23,15 @@ _/dtmtool_: contains DTM-Tools app python scripts
 
 _/queryTools_: contains sample pymongo query scripts
 
+_/documentation_: complete documentation material, including detailed software description, sample command lines, files for download, and tutorial video.
+
 ## Dependencies
 
 [pyvcf site]: https://pyvcf.readthedocs.io/en/latest/
 [freebayes]:https://github.com/ekg/freebayes
 [samtools]:http://www.htslib.org/
 
-If run locally, DTM-Tools requires prior installation of [Samtools][samtools], [Freebayes][freebayes], and [pyvcf][pyvcf site]. 
+If run locally, DTM-Tools requires prior installation of [Samtools][samtools], [Freebayes][freebayes], and [pyvcf][pyvcf site]. Samtools v0.1.19-44428cd, Freebayes v1.3.1, and PyVCF release 0.6.7 were employed in the published manuscript of this release.
 
 However, a Docker container is available, which obviates the need for these installations and enhances reproducibility and portability of DTM-Tools. Docker command lines can be found in the main README.md document (root directory) and in _sampleCommands.md_ in this /documentation directory.
 
@@ -60,8 +62,9 @@ You can read more about software reproducibility and the use of containers here:
 
 [Biowulf site]: https://hpc.nih.gov/systems
 [bbmap site]: https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmap-guide
+[smith paper]:https://www.ncbi.nlm.nih.gov/pubmed/?term=PMID%3A+28333980
 
-* We provide our own pre-processing script in this directory (_/documentation/TrimAlignSort.sh_) as sample commands for alignment and indexing. This script was used with the [NIH High Performance Computing][Biowulf site] cluster. Alignment with [bbmap][bbmap site] is recommended. 
+* We provide our own pre-processing script in this directory (_/documentation/TrimAlignSort.sh_) as sample commands for alignment and indexing. This script was used with the [NIH High Performance Computing][Biowulf site] cluster. Alignment with [bbmap][bbmap site] is recommended due its documenteed robust performance in conjunction with Freebayes ([Smith et al][smith paper], 2017).
 
 * DTM-Tools also requires the reference genome and its index as input files, stored in the directory path specified by the **‘-r’** command line option. Ensure that this is the exact same reference genome file employed when aligning the raw NGS FASTQ files. Be aware that the hg38 reference genome contains alternative haplotypes and patches which can lead to ambiguous alignments with some software. Note that in our sample preprocessing script we employ the bbmap aligner with the ‘ambiguous=toss’ option, which WILL result in loss of any reads derived from regions with alternative haplotypes (such as the _KEL_ blood group gene). If using this script, limit the reference genome to the chromosomal assemblies only (no patches or haplotypes).
 

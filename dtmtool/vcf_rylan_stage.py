@@ -329,7 +329,7 @@ class RylanVcfData:
         mapq_res = dict()
         for one_range in pos_ranges:
             range_arg = '%s:%s-%s'%(chromo, one_range[1], one_range[2])
-            exec_args = ['sh', '%s/rylantool/mapqcalc.sh' % rylan_dir, file_name, range_arg]
+            exec_args = ['sh', '%s/dtmtool/mapqcalc.sh' % rylan_dir, file_name, range_arg]
             logger.info('executing: %s'%(exec_args))
 
             p = subprocess.Popen(exec_args, stdout=subprocess.PIPE)
@@ -342,7 +342,7 @@ class RylanVcfData:
                 mapq_res[one_range[0]] = mapq_one_res
             else:
                 logger.warning('MAPQ returned no data for patient file %s position %s:%s-%s' % (patient_file, chromo,one_range[1], one_range[2]))
-    
+
         return mapq_res
 
     @staticmethod
