@@ -23,7 +23,7 @@ _/dtmtool_: contains DTM-Tools app python scripts
 
 _/queryTools_: contains sample pymongo query scripts
 
-_/documentation_: complete documentation material, including detailed software description, sample command lines, files for download, and tutorial video.
+_/documentation_: complete documentation material, including detailed software description, sample command lines, and files for download.
 
 ## Dependencies
 
