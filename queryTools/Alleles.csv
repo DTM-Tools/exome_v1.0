@@ -1,5 +1,5 @@
 Name,***KEL***,
-s6a,k(Cellano),K1
+s6a,k(Cellano),K1 (rule out weak variant)
 s6b,Not found,K1_weak_present
 s6c,Not found,multi
 s6d,Not found,multi
@@ -8,7 +8,7 @@ s6f,Jsb,Jsa
 s6g,Ulaneg,Ulapos
 s6h,K12pos,K12neg
 s6i,K14posK24negR180,K14neg K24negCys180
-s6j,K14pos K24negR180,K14neg K24posP180
+s6j,K14pos K24negR180,K14neg K24posP180 | K14negK24negH180
 s6k,K11,K17
 s6l,K18_1pos,K18_1neg
 s6m,K18_2pos,K18_2neg
@@ -38,7 +38,7 @@ s6aj,Not found,KEL_weak_02M_08
 s6ak,Not found,KEL_weak_02M_09
 s6al,Not found,KEL_weak_02M_10
 s6am,Not found,KEL_weak_02M_11
-s6an,Not found,KEL_null_02N_01
+s6an,Not found,KEL_null_02N_01 | KEL_null_02N_06
 s6ao,Not found,KEL_null_02N_26
 s6ap,Not found,KEL_null_02N_03
 s6aq,Not found,KEL_null_02N_04
@@ -47,11 +47,11 @@ s6as,Not found,Kell_null_02N_07
 s6at,Not found,KEL_null_02N_08
 s6au,Not found,KEL_null_02N_09
 s6av,Not found,KEL_null_02N_10
-s6aw,Not found,KEL_null_02N_13
+s6aw,Not found,KEL_null_02N_13| KEL_null_02N_13
 s6ax,Not found,KEL_null_02N_14
 s6ay,Not found,KEL_null_02N_15
 s6az,Not found,KEL_null_02N_16
-s6ba,Not found,KEL_null_02N_17
+s6ba,Not found,KEL_null_02N_17 | synonymous change
 s6bb,Not found,KEL_null_02N_19
 s6bc,Not found,KEL_null_02N_20
 s6bd,Not found,KEL_null_02N_21
@@ -92,19 +92,19 @@ Name,***Kidd***,
 s9a,Jka,Jkb
 s9b,Not found,JK_null_01N_02
 s9c,Not found,JK_null_01N_03
-s9d,Not found,JK_null_01N_05
+s9d,Not found,JK_null_01N_05 | synonymous change
 s9e,Not found,JK_null_01N_08
 s9f,Not found,JK_null_01N_10
 s9g,Not found,JK_weak_01W_05
 s9h,Not found,JK_null_ 02N_01/JK_null_01N_06
 s9i,Not found,JK_null_02N_06
-s9j,Not found,JK_null_02N_03
+s9j,Not found,JK_null_02N_03 | synonymous change
 s9k,Not found,JK_null_02N_04
 s9l,Not found,JK_null_02N_09
 s9m,Not found,JK_null_02N_10
 s9n,Not found,JK_weak_02W_01
 s9o,Not found,JK_weak_02W_02
-s9p,Not found,JK_null_01N_04/JK_null_02N_08
+s9p,Not found,JK_null_01N_04/JK_null_02N_08 | JK_null_02N_02
 s9q,Not found,JK_weak_01W_01
 s9r,Not found,JK_weak_01W_02
 s9s,Not found,JK_weak_01W_03
