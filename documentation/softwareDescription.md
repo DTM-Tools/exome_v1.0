@@ -33,7 +33,7 @@ _/documentation_: complete documentation material, including detailed software d
 
 If run locally, DTM-Tools requires prior installation of [Samtools][samtools], [Freebayes][freebayes], and [pyvcf][pyvcf site]. Samtools v0.1.19-44428cd, Freebayes v1.3.1, and PyVCF release 0.6.7 were employed in the published manuscript of this release.
 
-However, a Docker container is available, which obviates the need for these installations and enhances reproducibility and portability of DTM-Tools. Docker command lines can be found in the main README.md document (root directory) and in _sampleCommands.md_ in this /documentation directory.
+However, a Docker container is available, which obviates the need for these installations and enhances reproducibility and portability of DTM-Tools. Docker command lines can be found in the main README.md document (root directory) and in _sampleCommands.md_ in this /documentation directory. In addition, a supplementary ***basic video tutorial*** ```hyperlink pending```is included in the DTM-Tools publication to illustrate the use of this container.
 
 You can read more about software reproducibility and the use of containers here:
 
@@ -264,6 +264,8 @@ Multi.csv is used for alleles defined by more than one SNV and/or indel, and con
 The DTM-Tools output file is in JSON format. It will be saved in the directory specified by the ‘**-o**’ option of the command line, and will have the name of the input file with the ‘_.rylanout.json_’ extension. 
 
 JSON format was selected, rather than a predicted individual phenotype output, to allow the user to perform powerful and complex queries in large cohorts using a non-relational database. This format will also allow for complete structural flexibility in the output of future software versions that will incorporate copy number variations and genes with complex structural rearrangements. It is also structurally compatible with current genomic variation data files such as [dbSNP][JSON dbsnpsite].
+
+* A **tutorial video** ```hyperlink pending``` that focuses on the interpretation of the output file is included in the supplementary material of the DTM-Tools publication.
 
 * Understanding the structure of the JSON file is paramount to perform the proper final phenotype prediction, and to design complex queries for large cohorts. Please refer to **Figure 2** the DTM-Tools publication for an illustration and description of each field in the JSON output file.
 

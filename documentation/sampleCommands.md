@@ -3,7 +3,7 @@
 ## Running the Docker container
 
 Running DTM-Tools as a Docker container is 
-**highly recommended**; this eliminates the need to install any dependencies or activate environments.
+**highly recommended**; this eliminates the need to install any dependencies or activate environments. Refer to the DTM-Tools publication for a suplementary video tutorial illustrating the use of this Docker cotainer.
 
 The following command, from the root directory, will build the container. Be sure to make any necessary modifications to the DTM-Tools source code before building the container, such as: 
 
@@ -71,18 +71,20 @@ To view the JSON output file in a visually-friendly format, use any online JSON 
 
 The user can then download the formatted JSON file and visualize with any text editor. In addition, the Firefox web browser will automatically open any _.json_ file in an expandible/collapsible format.
 
+A **supplementary video tutorial** ```hyperlink pending``` is available in th DTM-Tools publication, illustrating the structure and interpretation of the JSON output file, and the use of pymongo script to query individual and cohort results.
+
 	
 ## Pymongo scripts
 
-Pymongo scripts are provided in the /queryTools directory. These are provided as a guide; we upload our JSON files into MongoDB for querying and analysis but any non-relational database could be used.
+Pymongo scripts are provided in the /queryTools directory. These are provided as a guide; we upload our JSON files into MongoDB for querying and analysis but any non-relational database could be used. A ***video tutorial*** is provided in the DTM-Tools publication supplementary material and illustrates the use of these scripts ```hyperlink pending```.
 
 [pymongo site]:https://api.mongodb.com/python/current/
 
-DTM-Tools exome_v1.0 release contains the following scripts which require [pymongo][pymongo site]:
+DTM-Tools exome_v1.0 release contains the following scripts which require [pymongo][pymongo site]. Note that authentication is not encoded in these scripts; **authentication is the responsibility of the user.**
 
 ### AlleleCountMissingFiltered.py
 
-This script provides an output that indicates, per row entry in each of the three databases, how many documents are classified as homozygous reference (i.e. zygosity code = 0), heterozygous (zygosity code =1) or homozygous variant (zygosity code =2). It also indicates how many documents were flagged as ‘filtered’ due to a failed quality filter, and how many documents did not contain such allele entry (missing in the input .bam file). Requires Python 3.x. Note that authentication is not encoded in this instance; authentication is the responsibility of the user.
+This script provides an output that indicates, per row entry in each of the three databases, how many documents are classified as homozygous reference (i.e. zygosity code = 0), heterozygous (zygosity code =1) or homozygous variant (zygosity code =2). It also indicates how many documents were flagged as ‘filtered’ due to a failed quality filter, and how many documents did not contain such allele entry (missing in the input .bam file). Requires Python 3.x. 
 
 The collection and table names are specified in line 10, remember to edit this before running the script:
 
@@ -96,7 +98,7 @@ Command line to run the script:
 
 This script provides a breakdown of the genomic variants identified, per ANNOVAR, whose coordinates are NOT described in the DTM-Tools database used in that particular run. 
 
-Output provides a count of total exonic, intronic, 3’UTR, and 5’UTR variants per gene. Note that gene names are determined by ANNOVAR and may vary. For exonic variants, the script provides the breakdown count for nonsynonymous SNV, synonymous SNV, nonframeshifts (substitutions, insertions, and deletions), frameshifts (substitutions, insertions, and deletions), stop gains, stop losses, and unknowns - as defined by ANNOVAR. Requires Python 3.x. Note that authentication is not encoded in this instance; authentication is the responsibility of the user.
+Output provides a count of total exonic, intronic, 3’UTR, and 5’UTR variants per gene. Note that gene names are determined by ANNOVAR and may vary. For exonic variants, the script provides the breakdown count for nonsynonymous SNV, synonymous SNV, nonframeshifts (substitutions, insertions, and deletions), frameshifts (substitutions, insertions, and deletions), stop gains, stop losses, and unknowns - as defined by ANNOVAR. Requires Python 3.x. 
 
 The collection and table names are specified in line 10, remember to edit this before running the script:
 
