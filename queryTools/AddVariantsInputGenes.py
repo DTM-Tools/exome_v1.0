@@ -7,7 +7,7 @@ import statistics
 def getNovelList(ipAddr, srvport):
     client = MongoClient(host=ipAddr, port=srvport)
     alleles = {}
-    novel = client.rylanFindings.Hg38FullJames
+    novel = client.collectionName.tableName
     foundNovel = novel.find()
 
     for person in foundNovel:

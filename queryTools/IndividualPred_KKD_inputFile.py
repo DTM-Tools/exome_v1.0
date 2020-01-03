@@ -5,8 +5,8 @@ import csv
 
 def getFindingsCollection(ipAddr, srvport):
 	client = MongoClient(host=ipAddr, port=srvport)
-	db = client.rylanFindings
-	return client.rylanFindings.Hg38FullJames
+	db = client.collectionName
+	return client.collectionName.tableName
 
 def getFindingsByRunId(findingsCollection, inputF):
     cursor = findingsCollection.find({ "inputFile" : inputF})

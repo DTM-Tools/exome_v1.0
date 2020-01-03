@@ -78,7 +78,7 @@ Pymongo scripts are provided in the /queryTools directory. These are provided as
 
 [pymongo site]:https://api.mongodb.com/python/current/
 
-DTM-Tools exome_v1.0 release contains the following two scripts which require [pymongo][pymongo site]:
+DTM-Tools exome_v1.0 release contains the following scripts which require [pymongo][pymongo site]:
 
 ### AlleleCountMissingFiltered.py
 

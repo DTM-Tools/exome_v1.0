@@ -21,8 +21,8 @@ def getAlleleList(File1,File2):
 
 def getFindingsCollection(ipAddr, srvport):
 	client = MongoClient(host=ipAddr, port=srvport)
-	db = client.rylanFindings
-	return client.rylanFindings.Hg38FullJames
+	db = client.collectionName
+	return client.collectionName.tableName
 
 def getAllDocsTree(findingscollection, alleles, metric):
 

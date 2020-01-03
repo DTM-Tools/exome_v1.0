@@ -5,7 +5,7 @@ import csv
 
 def getFindingsCollection(ipAddr, srvport):
 	client = MongoClient(host=ipAddr, port=srvport)
-	db = client.rylanFindings
+	db = client.collectionName
 	return client.collectionName.tableName
 
 def getCountOfMissing(findingscollection, allele):
