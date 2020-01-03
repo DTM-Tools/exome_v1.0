@@ -3,7 +3,7 @@
 ## Running the Docker container
 
 Running DTM-Tools as a Docker container is 
-**highly recommended**; this eliminates the need to install any dependencies or activate environments. Refer to the DTM-Tools publication for a suplementary video tutorial illustrating the use of this Docker cotainer.
+**highly recommended**; this eliminates the need to install dependencies or activate environments. Refer to the DTM-Tools publication for a suplementary **video tutorial** ```hyperlink pending``` illustrating the use of this Docker cotainer.
 
 The following command, from the root directory, will build the container. Be sure to make any necessary modifications to the DTM-Tools source code before building the container, such as: 
 
@@ -202,7 +202,7 @@ Command line:
 
 
 ### IndividualPred\_KKD\_InputFile.py
-This script is a variant of _IndividualPred\_KKD\_runId.py_ that takes the input file name, instead of the runId. Be cautious if your database contains more than one run from the same file; the runId is better suited as a unique identifier. Output is identical to _IndividualPred\_KKD\_runId.py_ .
+This script is a variant of _IndividualPred\_KKD\_runId.py_ that takes the input file name, instead of the runId. Be cautious if your database contains more than one run from the same file; the runId is better suited as a unique identifier. Output is identical to _IndividualPred\_KKD\_runId.py_.
 
 Collection and table names are specified in line 10, as described above. 
 
