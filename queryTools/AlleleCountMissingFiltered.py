@@ -3,6 +3,7 @@ import pymongo
 import sys
 import csv
 
+
 def getFindingsCollection(ipAddr, srvport):
 	client = MongoClient(host=ipAddr, port=srvport)
 	db = client.collectionName

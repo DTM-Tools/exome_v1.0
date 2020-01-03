@@ -84,7 +84,7 @@ DTM-Tools exome_v1.0 release contains the following scripts which require [pymon
 
 ### AlleleCountMissingFiltered.py
 
-This script provides an output that indicates, per row entry in each of the three databases, how many documents are classified as homozygous reference (i.e. zygosity code = 0), heterozygous (zygosity code =1) or homozygous variant (zygosity code =2). It also indicates how many documents were flagged as ‘filtered’ due to a failed quality filter, and how many documents did not contain such allele entry (missing in the input .bam file). Requires Python 3.x. 
+This script provides an output that indicates, per row entry in each of the three databases, how many documents are classified as homozygous reference (i.e. zygosity code = 0), heterozygous (zygosity code =1) or homozygous variant (zygosity code =2). It also indicates how many documents were flagged as ‘filtered’ due to a failed quality filter, and how many documents did not contain such allele entry (missing in the input .bam file). Requires Python 3.x, and expects _Alelles.csv_ in the running directory. Note that some genomic positions have more than one variant nucleotide classification, in that case this script will not specify; use direct database queries to dissect these cases.
 
 The collection and table names are specified in line 10, remember to edit this before running the script:
 
@@ -93,6 +93,12 @@ The collection and table names are specified in line 10, remember to edit this b
 Command line to run the script:
 
 	python AlleleCountMissingFiletered.py > /DIRECTORY/PATH/outputFile.txt
+
+### MultiAlleleCount.py
+
+This script is a variation of _AlleleCountMissingFiltered.py_ that addresses alleles that are defined by more than one SNV/Indel. Requires _AllelesMultiKKD.csv_ in the running directory.
+
+Collection and table names are specified in line 10, as above. 
 	
 ### AddVariantsPerGene.py
 
@@ -107,6 +113,31 @@ The collection and table names are specified in line 10, remember to edit this b
 Command line:
 
 	python AddVariantsPerGene.py > /DIRECTORY/PATH/outputFile.txt
+	
+### AddVariantsInputGene.py
+This script is a variation of _AddVariantsPerGene.py_. It allows the user to specify the gene names to query for novel variants, and it has the option to report intronic changes per ANNOVAR.
+
+Collection and table names are specified in line 10, as above.
+
+Note that the section to report intron variants, which is very time-consuming, is commented out in the tracked version of this script. To include it, simply remove the 3 tick marks ```'''```at the beginning and at the end of this section:
+
+    '''idListIntronic=[]
+    countIntronic=0
+    for id in alleles.keys():
+        if id not in idListIntronic:
+            if alleles[id]['location']=="intronic":
+                countIntronic = countIntronic + 1
+                idListIntronic.append(id)
+    print ('Total intronic changes:',+countIntronic)'''
+    
+ Deafult gene names to scan are KEL, SLC14A1, and ACKR1; these can be edited in line 21:
+ 
+ 	geneList=['KEL','SLC14A1','ACKR1']
+
+Command line:
+
+	python AddVariantsInputGene.py > /DIRECTORY/PATH/outputFile.txt
+
 	
 ## Sample MongoDB queries
 
