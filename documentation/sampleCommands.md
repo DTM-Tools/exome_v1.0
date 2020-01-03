@@ -71,7 +71,32 @@ To view the JSON output file in a visually-friendly format, use any online JSON 
 
 The user can then download the formatted JSON file and visualize with any text editor. In addition, the Firefox web browser will automatically open any _.json_ file in an expandible/collapsible format.
 
-A **supplementary video tutorial** ```hyperlink pending``` is available in th DTM-Tools publication, illustrating the structure and interpretation of the JSON output file, and the use of pymongo script to query individual and cohort results.
+A **supplementary video tutorial** ```hyperlink pending``` is available in th DTM-Tools publication, illustrating the structure and interpretation of the JSON output file, and the use of our pymongo scripts to query individual and cohort results.
+
+## Sample MongoDB queries
+
+Any non-relational database can be employed. We provide here some commands that the development team uses to import and analyze documents in MongoDB for your reference.
+
+To import in bulk all .rylanout.jsons (DTM-Tools output files) saved in a directory:
+
+	find . -regex '.*/[^/]*.json' | xargs -L 1 mongoimport --db databaseName --collection tableName --file
+	
+To list the runID and Input File name for a document that contains a specific additionalFinding:
+
+	db.databaseName.find({"additionalFindings.CHROM19:45321793:G:T.gene":"BCAM"},{"_id":0,"runId":1,"inputFile":1})
+
+	
+To count the documents that predict homozygosity for s8a (Fyb) and homozygosity for the s8b (GATA box mutation):
+
+	db.databaseName.count({$and:[{"findings.s8a.zygosity":2},{"findings.s8b.zygosity":2}]})
+	
+To list the runIDs for all documents that predict homozygosity for s8a (Fyb) and homozygosity for the s8b (GATA box mutation):
+
+	db.databaseName.find({$and:[{"findings.s8a.zygosity":2},{"findings.s8b.zygosity":2}]},{"_id" : 0,"runId":1})
+	
+To list the runIDs for all documents that have a certain allele (s6a in this case) not classified and not filtered:
+
+	db.databaseName.find({$nor:[{"findings.s6a.determination":"classified"},{"findings.s6a.determination":"filtered"}]},{"_id" : 0,"runId":1})
 
 	
 ## Pymongo scripts
@@ -80,11 +105,33 @@ Pymongo scripts are provided in the /queryTools directory. These are provided as
 
 [pymongo site]:https://api.mongodb.com/python/current/
 
-DTM-Tools exome_v1.0 release contains the following scripts which require [pymongo][pymongo site]. Note that authentication is not encoded in these scripts; **authentication is the responsibility of the user.**
+DTM-Tools exome_v1.0 release contains the following scripts which require [pymongo][pymongo site] and Python 3.x. Note that authentication is not encoded in these scripts; **authentication is the responsibility of the user.**
+
+### CohortStats.py
+This script provides the mean, minimum, maximum and standard deviation for quality parameters in each of the genomic regions queried by the DTM-Tools database for the entire cohort. It then provides the overal statistics for entire group of variants in the cohort as a whole. Helpful to obtain general depth and QUAL values in the regions of interest. Expects two DTM-Tools database files ( _ChromoList.csv_ and_ChromoInDelList.csv_) in the working directory.  
+
+Collection and table names are specified in lines 25-26, remember to edit them before running the script:
+	
+	db = client.collectionName
+	return client.collectionName.tableName
+	
+The scripts takes two arguments specified by the user: 
+
+* The metric code queried, as it appears in the JSON output file (DP, AO, QUAL, etc)
+* Text naming or explaining this metric (depth, fraction_alternate, etc)
+
+Command line:
+	
+	python CohortStats.py <metric> <metric_name>
+
+Sample command lines:
+
+	python CohortStats.py DP depth
+	python CohortStats.py QUAL qual_value
 
 ### AlleleCountMissingFiltered.py
 
-This script provides an output that indicates, per row entry in each of the three databases, how many documents are classified as homozygous reference (i.e. zygosity code = 0), heterozygous (zygosity code =1) or homozygous variant (zygosity code =2). It also indicates how many documents were flagged as ‘filtered’ due to a failed quality filter, and how many documents did not contain such allele entry (missing in the input .bam file). Requires Python 3.x, and expects _Alelles.csv_ in the running directory. Note that some genomic positions have more than one variant nucleotide classification, in that case this script will not specify; use direct database queries to dissect these cases.
+This script provides an output that indicates, per row entry in each of the three databases, how many documents are classified as homozygous reference (i.e. zygosity code = 0), heterozygous (zygosity code =1) or homozygous variant (zygosity code =2). It also indicates how many documents were flagged as ‘filtered’ due to a failed quality filter, and how many documents did not contain such allele entry (missing in the input .bam file). Requires Python 3.x, and expects _Alelles.csv_ in the running directory. Note that some genomic positions have more than one variant nucleotide classification, in that case this script will not specify which variant was identified; use direct database queries to dissect these cases.
 
 The collection and table names are specified in line 10, remember to edit this before running the script:
 
@@ -99,6 +146,10 @@ Command line to run the script:
 This script is a variation of _AlleleCountMissingFiltered.py_ that addresses alleles that are defined by more than one SNV/Indel. Requires _AllelesMultiKKD.csv_ in the running directory.
 
 Collection and table names are specified in line 10, as above. 
+
+Command line:
+
+	python MultiAlleleCount.py > /DIRECTORY/PATH/outputFile.txt
 	
 ### AddVariantsPerGene.py
 
@@ -137,31 +188,27 @@ Note that the section to report intron variants, which is very time-consuming, i
 Command line:
 
 	python AddVariantsInputGene.py > /DIRECTORY/PATH/outputFile.txt
-
 	
-## Sample MongoDB queries
+### IndividualPred\_KKD\_runId.py
+This script provides the antigen phenotype interpretation from a single individual. Requires the user to provide the specific runId of a JSON output document that has been uploaded into a non-relational database. 
 
-Any non-relational database can be employed. We provide here some commands that the development team uses to import and analyze documents in MongoDB for your reference.
+Provides antigenic determinations, followed by presence and count of weak and null varations in each blood group. Also provides a list of variants that were filtered, and a list of novel exonic variants in the relevant gene.
 
-To import in bulk all .rylanout.jsons (DTM-Tools output files) saved in a directory:
+Collection and table names are specified in line 10, as described above. Remember to edit these before running the script.
 
-	find . -regex '.*/[^/]*.json' | xargs -L 1 mongoimport --db databaseName --collection tableName --file
-	
-To list the runID and Input File name for a document that contains a specific additionalFinding:
+Command line:
 
-	db.databaseName.find({"additionalFindings.CHROM19:45321793:G:T.gene":"BCAM"},{"_id":0,"runId":1,"inputFile":1})
+	python IndividualPred_KKD_runId.py <runId>
 
-	
-To count the documents that predict homozygosity for s8a (Fyb) and homozygosity for the s8b (GATA box mutation):
 
-	db.databaseName.count({$and:[{"findings.s8a.zygosity":2},{"findings.s8b.zygosity":2}]})
-	
-To list the runIDs for all documents that predict homozygosity for s8a (Fyb) and homozygosity for the s8b (GATA box mutation):
+### IndividualPred\_KKD\_InputFile.py
+This script is a variant of _IndividualPred\_KKD\_runId.py_ that takes the input file name, instead of the runId. Be cautious if your database contains more than one run from the same file; the runId is better suited as a unique identifier. Output is identical to _IndividualPred\_KKD\_runId.py_ .
 
-	db.databaseName.find({$and:[{"findings.s8a.zygosity":2},{"findings.s8b.zygosity":2}]},{"_id" : 0,"runId":1})
-	
-To list the runIDs for all documents that have a certain allele (s6a in this case) not classified and not filtered:
+Collection and table names are specified in line 10, as described above. 
 
-	db.databaseName.find({$nor:[{"findings.s6a.determination":"classified"},{"findings.s6a.determination":"filtered"}]},{"_id" : 0,"runId":1})
+Command line:
+
+	python IndividualPred_KKD_runId.py <inputFile>
+
 	
 **DTM-Tools is for research use only and is in continuous development**. Please contact the DTM-Tools developer at <celina.montemayorgarcia@nih.gov> for questions and to report any problems.
