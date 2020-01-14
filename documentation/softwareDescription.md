@@ -265,8 +265,6 @@ The DTM-Tools output file is in JSON format. It will be saved in the directory s
 
 JSON format was selected, rather than a predicted individual phenotype output, to allow the user to perform powerful and complex queries in large cohorts using a non-relational database. This format will also allow for complete structural flexibility in the output of future software versions that will incorporate copy number variations and genes with complex structural rearrangements. It is also structurally compatible with current genomic variation data files such as [dbSNP][JSON dbsnpsite].
 
-* A **tutorial video** ```hyperlink pending``` that focuses on the interpretation of the output file is included in the supplementary material of the DTM-Tools publication.
-
 * Understanding the structure of the JSON file is paramount to perform the proper final phenotype prediction, and to design complex queries for large cohorts. Please refer to **Figure 2** the DTM-Tools publication for an illustration and description of each field in the JSON output file.
 
 * A sample output file is available here for download: /documentation/Sample.rylanout.json. To view the DTM-Tools output file in this visually-friendly format, simple use any online JSON formatter. Sample links to open online formatters are provided in _/documentation/sampleCommands.md_.

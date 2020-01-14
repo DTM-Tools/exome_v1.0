@@ -71,7 +71,6 @@ To view the JSON output file in a visually-friendly format, use any online JSON 
 
 The user can then download the formatted JSON file and visualize with any text editor. In addition, the Firefox web browser will automatically open any _.json_ file in an expandible/collapsible format.
 
-A **supplementary video tutorial** ```hyperlink pending``` is available in th DTM-Tools publication, illustrating the structure and interpretation of the JSON output file, and the use of our pymongo scripts to query individual and cohort results.
 
 ## Sample MongoDB queries
 
@@ -101,7 +100,7 @@ To list the runIDs for all documents that have a certain allele (s6a in this cas
 	
 ## Pymongo scripts
 
-Pymongo scripts are provided in the /queryTools directory. These are provided as a guide; we upload our JSON files into MongoDB for querying and analysis but any non-relational database could be used. A ***video tutorial*** is provided in the DTM-Tools publication supplementary material and illustrates the use of these scripts ```hyperlink pending```.
+Pymongo scripts are provided in the /queryTools directory. These are provided as a guide; we upload our JSON files into MongoDB for querying and analysis but any non-relational database could be used. 
 
 [pymongo site]:https://api.mongodb.com/python/current/
 
