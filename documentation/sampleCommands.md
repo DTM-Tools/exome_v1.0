@@ -192,9 +192,12 @@ Command line:
 ### IndividualPred\_KKD\_runId.py
 This script provides the antigen phenotype interpretation from a single individual. Requires the user to provide the specific runId of a JSON output document that has been uploaded into a non-relational database. 
 
-Provides antigenic determinations, followed by presence and count of weak and null varations in each blood group. Also provides a list of variants that were filtered, and a list of novel exonic variants in the relevant gene.
+Provides antigenic determinations, followed by presence and count of weak and null varations in each blood group. Also provides a list of variants that were filtered, and a list of novel exonic variants in the relevant gene. The script requires _ChromoList.csv_, _ChromoInDelList.csv_, and _File3.csv_ in thee running directory (these are provided in the _/querytools_ directory along with pymongo scripts).
 
-Collection and table names are specified in lines 9-10, remember to edit these before running the script.
+Collection and table names are specified in lines 9-10; remember to edit these before running the script:
+
+	db = client.collectionName
+	return client.collectionName.tableName
 
 Command line:
 
@@ -202,7 +205,7 @@ Command line:
 
 
 ### IndividualPred\_KKD\_InputFile.py
-This script is a variant of _IndividualPred\_KKD\_runId.py_ that takes the input file name, instead of the runId. Be cautious if your database contains more than one run from the same file; the runId is better suited as a unique identifier. Output is identical to _IndividualPred\_KKD\_runId.py_.
+This script is a variant of _IndividualPred\_KKD\_runId.py_ that takes the input file name, instead of the runId. Be cautious if your database contains more than one run from the same file; the runId is better suited as a unique identifier. Output is identical to _IndividualPred\_KKD\_runId.py_. This script also requires _ChromoList.csv_, _ChromoInDelList.csv_, and _File3.csv_ in the running directory (provided in the _/querytools_ directory along with pymongo scripts).
 
 Collection and table names are specified in lines 9-10, as described above. 
 
