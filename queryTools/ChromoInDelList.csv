@@ -1,0 +1,13 @@
+Allele,Description,Enabled,System,Gene,Chromosome,HG19Start,HG19End,GRC38Start,GRC38End,Ref,ALT,RefClass,AltClass,Type,DP_REF,MAPQ_REF,MQM,MQMR,QUAL,DP,AO,AO/DP,QR,QA,Cell,Function,Gensubtype,Refsubtype,AltSubtype
+ins6a,KEL02N_23,TRUE,6,KEL,7,142658484,142658485,142961397,142961398,GA,GAA,Not found,KEL_null_02N_23,ins,x>10,x>10,X>0,x>10,x>10,(x > 10) & (x < 200),x > 3,x > 0.3,x>0,x>0,RBC,Antigen,Null,Noeffect,Null
+del6a,KEL02N_11,TRUE,6,KEL,7,142651290,142651293,142954203,142954206,CCA,CA,Not found,KEL_null_02N_11,del,x>10,x>10,X>0,x>10,x>10,(x > 10) & (x < 200),x > 3,x > 0.3,x>0,x>0,RBC,Antigen,Null,Noeffect,Null
+del6b,KEL02N_25,TRUE,6,KEL,7,142639581,142639584,142942494,142942497,TCC,TC,Not found,KEL_null_02N_25,del,x>10,x>10,X>0,x>10,x>10,(x > 10) & (x < 200),x > 3,x > 0.3,x>0,x>0,RBC,Antigen,Null,Noeffect,Null
+del6c,KEL02N_27,TRUE,6,KEL,7,142651555,142651558,142954468,142954471,GCA,GA,Not found,KEL_null_02N_27,del,x>10,x>10,X>0,x>10,x>10,(x > 10) & (x < 200),x > 3,x > 0.3,x>0,x>0,RBC,Antigen,Null,Noeffect,Null
+del8a,FY01N_02,TRUE,8,ACKR1,1,159175508,159175525,159205718,159205735,CCTGGCTGGCCTGTCCT,CT,Not found,FY_null_01N_02,del,x>10,x>10,X>0,x>10,x>10,(x > 10) & (x < 200),x > 3,x > 0.3,x>0,x>0,RBC,Antigen,Null,Noeffect,Null
+del8b,FY01N_05,TRUE,8,ACKR1,1,159175554,159175557,159205764,159205767,TCA,TA,Not found,FY_null_01N_05,del,x>10,x>10,X>0,x>10,x>10,(x > 10) & (x < 200),x > 3,x > 0.3,x>0,x>0,RBC,Antigen,Null,Noeffect,Null
+del8c,FY01N_07,TRUE,8,ACKR1,1,159175946,159175949,159206156,159206159,GGC,GC,Not found,FY_null_01N_07,del,x>10,x>10,X>0,x>10,x>10,(x > 10) & (x < 200),x > 3,x > 0.3,x>0,x>0,RBC,Antigen,Null,Noeffect,Null
+del8e,FY02N_04,TRUE,8,ACKR1,1,159175406,159175410,159205616,159205620,TCTG,TG,Not found,FY_null_02N_04,del,x>10,x>10,X>0,x>10,x>10,(x > 10) & (x < 200),x > 3,x > 0.3,x>0,x>0,RBC,Antigen,Null,Noeffect,Null
+del8f,FY02N_06,TRUE,8,ACKR1,1,159175378,159175381,159205588,159205591,CTG,CG,Not found,FY_null_02N_06,del,x>10,x>10,X>0,x>10,x>10,(x > 10) & (x < 200),x > 3,x > 0.3,x>0,x>0,RBC,Antigen,Null,Noeffect,Null
+del9a,JK01N_09,TRUE,9,SLC14A1,18,43310310,43310336,45730345,45730371,GAGTGGACAGCCCCACTATGGTTAGG,GG,Not found,JK_null_01N_09,del,x>10,x>10,X>0,x>10,x>10,(x > 10) & (x < 200),x > 3,x > 0.3,x>0,x>0,RBC,Antigen,Null,Noeffect,Null
+del9b,JK01N_07/JK02N_05,TRUE,9,SLC14A1,18,43319185,43319188,45739220,45739223,CAG,CG,Not found,JK_null_01N_07/JK_null_02N_05,del,x>10,x>10,X>0,x>10,x>10,(x > 10) & (x < 200),x > 3,x > 0.3,x>0,x>0,RBC,Antigen,Null,Noeffect,Null
+del9c,JK02N_14,TRUE,9,SLC14A1,18,43329782,43329785,45749817,45749820,CGC,CC,Not found,JK_null_02N_14,del,x>10,x>10,X>0,x>10,x>10,(x > 10) & (x < 200),x > 3,x > 0.3,x>0,x>0,RBC,Antigen,Null,Noeffect,Null
