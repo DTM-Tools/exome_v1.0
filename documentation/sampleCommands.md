@@ -109,7 +109,7 @@ DTM-Tools exome_v1.0 release contains the following scripts which require [pymon
 ### CohortStats.py
 This script provides the mean, minimum, maximum and standard deviation for quality parameters in each of the genomic regions queried by the DTM-Tools database for the entire cohort. It then provides the overal statistics for entire group of variants in the cohort as a whole. Helpful to obtain general depth and QUAL values in the regions of interest. Expects two DTM-Tools database files ( _ChromoList.csv_ and_ChromoInDelList.csv_) in the working directory.  
 
-Collection and table names are specified in lines 25-26, remember to edit them before running the script:
+Collection and table names are specified in lines 24-25, remember to edit them before running the script:
 	
 	db = client.collectionName
 	return client.collectionName.tableName
@@ -132,8 +132,9 @@ Sample command lines:
 
 This script provides an output that indicates, per row entry in each of the three databases, how many documents are classified as homozygous reference (i.e. zygosity code = 0), heterozygous (zygosity code =1) or homozygous variant (zygosity code =2). It also indicates how many documents were flagged as ‘filtered’ due to a failed quality filter, and how many documents did not contain such allele entry (missing in the input .bam file). Requires Python 3.x, and expects _Alelles.csv_ in the running directory. Note that some genomic positions have more than one variant nucleotide classification, in that case this script will not specify which variant was identified; use direct database queries to dissect these cases.
 
-The collection and table names are specified in line 10, remember to edit this before running the script:
+The collection and table names are specified in lines 9-10, remember to edit this before running the script:
 
+	db = client.collectionName
 	return client.collectionName.tableName
 
 Command line to run the script:
@@ -144,7 +145,7 @@ Command line to run the script:
 
 This script is a variation of _AlleleCountMissingFiltered.py_ that addresses alleles that are defined by more than one SNV/Indel. Requires _AllelesMultiKKD.csv_ in the running directory.
 
-Collection and table names are specified in line 10, as above. 
+Collection and table names are specified in lines 9-10, as above. 
 
 Command line:
 
@@ -158,7 +159,7 @@ Output provides a count of total exonic, intronic, 3’UTR, and 5’UTR variants
 
 The collection and table names are specified in line 10, remember to edit this before running the script:
 
-	return client.collectionName.tableName
+	novel = client.collectionName.tableName
 
 Command line:
 
@@ -193,7 +194,7 @@ This script provides the antigen phenotype interpretation from a single individu
 
 Provides antigenic determinations, followed by presence and count of weak and null varations in each blood group. Also provides a list of variants that were filtered, and a list of novel exonic variants in the relevant gene.
 
-Collection and table names are specified in line 10, as described above. Remember to edit these before running the script.
+Collection and table names are specified in lines 9-10, remember to edit these before running the script.
 
 Command line:
 
@@ -203,7 +204,7 @@ Command line:
 ### IndividualPred\_KKD\_InputFile.py
 This script is a variant of _IndividualPred\_KKD\_runId.py_ that takes the input file name, instead of the runId. Be cautious if your database contains more than one run from the same file; the runId is better suited as a unique identifier. Output is identical to _IndividualPred\_KKD\_runId.py_.
 
-Collection and table names are specified in line 10, as described above. 
+Collection and table names are specified in lines 9-10, as described above. 
 
 Command line:
 
