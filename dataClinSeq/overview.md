@@ -1,4 +1,4 @@
-# DTM-Tools ClinSeq-dbGAP correlation files
+# ClinSeq-dbGAP correlation files
 
 ## Data sharing statement
 Please refer to the DTM-Tools publication for experimental methods and results of the DTM-Tools exome_v1.0 validation with the ClinSeq cohort. 
