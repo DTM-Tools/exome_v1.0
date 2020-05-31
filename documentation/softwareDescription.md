@@ -33,7 +33,7 @@ _/documentation_: complete documentation material, including detailed software d
 
 If run locally, DTM-Tools requires prior installation of [Samtools][samtools], [Freebayes][freebayes], and [pyvcf][pyvcf site]. Samtools v0.1.19-44428cd, Freebayes v1.3.1, and PyVCF release 0.6.7 were employed in the published manuscript of this release.
 
-However, a Docker container is available, which obviates the need for these installations and enhances reproducibility and portability of DTM-Tools. Docker command lines can be found in the main README.md document (root directory) and in _sampleCommands.md_ in this /documentation directory. In addition, a supplementary ***basic video tutorial*** ```hyperlink pending```is included in the DTM-Tools publication to illustrate the use of this container.
+However, a Docker container is available, which obviates the need for these installations and enhances reproducibility and portability of DTM-Tools. Docker command lines can be found in the main README.md document (root directory) and in _sampleCommands.md_ in this /documentation directory. In addition, a supplementary ***basic video tutorial*** is included in the DTM-Tools publication to illustrate the use of this container.
 
 You can read more about software reproducibility and the use of containers here:
 
@@ -95,7 +95,7 @@ DTM-Tools also has the option (**-a**) to report any additional genomic variants
 
 The DTM-Tools command line also expects the genomic rules and interpretation databases stored in the directory path specified by the ‘**-r**’ option. 
 
-DTM-Tools exome v1.0 database can be downloaded from the Github  _/database directory. Three files are expected: _ChromoList.csv, ChromoInDelList.csv, and Multi.csv_, each described individually below. 
+DTM-Tools exome v1.0 database is based on ISBT tables KEL v4.0, FYv4.1, and JK v5.1; it can be downloaded from the Github  _/database directory. Three files are expected: _ChromoList.csv, ChromoInDelList.csv, and Multi.csv_, each described individually below. 
 
 [JSON dbsnpsite]: https://ncbiinsights.ncbi.nlm.nih.gov/2018/06/15/dbsnp-updates-json-refsnp-report-api
 
