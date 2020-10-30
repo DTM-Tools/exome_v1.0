@@ -214,4 +214,4 @@ Command line:
 	python IndividualPred_KKD_InputFile.py <inputFile>
 
 	
-**DTM-Tools is for research use only and is in continuous development**. Please contact the DTM-Tools developer at <celina.montemayorgarcia@nih.gov> for questions and to report any problems.
+**DTM-Tools is for research use only and is in continuous development**. Please contact the DTM-Tools developer at <celina.montemayor@transfusiongenomics.com> for questions and to report any problems.
