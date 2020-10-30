@@ -121,5 +121,5 @@ In any work or product derived from this material, proper attribution of the aut
 *Publication citation pending
 ```
 
-**DTM-Tools is for research use only and is in continuous development**. Please contact the DTM-Tools developer at <celina.montemayorgarcia@nih.gov> wiith questions. We welcome all comments and contributions.
+**DTM-Tools is for research use only and is in continuous development**. Please contact the DTM-Tools developer at <celina.montemayor@transfusiongenomics> wiith questions. We welcome all comments and contributions.
 
